@@ -19,12 +19,6 @@ const socialLinks = [
     icon: "◈",
   },
   {
-    label: "LinkedIn",
-    url: "https://linkedin.com/in/risingsun",
-    handle: "/in/risingsun",
-    icon: "◇",
-  },
-  {
     label: "Email",
     url: "mailto:maco144@gmail.com",
     handle: "maco144@gmail.com",

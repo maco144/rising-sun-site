@@ -34,9 +34,7 @@ Built with TypeScript, React, and Rust for the core cryptographic operations. Us
     status: "active",
     tags: ["security", "typescript", "react", "rust", "encryption"],
     links: [
-      { label: "Website", url: "https://passwordpalace.dev" },
-      { label: "GitHub", url: "https://github.com/rising-sun/password-palace" },
-      { label: "Docs", url: "https://docs.passwordpalace.dev" },
+      { label: "Website", url: "https://passwordpalace.com" },
     ],
     featured: true,
   },
@@ -63,8 +61,7 @@ Built with Next.js, PostgreSQL, and uses ML models for image recognition and aut
     status: "active",
     tags: ["productivity", "nextjs", "postgresql", "ml", "s3"],
     links: [
-      { label: "Website", url: "https://trove.app" },
-      { label: "GitHub", url: "https://github.com/rising-sun/trove" },
+      { label: "Website", url: "https://trove.website" },
     ],
     featured: true,
   },
@@ -90,8 +87,7 @@ Built with TypeScript and HTML5 Canvas. Uses Web Audio API for retro sound effec
     status: "active",
     tags: ["games", "typescript", "canvas", "webgl", "retro"],
     links: [
-      { label: "Play Now", url: "https://gamegames.io" },
-      { label: "GitHub", url: "https://github.com/rising-sun/gamegames" },
+      { label: "Play Now", url: "https://gamegames.gg" },
     ],
     featured: true,
   },
@@ -118,8 +114,7 @@ React Native for cross-platform mobile, Electron for desktop. Uses SQLite for lo
     status: "beta",
     tags: ["productivity", "react-native", "electron", "health", "ai"],
     links: [
-      { label: "Website", url: "https://eudaimonia.app" },
-      { label: "TestFlight", url: "https://testflight.apple.com/eudaimonia" },
+      { label: "Website", url: "https://aios.design" },
     ],
     featured: false,
   },
