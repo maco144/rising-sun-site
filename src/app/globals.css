@@ -1,23 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #0d0d0d;
+  --foreground: #e0e0e0;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "JetBrains Mono", Consolas, Monaco, monospace;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2a2a2a;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3a3a3a;
+}
+
+/* Selection styling */
+::selection {
+  background: #00ff41;
+  color: #0d0d0d;
+}
+
+/* ASCII art styles */
+.ascii-art {
+  font-family: "JetBrains Mono", monospace;
+  line-height: 1.2;
+  white-space: pre;
+}
+
+/* Terminal cursor blink */
+.cursor-blink::after {
+  content: "█";
+  animation: blink 1s step-end infinite;
+}
+
+/* Glowing text effects */
+.glow-green {
+  text-shadow: 0 0 10px rgba(0, 255, 65, 0.5);
+}
+
+.glow-amber {
+  text-shadow: 0 0 10px rgba(255, 176, 0, 0.5);
+}
+
+/* Link styles */
+a {
+  transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+
+/* Focus styles */
+:focus-visible {
+  outline: 2px solid #00ff41;
+  outline-offset: 2px;
 }
 
 @layer utilities {
