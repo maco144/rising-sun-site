@@ -2,17 +2,9 @@ import Link from "next/link";
 import ProjectCard from "@/components/ProjectCard";
 import UpdateCard from "@/components/UpdateCard";
 import ASCIIBorder from "@/components/ASCIIBorder";
+import AnimatedHero from "@/components/AnimatedHero";
 import { getFeaturedProjects } from "@/data/projects";
 import { getRecentUpdates } from "@/data/updates";
-
-const heroAscii = `
-    ╱╲    ╱╲    ╱╲
-   ╱  ╲  ╱  ╲  ╱  ╲
-  ╱    ╲╱    ╲╱    ╲
-  ──────────────────
-       RISING SUN
-    dev  portfolio
-`;
 
 export default function HomePage() {
   const featuredProjects = getFeaturedProjects();
@@ -20,57 +12,22 @@ export default function HomePage() {
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
-      {/* Hero Section */}
-      <section className="py-12 md:py-20">
-        <div className="flex flex-col md:flex-row md:items-center gap-8">
-          {/* ASCII Art */}
-          <pre className="ascii-art text-terminal-amber text-xs md:text-sm">
-            {heroAscii}
-          </pre>
-
-          {/* Hero Text */}
-          <div className="flex-1">
-            <h1 className="text-2xl md:text-3xl font-bold text-terminal-green mb-4">
-              Welcome, traveler.
-            </h1>
-            <p className="text-terminal-white-dim mb-6 max-w-xl">
-              This is a collection of projects built with passion for clean code,
-              thoughtful design, and solving interesting problems. Browse around,
-              explore the source, and feel free to reach out.
-            </p>
-            <div className="flex flex-wrap gap-4">
-              <Link
-                href="/projects"
-                className="inline-flex items-center gap-2 px-4 py-2 border border-terminal-green text-terminal-green hover:bg-terminal-green hover:text-terminal-black transition-colors"
-              >
-                <span>{">"}</span>
-                <span>view_projects</span>
-              </Link>
-              <Link
-                href="/about"
-                className="inline-flex items-center gap-2 px-4 py-2 border border-terminal-gray text-terminal-white hover:border-terminal-amber hover:text-terminal-amber transition-colors"
-              >
-                <span>$</span>
-                <span>about_me</span>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Animated Hero Section */}
+      <AnimatedHero />
 
       {/* Status Bar */}
       <ASCIIBorder variant="single" className="mb-12">
         <div className="flex flex-wrap items-center gap-4 text-sm">
           <span className="text-terminal-gray">STATUS:</span>
-          <span className="text-terminal-green">
-            <span className="inline-block w-2 h-2 bg-terminal-green rounded-full mr-2 animate-pulse" />
+          <span className="text-terminal-green flex items-center">
+            <span className="inline-block w-2 h-2 bg-terminal-green rounded-full mr-2 status-pulse" />
             Online & Building
           </span>
-          <span className="text-terminal-gray">|</span>
+          <span className="text-terminal-gray hidden sm:inline">|</span>
           <span className="text-terminal-white-dim">
             {featuredProjects.length + 5} projects
           </span>
-          <span className="text-terminal-gray">|</span>
+          <span className="text-terminal-gray hidden sm:inline">|</span>
           <span className="text-terminal-white-dim">
             Open for collaboration
           </span>
@@ -80,20 +37,26 @@ export default function HomePage() {
       {/* Featured Projects */}
       <section className="mb-16">
         <div className="flex items-center justify-between mb-6">
-          <h2 className="text-xl font-semibold">
+          <h2 className="text-xl font-semibold glitch-hover">
             <span className="text-terminal-gray">{">"}</span>{" "}
-            <span className="text-terminal-amber">Featured Projects</span>
+            <span className="text-terminal-amber glow-amber">Featured Projects</span>
           </h2>
           <Link
             href="/projects"
-            className="text-sm text-terminal-white-dim hover:text-terminal-green transition-colors"
+            className="text-sm text-terminal-white-dim hover:text-terminal-green hover:glow-green transition-all"
           >
             [view all]
           </Link>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {featuredProjects.map((project) => (
-            <ProjectCard key={project.slug} project={project} featured />
+          {featuredProjects.map((project, index) => (
+            <div
+              key={project.slug}
+              className="animate-fade-in"
+              style={{ animationDelay: `${index * 100}ms` }}
+            >
+              <ProjectCard project={project} featured />
+            </div>
           ))}
         </div>
       </section>
@@ -101,42 +64,60 @@ export default function HomePage() {
       {/* Recent Updates */}
       <section className="mb-16">
         <div className="flex items-center justify-between mb-6">
-          <h2 className="text-xl font-semibold">
+          <h2 className="text-xl font-semibold glitch-hover">
             <span className="text-terminal-gray">$</span>{" "}
-            <span className="text-terminal-cyan">Recent Updates</span>
+            <span className="text-terminal-cyan glow-cyan">Recent Updates</span>
           </h2>
           <Link
             href="/updates"
-            className="text-sm text-terminal-white-dim hover:text-terminal-cyan transition-colors"
+            className="text-sm text-terminal-white-dim hover:text-terminal-cyan transition-all"
           >
             [view all]
           </Link>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {recentUpdates.map((update) => (
-            <UpdateCard key={update.slug} update={update} />
+          {recentUpdates.map((update, index) => (
+            <div
+              key={update.slug}
+              className="animate-fade-in"
+              style={{ animationDelay: `${index * 100 + 300}ms` }}
+            >
+              <UpdateCard update={update} />
+            </div>
           ))}
         </div>
       </section>
 
-      {/* Quick Links */}
+      {/* Quick Links / CTA */}
       <section>
         <ASCIIBorder variant="double">
-          <div className="text-center py-4">
+          <div className="text-center py-6">
             <p className="text-terminal-white-dim mb-4">
               Interested in working together or have questions?
             </p>
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 text-terminal-amber hover:text-terminal-green transition-colors"
+              className="group inline-flex items-center gap-3 text-terminal-amber hover:text-terminal-green transition-all duration-300 hover:glow-green"
             >
-              <span>{">>>"}</span>
-              <span className="underline">Get in touch</span>
-              <span>{"<<<"}</span>
+              <span className="transition-transform group-hover:-translate-x-1">{">>>"}</span>
+              <span className="underline underline-offset-4">Get in touch</span>
+              <span className="transition-transform group-hover:translate-x-1">{"<<<"}</span>
             </Link>
           </div>
         </ASCIIBorder>
       </section>
+
+      {/* Terminal prompt decoration at bottom */}
+      <div className="mt-16 text-center">
+        <div className="inline-block text-terminal-gray text-sm">
+          <span className="text-terminal-green">visitor@rising-sun</span>
+          <span className="text-terminal-white">:</span>
+          <span className="text-terminal-cyan">~</span>
+          <span className="text-terminal-white">$ </span>
+          <span className="text-terminal-white-dim">scroll for more</span>
+          <span className="inline-block w-2 h-4 bg-terminal-green ml-1 animate-blink" />
+        </div>
+      </div>
     </div>
   );
 }
