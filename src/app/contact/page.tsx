@@ -8,8 +8,8 @@ export const metadata = {
 const socialLinks = [
   {
     label: "GitHub",
-    url: "https://github.com/rising-sun",
-    handle: "@rising-sun",
+    url: "https://github.com/maco144",
+    handle: "@maco144",
     icon: "◉",
   },
   {
