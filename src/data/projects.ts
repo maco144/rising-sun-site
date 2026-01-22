@@ -14,25 +14,31 @@ export const projects: Project[] = [
   {
     slug: "password-palace",
     name: "Password Palace",
-    tagline: "Secure password management made simple",
+    tagline: "3D Memory Palace Authentication System",
     description:
-      "A modern, secure password manager with zero-knowledge encryption. Features browser extensions, mobile apps, and team sharing capabilities.",
-    longDescription: `Password Palace is a comprehensive password management solution designed with security and usability in mind. Built on zero-knowledge architecture, your passwords are encrypted locally before ever reaching our servers.
+      "A revolutionary authentication system using spatial memory and zero-knowledge proofs on the Cosmos blockchain. Navigate 3D rooms to unlock your digital identity.",
+    longDescription: `Password Palace reimagines authentication through spatial memory. Instead of remembering text passwords, users navigate a personalized 3D memory palace - a technique used by memory champions for millennia, now secured by blockchain cryptography.
 
 ## Key Features
 
-- **Zero-Knowledge Encryption**: Your master password never leaves your device
-- **Cross-Platform Sync**: Access your vault from any device
-- **Browser Extensions**: Available for Chrome, Firefox, Safari, and Edge
-- **Secure Sharing**: Share passwords with team members without exposing the actual credentials
-- **Password Generator**: Create strong, unique passwords with customizable rules
-- **Security Audit**: Identify weak, reused, or compromised passwords
+- **Spatial Memory Authentication**: Navigate 3D rooms, interact with objects, and trace patterns to prove your identity
+- **Zero-Knowledge Proofs**: Your spatial secrets never leave your device - only cryptographic proofs are verified on-chain
+- **9 Authentication Modalities**: 3D Room navigation, Gesture sequences, Keystroke dynamics, Pattern drawing, Melody recognition, Air gestures, and more
+- **Cosmos Integration**: Built on the Cosmos blockchain with CosmWasm smart contracts
+- **Keplr Wallet Support**: Seamless integration with the Cosmos ecosystem
+
+## How It Works
+
+1. Create your memory palace by placing objects in 3D rooms
+2. Define your secret path through the space
+3. When authenticating, recreate your journey
+4. ZK proofs verify you know the path without revealing it
 
 ## Tech Stack
 
-Built with TypeScript, React, and Rust for the core cryptographic operations. Uses WebCrypto API for browser-based encryption.`,
+Built with React 19, TypeScript, and Three.js for immersive 3D experiences. CosmWasm (Rust) smart contracts handle on-chain verification. Halo2 circuits generate zero-knowledge proofs.`,
     status: "active",
-    tags: ["security", "typescript", "react", "rust", "encryption"],
+    tags: ["web3", "typescript", "react", "three.js", "cosmos", "zk-proofs"],
     links: [
       { label: "Website", url: "https://passwordpalace.com" },
     ],
@@ -41,25 +47,31 @@ Built with TypeScript, React, and Rust for the core cryptographic operations. Us
   {
     slug: "trove",
     name: "Trove",
-    tagline: "Digital asset organization for creators",
+    tagline: "Spatial puzzle protocol for digital treasure",
     description:
-      "A powerful digital asset manager for designers, developers, and content creators. Organize, tag, and find your files instantly.",
-    longDescription: `Trove is a digital asset management system designed specifically for creative professionals. Stop wasting time searching through folders - find exactly what you need in seconds.
+      "A protocol for protecting valuable digital contents with spatial puzzles and distributed access. Create treasure hunts, ARG experiences, and secure vaults using zero-knowledge cryptography.",
+    longDescription: `Trove is a protocol that protects valuable digital contents behind spatial puzzles with distributed access control. Think of it as programmable treasure chests secured by zero-knowledge proofs.
 
 ## Key Features
 
-- **Smart Tagging**: AI-powered automatic tagging and categorization
-- **Visual Search**: Find assets by color, shape, or similar images
-- **Version Control**: Track changes and restore previous versions
-- **Collections**: Organize assets into smart collections with dynamic filters
-- **Export Presets**: Export in multiple formats with one click
-- **Integration Ready**: Connect with Figma, Sketch, Adobe CC, and more
+- **Spatial Puzzles**: Protect content with location-based, pattern-based, or multi-step spatial challenges
+- **$TROVE Token**: Native token for the Trove ecosystem powering treasure hunts and rewards
+- **Hunt System**: Create multi-stage ARG (Alternate Reality Game) experiences with progressive reveals
+- **Zero-Knowledge Security**: Halo2 circuits ensure puzzle solutions are verified without revealing the answer
+- **Distributed Access**: Split access across multiple participants or time-locked reveals
+
+## Use Cases
+
+- **Digital Treasure Hunts**: Create real-world scavenger hunts with crypto rewards
+- **ARG Experiences**: Build immersive narrative games with cryptographic puzzles
+- **Secure Vaults**: Time-locked or condition-locked content delivery
+- **Collaborative Unlocking**: Content that requires multiple parties to access
 
 ## Tech Stack
 
-Built with Next.js, PostgreSQL, and uses ML models for image recognition and auto-tagging. S3-compatible storage backend.`,
+CosmWasm smart contracts for on-chain logic, Halo2 ZK circuits for proof generation, TypeScript SDK for developers. Integrates with the Cosmos ecosystem.`,
     status: "active",
-    tags: ["productivity", "nextjs", "postgresql", "ml", "s3"],
+    tags: ["web3", "cosmos", "zk-proofs", "typescript", "rust"],
     links: [
       { label: "Website", url: "https://trove.website" },
     ],
@@ -68,24 +80,32 @@ Built with Next.js, PostgreSQL, and uses ML models for image recognition and aut
   {
     slug: "gamegames",
     name: "GameGames",
-    tagline: "Retro-inspired browser games collection",
+    tagline: "Decentralized skill wagering platform",
     description:
-      "A collection of nostalgic browser games with modern twists. Play classic arcade-style games directly in your browser, no installation required.",
-    longDescription: `GameGames is a love letter to the golden age of arcade and early computer games. Each game is a modern reimagining of classic gameplay mechanics, built for the web.
+      "A trustless skill wagering platform built on Solana. Compete in Chess, TFT, Clash Royale, Brawl Stars, and TETR.IO with crypto stakes and AI-verified results.",
+    longDescription: `GameGames is a decentralized platform for skill-based wagering. Put your gaming skills to the test with real stakes, secured by blockchain escrow and verified by AI vision systems.
 
-## Featured Games
+## Supported Games
 
-- **Pixel Invaders**: A bullet-hell twist on the classic shooter
-- **Snake++**: Snake with power-ups, obstacles, and multiplayer
-- **Tetris Tactics**: Turn-based competitive Tetris
-- **Pong Evolved**: Physics-based pong with special abilities
-- **Memory Matrix**: Pattern memory game with increasing complexity
+- **Chess**: Classic 1v1 matches with ELO-based matchmaking
+- **Teamfight Tactics (TFT)**: Placement-based wagering for auto-battler fans
+- **Clash Royale**: Real-time mobile strategy competition
+- **Brawl Stars**: Mobile action wagering
+- **TETR.IO**: Competitive Tetris with precise scoring
+
+## Key Features
+
+- **Trustless Escrow**: Stakes are held in Solana smart contracts, released automatically on match completion
+- **AI Vision Verification**: Claude-powered computer vision verifies game results from screenshots
+- **Reputation System**: Build your player reputation with verified match history
+- **Fair Matchmaking**: ELO-based matching ensures competitive games
+- **Instant Payouts**: Winners receive funds immediately after verification
 
 ## Tech Stack
 
-Built with TypeScript and HTML5 Canvas. Uses Web Audio API for retro sound effects. All games run at 60fps and support keyboard and gamepad input.`,
+Built on Solana for fast, low-cost transactions. AI vision system powered by Claude for result verification. React frontend with real-time match updates via WebSocket.`,
     status: "active",
-    tags: ["games", "typescript", "canvas", "webgl", "retro"],
+    tags: ["web3", "solana", "gaming", "ai", "typescript"],
     links: [
       { label: "Play Now", url: "https://gamegames.gg" },
     ],
@@ -94,25 +114,32 @@ Built with TypeScript and HTML5 Canvas. Uses Web Audio API for retro sound effec
   {
     slug: "eudaimonia",
     name: "Eudaimonia",
-    tagline: "Mindful productivity and well-being tracker",
+    tagline: "AI-native operating system design",
     description:
-      "A holistic productivity app that balances achievement with well-being. Track habits, mood, energy, and goals in one unified dashboard.",
-    longDescription: `Eudaimonia combines productivity tracking with well-being monitoring to help you achieve sustainable success. Named after the Greek concept of human flourishing, it's designed to help you thrive, not just survive.
+      "Exploring the future of human-computer interaction through AI-native operating system concepts. Reimagining how we work, create, and compute.",
+    longDescription: `Eudaimonia (AIOS) is a design exploration into AI-native operating systems. What if your computer truly understood you? What if the interface adapted to your thoughts rather than forcing you to adapt to it?
 
-## Key Features
+## Design Philosophy
 
-- **Holistic Dashboard**: See productivity, energy, mood, and habits at a glance
-- **Smart Scheduling**: AI suggests optimal times for deep work based on your patterns
-- **Habit Streaks**: Build positive habits with visual streak tracking
-- **Energy Mapping**: Understand your natural energy cycles
-- **Weekly Reviews**: Guided reflection sessions to improve continuously
-- **Privacy First**: All data stored locally with optional encrypted sync
+Named after the Greek concept of human flourishing, Eudaimonia explores interfaces that enhance human capability rather than replacing it. The goal is sustainable, meaningful interaction with technology.
+
+## Exploration Areas
+
+- **Contextual Awareness**: Systems that understand your current task and anticipate needs
+- **Natural Interaction**: Moving beyond clicks and keyboards to more intuitive modalities
+- **Privacy-Preserving AI**: Local-first intelligence that respects your data
+- **Adaptive Interfaces**: UIs that reshape themselves based on context and user patterns
+- **Ambient Computing**: Computing that fades into the background until needed
+
+## Current Focus
+
+Design concepts and prototypes exploring how AI assistants should integrate into daily computing workflows. Research into spatial interfaces, voice-first interaction, and proactive assistance.
 
 ## Tech Stack
 
-React Native for cross-platform mobile, Electron for desktop. Uses SQLite for local storage with optional E2E encrypted sync.`,
+Design explorations using Figma and prototypes in React. Research documentation and concept development.`,
     status: "beta",
-    tags: ["productivity", "react-native", "electron", "health", "ai"],
+    tags: ["design", "ai", "ux", "research", "interfaces"],
     links: [
       { label: "Website", url: "https://aios.design" },
     ],
@@ -121,28 +148,35 @@ React Native for cross-platform mobile, Electron for desktop. Uses SQLite for lo
   {
     slug: "forgeground",
     name: "Forgeground",
-    tagline: "Real-time collaborative code editor",
+    tagline: "3D arena shooter with physics manipulation",
     description:
-      "A VS Code-inspired collaborative editor for pair programming and code reviews. Real-time sync, voice chat, and shared terminals.",
-    longDescription: `Forgeground brings real-time collaboration to code editing. Perfect for pair programming sessions, technical interviews, and code reviews.
+      "A browser-based 3D arena shooter built with Babylon.js. Features singleplayer AI, multiplayer via WebSocket, and unique physics field weapons.",
+    longDescription: `Forgeground is a fast-paced 3D arena shooter that runs entirely in your browser. Battle AI opponents or compete against players online with a unique physics manipulation system.
 
 ## Key Features
 
-- **Real-Time Sync**: See changes as they happen with conflict-free editing
-- **Voice & Video**: Built-in communication - no need for separate tools
-- **Shared Terminal**: Run commands together in a shared environment
-- **Language Support**: Syntax highlighting for 100+ languages
-- **VS Code Keybindings**: Familiar shortcuts for VS Code users
-- **Session Recording**: Record and replay coding sessions
+- **Singleplayer AI**: Multiple difficulty levels from easy to nightmare with intelligent state-machine AI
+- **Multiplayer**: Real-time WebSocket networking with client-side prediction and interpolation
+- **15+ Weapons**: From hitscan rifles to physics-manipulating graviton lances and temporal repeaters
+- **30+ Abilities**: Movement (dash, blink, grappling hook), offensive (grenades, missiles), and physics manipulation
+- **Physics Fields**: Gravity, time, inertia, entropy, space, and mass manipulation
+
+## Weapon Types
+
+Standard weapons (rifle, shotgun, sniper, bow) plus unique physics weapons:
+- **Graviton Lance**: Fires gravity field projectiles
+- **Temporal Repeater**: Time manipulation shots
+- **Inertia Hammer**: Momentum-based attacks
+- **Entropy Bow**: Decay field arrows
+- **Spatial Shotgun**: Space compression pellets
 
 ## Tech Stack
 
-Built with Monaco Editor, WebRTC for real-time communication, and CRDTs for conflict-free collaboration. Kubernetes-based infrastructure for scalable container sessions.`,
+Built with TypeScript and Babylon.js. 60Hz fixed timestep physics with deterministic seeded PRNG. WebSocket multiplayer with server reconciliation.`,
     status: "beta",
-    tags: ["collaboration", "webrtc", "monaco", "kubernetes", "typescript"],
+    tags: ["gamedev", "typescript", "babylonjs", "webgl", "multiplayer"],
     links: [
-      { label: "Try It", url: "https://forgeground.dev" },
-      { label: "GitHub", url: "https://github.com/rising-sun/forgeground" },
+      { label: "Play", url: "https://forgeground.online" },
     ],
     featured: false,
   },
@@ -151,80 +185,30 @@ Built with Monaco Editor, WebRTC for real-time communication, and CRDTs for conf
     name: "Rising Sun",
     tagline: "This very website you're browsing",
     description:
-      "A minimal, ASCII-aesthetic portfolio site built with Next.js and Tailwind CSS. Features a dark terminal-inspired theme.",
+      "A minimal, ASCII-aesthetic portfolio site built with Next.js and Tailwind CSS. Features CRT effects, boot sequences, and terminal-inspired design.",
     longDescription: `Rising Sun is this portfolio website - a showcase of projects built with a love for retro computing aesthetics and modern web technologies.
 
 ## Design Philosophy
 
-- **Terminal Aesthetic**: Inspired by classic terminal interfaces
-- **Minimal & Fast**: No unnecessary bloat, fast load times
-- **Accessible**: Keyboard navigable, screen reader friendly
-- **Responsive**: Works on all device sizes
+- **Terminal Aesthetic**: Inspired by classic CRT monitors and terminal interfaces
+- **Boot Sequence**: Simulated BIOS startup for full retro immersion
+- **CRT Effects**: Scanlines, vignette, flicker, and noise for authentic feel
+- **Minimal & Fast**: No unnecessary bloat, statically generated for speed
+
+## Features
+
+- **Custom Block Cursor**: Follows your mouse like an old terminal
+- **Glitch Effects**: Hover interactions with retro glitch animations
+- **ASCII Art**: Decorative borders and graphics using text characters
+- **Responsive**: Full experience on all device sizes
 
 ## Tech Stack
 
-Built with Next.js 14, TypeScript, and Tailwind CSS. Statically generated for optimal performance. Hosted on Vercel.`,
+Built with Next.js 14, TypeScript, and Tailwind CSS. Custom CSS animations for CRT and glitch effects. Hosted on Vercel.`,
     status: "active",
-    tags: ["nextjs", "tailwind", "typescript", "portfolio"],
+    tags: ["nextjs", "tailwind", "typescript", "portfolio", "css"],
     links: [
-      { label: "Source", url: "https://github.com/rising-sun/portfolio" },
-    ],
-    featured: false,
-  },
-  {
-    slug: "hexgrid",
-    name: "HexGrid",
-    tagline: "Procedural world generation toolkit",
-    description:
-      "A library for generating and rendering hexagonal grid-based worlds. Perfect for strategy games, simulations, and map visualizations.",
-    longDescription: `HexGrid is a comprehensive toolkit for working with hexagonal grids. Whether you're building a strategy game, a simulation, or just want cool hex-based visualizations, HexGrid has you covered.
-
-## Key Features
-
-- **Multiple Coordinate Systems**: Cube, axial, and offset coordinates
-- **Procedural Generation**: Terrain, biomes, rivers, and settlements
-- **Pathfinding**: A* implementation optimized for hex grids
-- **Rendering**: Canvas and WebGL renderers included
-- **Serialization**: Save and load worlds efficiently
-- **TypeScript**: Fully typed API
-
-## Tech Stack
-
-Pure TypeScript with zero runtime dependencies. Optional rendering packages for Canvas and WebGL.`,
-    status: "active",
-    tags: ["gamedev", "typescript", "procedural", "webgl", "library"],
-    links: [
-      { label: "NPM", url: "https://npmjs.com/package/hexgrid" },
-      { label: "GitHub", url: "https://github.com/rising-sun/hexgrid" },
-      { label: "Demo", url: "https://hexgrid.dev/demo" },
-    ],
-    featured: false,
-  },
-  {
-    slug: "terminal-ui",
-    name: "Terminal UI",
-    tagline: "React components with terminal aesthetics",
-    description:
-      "A React component library that brings terminal and ASCII aesthetics to the modern web. Buttons, inputs, modals, and more.",
-    longDescription: `Terminal UI is a React component library for developers who love the aesthetic of classic terminal interfaces but want modern web functionality.
-
-## Components
-
-- **Buttons**: Multiple variants with ASCII borders
-- **Inputs**: Text, password, search with terminal styling
-- **Modals**: Dialogs with ASCII frame decorations
-- **Tables**: Data tables with box-drawing characters
-- **Cards**: Content containers with customizable borders
-- **Progress**: ASCII progress bars and spinners
-- **Typography**: Monospace text components
-
-## Tech Stack
-
-Built with React 18 and TypeScript. Styling via CSS-in-JS. Zero external CSS dependencies.`,
-    status: "coming-soon",
-    tags: ["react", "component-library", "typescript", "ui", "ascii"],
-    links: [
-      { label: "GitHub", url: "https://github.com/rising-sun/terminal-ui" },
+      { label: "Source", url: "https://github.com/maco144/rising-sun-site" },
     ],
     featured: false,
   },
