@@ -14,8 +14,8 @@ const socialLinks = [
   },
   {
     label: "Twitter/X",
-    url: "https://twitter.com/risingsundev",
-    handle: "@risingsundev",
+    url: "https://twitter.com/SneezusChrist",
+    handle: "@SneezusChrist",
     icon: "◈",
   },
   {
@@ -26,8 +26,8 @@ const socialLinks = [
   },
   {
     label: "Email",
-    url: "mailto:hello@risingsun.dev",
-    handle: "hello@risingsun.dev",
+    url: "mailto:maco144@gmail.com",
+    handle: "maco144@gmail.com",
     icon: "◆",
   },
 ];
