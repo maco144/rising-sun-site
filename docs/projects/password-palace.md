@@ -82,7 +82,7 @@ Password Palace replaces text passwords with **spatial memory** - the same techn
 
 ## Links
 
-- Website: [passwordpalace.com](https://passwordpalace.com)
+- **Website**: [passwordpalace.com](https://passwordpalace.com)
 
 ---
 

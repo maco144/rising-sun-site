@@ -105,6 +105,18 @@ Early-stage infrastructure for the next internet: identity, AI assistants, gamin
 
 ---
 
+## Live Products
+
+| Project | Website |
+|---------|---------|
+| Password Palace | [passwordpalace.com](https://passwordpalace.com) |
+| Trove | [trove.website](https://trove.website) |
+| GameGames | [gamegames.gg](https://gamegames.gg) |
+| Eudaimonia | [aios.design](https://aios.design) |
+| Forgeground | [forgeground.online](https://forgeground.online) |
+
+---
+
 ## Connect
 
 - GitHub: [@maco144](https://github.com/maco144)

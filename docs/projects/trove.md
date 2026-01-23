@@ -132,7 +132,11 @@ Trove and Password Palace share the same cryptographic foundation:
 
 ## Links
 
-- Website: [trove.website](https://trove.website)
+- **Website**: [trove.website](https://trove.website)
+
+## Metrics & Status
+
+- **Status**: Live product
 
 ---
 

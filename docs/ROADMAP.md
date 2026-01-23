@@ -7,7 +7,7 @@
 | Project | Status | Completion | Key Milestones Achieved |
 |---------|--------|------------|------------------------|
 | **Password Palace** | Private Beta | ~70% | ZK circuits, 9 auth modalities, browser extension, OAuth provider |
-| **Trove** | Specification | ~30% | Full spec, Halo2 circuits designed, CosmWasm contracts drafted |
+| **Trove** | Live | ~50% | Working product at [trove.website](https://trove.website), Halo2 circuits, CosmWasm contracts |
 | **GameGames** | Devnet | ~50% | Solana program deployed, React frontend, IPFS hosting |
 | **Eudaimonia** | Alpha | ~60% | 18 specialists, 70+ tools, 44 API integrations, 2200+ tests |
 | **Forgeground** | Beta | ~40% | Core gameplay, multiplayer networking, basic weapons |

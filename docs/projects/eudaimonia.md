@@ -164,7 +164,8 @@ AIOS/
 
 ## Links
 
-- Website: [aios.design](https://aios.design)
+- **Website**: [aios.design](https://aios.design)
+- **GitHub**: [github.com/maco144/Eudaimonia](https://github.com/maco144/Eudaimonia)
 
 ---
 

@@ -145,7 +145,7 @@ GameGames takes a **2.5% platform fee** on completed wagers, significantly lower
 
 ## Links
 
-- Play: [gamegames.gg](https://gamegames.gg)
+- **Website**: [gamegames.gg](https://gamegames.gg)
 
 ---
 

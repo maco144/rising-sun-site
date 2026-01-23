@@ -163,7 +163,7 @@ forgeground/
 
 ## Links
 
-- Play: [forgeground.online](https://forgeground.online)
+- **Play Now**: [forgeground.online](https://forgeground.online)
 
 ---
 
