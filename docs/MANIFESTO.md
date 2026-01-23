@@ -86,6 +86,42 @@ Forgeground's frontend lives on IPFS. Even if we disappeared tomorrow, the game 
 
 ---
 
+## The Identity Problem
+
+Before there can be a free internet, there must be sovereign identity.
+
+Think about it: every freedom online depends on proving who you are. Access to your money, your data, your communications, your reputation - all gated by identity. Whoever controls identity controls everything.
+
+Today's identity solutions all fail the sovereignty test:
+
+**Passwords** - Stored in databases you don't control. Phished. Leaked. Breached. You don't own your password; you share it with every service that demands one.
+
+**Biometrics** - Your face, your fingerprint, your iris. Convenient, yes. But you can't change them if compromised. They can be captured without consent. And they reduce your identity to a biological signature that governments and corporations can demand, scan, and track.
+
+**Hardware tokens** - Better, but you're trusting a manufacturer. The device can be stolen, lost, or backdoored. Your identity becomes a physical object that can be confiscated.
+
+**Voice/Face recognition** - Trivially spoofable with AI. Deepfakes make these authentication methods increasingly worthless. And worse, they normalize constant biometric surveillance.
+
+**Platform identity** - "Sign in with Google/Apple/Facebook." Your identity exists at the pleasure of a corporation that can revoke it, mine it, or hand it to authorities without your knowledge.
+
+None of these give you identity that is truly *yours*.
+
+Password Palace is different. It's built on a simple insight: **the most secure secret is one that exists only in your mind, in a form that can't be extracted, photographed, or coerced.**
+
+Spatial memory - the way you remember where you put things, how your childhood home was arranged, the path through a familiar place - is deeply human. It's how memory champions memorize thousands of items. It's intuitive, memorable, and *yours*.
+
+When your "password" is a 3D room you designed, with objects you placed, in an arrangement only you know - that's identity no one can steal by breaching a database. No one can capture by photographing your face. No one can extract by taking your hardware.
+
+And with zero-knowledge proofs, you never reveal the secret. You prove you know it. The verifier learns nothing except that you're you.
+
+This matters beyond convenience. In a world of increasing authoritarianism, your ability to maintain a digital identity that can't be revoked, surveilled, or coerced is foundational to freedom itself. Dissidents need identity that governments can't seize. Journalists need identity that corporations can't pressure. Everyone needs identity that isn't contingent on the goodwill of platforms.
+
+Password Palace isn't just a better password manager. It's infrastructure for self-sovereign identity - the foundation on which a free internet must be built.
+
+**You are not your biometrics. You are not your hardware. You are not your platform account. You are your memories, your knowledge, your secrets. Own them.**
+
+---
+
 ## Why Now
 
 Three technological shifts make this moment unique:
@@ -104,7 +140,7 @@ The pieces exist. Someone needs to assemble them.
 
 This isn't a whitepaper for vaporware. These are working systems:
 
-**Password Palace** - 95+ components, 9 authentication modalities, ZK proofs running in production. Real users authenticating with spatial memory instead of passwords.
+**Password Palace** - 95+ components, 9 authentication modalities, ZK proofs running in production. Not just authentication - *self-sovereign digital identity*. No biometrics to spoof, no hardware to steal, no passwords to breach. Identity that exists only in your mind, proven through mathematics.
 
 **Trove** - Full specification, Halo2 circuits, CosmWasm contracts. Infrastructure for trustless conditional access to digital value.
 
