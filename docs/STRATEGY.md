@@ -178,7 +178,7 @@ Three technological shifts make this moment unique:
 | **AI is actually intelligent** | Agents can genuinely help | Already built (Eudaimonia) |
 | **Web tech is powerful** | Browser = app platform | Already built (Forgeground) |
 
-The window is **2024-2027**. After that, either we've established positions or well-funded competitors have caught up.
+The window is **2026-2028**. After that, either we've established positions or well-funded competitors have caught up.
 
 ---
 
