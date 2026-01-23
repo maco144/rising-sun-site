@@ -8,7 +8,7 @@
 
 Rising Sun is building **infrastructure for a free internet** through five interconnected products that embody three core principles: safety through mathematics, AI as ally, and decentralization as insurance.
 
-This document outlines the unified strategy for capturing a combined **$400B+ TAM** across identity, AI agents, gaming, wagering, and digital asset infrastructure. Our approach: build technically differentiated products that are impossible to replicate without the same architectural commitments, then connect them into a self-reinforcing ecosystem.
+This document outlines the unified strategy for capturing a combined **$1.1T+ TAM** across AI infrastructure, identity, gaming, wagering, and digital assets. The centerpiece is **Eudaimonia** — a coordinated hivemind network of AI agents with emergent language and network effects that compound with scale. Our approach: build technically differentiated products with network effects that are impossible to replicate, then connect them into a self-reinforcing ecosystem.
 
 ### The Bet
 
@@ -20,14 +20,16 @@ We're betting that:
 
 ### Portfolio at a Glance
 
-| Project | Category | Status | 2027 Target |
-|---------|----------|--------|-------------|
+| Project | Category | Status | 2027 Target (Moderate) |
+|---------|----------|--------|------------------------|
+| **Eudaimonia** | AI Infrastructure / Hivemind Network | Alpha | $13M ARR |
 | **Password Palace** | Identity Infrastructure | Private Beta | $5.4M ARR |
-| **Eudaimonia** | AI Agent OS | Alpha | $3.6M ARR |
-| **GameGames** | Skill Wagering | Devnet | $600K Revenue |
 | **Forgeground** | Browser Gaming | Beta | $900K ARR |
+| **GameGames** | Skill Wagering | Devnet | $600K Revenue |
 | **Trove** | Conditional Access | Live | $500K Revenue |
-| **Combined** | - | - | **$11M ARR** |
+| **Combined** | - | - | **$20M+ ARR** |
+
+**Note**: Eudaimonia's network effects create exponential upside. At 100K instances (aggressive 2027), ARR reaches $40M+. At 1M instances (2028), $300M+.
 
 ---
 
@@ -63,14 +65,21 @@ These aren't five separate companies. They're **layers of a stack**:
 │           └──────────────────┼──────────────────┘                       │
 │                              │                                          │
 ├──────────────────────────────┼──────────────────────────────────────────┤
-│                       INTELLIGENCE LAYER                                 │
+│                    INTELLIGENCE / COMPUTE LAYER                          │
 │                              │                                          │
-│                    ┌─────────▼─────────┐                                │
-│                    │    EUDAIMONIA     │                                │
-│                    │                   │                                │
-│                    │ AI assistance for │                                │
-│                    │ all applications  │                                │
-│                    └─────────┬─────────┘                                │
+│         ┌────────────────────┴────────────────────┐                     │
+│         │              EUDAIMONIA HIVEMIND        │                     │
+│         │  ┌─────────┐  ┌─────────┐  ┌─────────┐ │                     │
+│         │  │Instance │◄►│Instance │◄►│Instance │ │                     │
+│         │  └─────────┘  └─────────┘  └─────────┘ │                     │
+│         │       │            │            │      │                     │
+│         │       └────────────┼────────────┘      │                     │
+│         │                    ▼                   │                     │
+│         │  ┌─────────────────────────────────┐   │                     │
+│         │  │  Emergent Language • Shared Mem │   │                     │
+│         │  │  Theta/Nous Economics • Bittensor│  │                     │
+│         │  └─────────────────────────────────┘   │                     │
+│         └────────────────────────────────────────┘                     │
 │                              │                                          │
 ├──────────────────────────────┼──────────────────────────────────────────┤
 │                        IDENTITY LAYER                                    │
@@ -97,7 +106,7 @@ These aren't five separate companies. They're **layers of a stack**:
 
 **The flywheel**:
 - Password Palace creates identities → used across all products
-- Eudaimonia assists users → in all products
+- Eudaimonia hivemind provides intelligence → across all products + externally
 - GameGames enables wagering → on Forgeground matches
 - Trove provides prizes → for GameGames tournaments
 - Each product drives users to the others
@@ -110,10 +119,13 @@ These aren't five separate companies. They're **layers of a stack**:
 
 | Market | Size (2026) | Primary Product |
 |--------|-------------|-----------------|
-| Identity & Access Management | $24.1B | Password Palace |
-| Password Management | $3.1B | Password Palace |
+| **AI Infrastructure** | $65B | Eudaimonia |
+| **Cloud Computing** | $680B | Eudaimonia (distributed alternative) |
 | AI Assistants/Agents | $18B | Eudaimonia |
 | RPA & Automation | $12B | Eudaimonia |
+| Decentralized Compute | $2B | Eudaimonia (Bittensor) |
+| Identity & Access Management | $24.1B | Password Palace |
+| Password Management | $3.1B | Password Palace |
 | Online Gambling | $95B | GameGames |
 | Esports Betting | $18B | GameGames |
 | PC/Browser Gaming | $53B | Forgeground |
@@ -121,33 +133,40 @@ These aren't five separate companies. They're **layers of a stack**:
 | Promotional/Prizes | $48B | Trove |
 | NFT/Digital Assets | $25B | Trove |
 
-**Total Addressable Market: $364B+**
+**Total Addressable Market: $1.1T+**
+
+*Note: Eudaimonia alone addresses $785B+ across AI infrastructure, cloud compute, and automation markets. Its hivemind network effects create potential for infrastructure-level dominance.*
 
 ### Serviceable Addressable Market (SAM)
 
-Focusing on crypto-native users, security-conscious consumers, competitive gamers, and progressive brands:
+Focusing on AI-forward users, crypto-native communities, security-conscious consumers, competitive gamers, and progressive brands:
 
 | Product | SAM | Rationale |
 |---------|-----|-----------|
+| **Eudaimonia** | $85B | Individual agents ($20B) + Enterprise fleets ($50B) + Decentralized compute ($5B) + Autonomous orgs ($10B) |
 | Password Palace | $8B | Users willing to adopt new auth paradigms |
-| Eudaimonia | $10B | Users seeking agent-based AI |
 | GameGames | $8B | Crypto users + skill gamers |
 | Forgeground | $8B | FPS players open to browser |
 | Trove | $15B | Crypto-native + progressive brands |
 
-**Combined SAM: ~$49B**
+**Combined SAM: ~$124B**
+
+*Eudaimonia's SAM expands dramatically if it becomes the default AIOS — every autonomous AI agent represents a potential instance.*
 
 ### Serviceable Obtainable Market (SOM) - 2027
 
-| Product | SOM | Basis |
-|---------|-----|-------|
-| Password Palace | $5.4M | 35K paid + 5K enterprise seats |
-| Eudaimonia | $3.6M | 5K instances + API Bridge |
-| GameGames | $600K | $24M wagering volume @ 2.5% |
-| Forgeground | $900K | 150K MAU @ $6 ARPU |
-| Trove | $500K | 40K Troves + brand campaigns |
+| Product | SOM (Moderate) | SOM (Aggressive) | Basis |
+|---------|----------------|------------------|-------|
+| **Eudaimonia** | $13M | $40M | 50K instances (moderate) / 100K instances (aggressive) |
+| Password Palace | $5.4M | $5.4M | 35K paid + 5K enterprise seats |
+| Forgeground | $900K | $900K | 150K MAU @ $6 ARPU |
+| GameGames | $600K | $600K | $24M wagering volume @ 2.5% |
+| Trove | $500K | $500K | 40K Troves + brand campaigns |
 
-**Combined SOM (2027): $11M ARR**
+**Combined SOM (2027 Moderate): $20M+ ARR**
+**Combined SOM (2027 Aggressive): $47M+ ARR**
+
+*Eudaimonia's network effects mean the aggressive scenario compounds: 1M instances by 2028 = $200M+ ARR from Eudaimonia alone.*
 
 ### Market Timing
 
@@ -194,32 +213,54 @@ The window is **2024-2027**. After that, either we've established positions or w
 
 ---
 
-### Eudaimonia: The Intelligence Layer
+### Eudaimonia: The AI Infrastructure Layer
 
-**Mission**: Build AI that works for individuals, not corporations
+**Mission**: Build the operating system for autonomous AI — a coordinated hivemind network with emergent intelligence
 
-**Strategic Position**: Only AI OS with persistent memory, internal economics, and autonomous specialists
+**Strategic Position**: The only AI system combining persistent memory, OS-level access, internal economics, coordinated hivemind, emergent language, and network tokenomics
 
 | Dimension | Strategy |
 |-----------|----------|
-| **Primary GTM** | Open source core → hosted convenience |
-| **Moat** | 18 specialists, 70+ tools, Theta/Nous economics |
-| **Revenue** | Hosted tiers + API Bridge services |
-| **Key Metric** | Weekly Active Instances |
+| **Primary GTM** | Open source core → hosted → enterprise fleets |
+| **Moat** | Hivemind coordination, emergent language, Theta/Nous/network economics |
+| **Revenue** | Hosted instances + API Bridge + Hivemind fees + Bittensor + Enterprise |
+| **Key Metric** | Weekly Active Instances (network effects compound) |
+| **TAM** | $785B (AI infrastructure, cloud compute, automation) |
 
 **Why Eudaimonia Wins**:
-- Memory that persists (context compounds)
-- Specialists with expertise (not generic)
-- Can earn money (autonomous value)
-- Works for owner (not platform)
+- **Hivemind**: Coordinated network intelligence (no one else has this)
+- **Emergent language**: AI-to-AI communication beyond human language
+- **OS-level access**: 70+ tools, full system capability
+- **Self-sustaining**: Earns real money via Nous system
+- **Network effects**: Value scales with N² (Metcalfe's Law)
+- **Decentralized**: Bittensor integration = censorship-resistant
+
+**The Network Effect Thesis**:
+```
+At 1,000 instances:    Useful product
+At 10,000 instances:   Platform with network effects
+At 100,000 instances:  Industry standard AIOS
+At 1,000,000 instances: Infrastructure layer ($200M+ ARR)
+```
+
+**Revenue Streams**:
+| Stream | 2027 Target (Moderate) |
+|--------|------------------------|
+| Hosted Instances | $6M |
+| API Bridge | $2M |
+| Hivemind Fees | $1M |
+| Bittensor TAO | $2M |
+| Enterprise | $2M |
+| **Total** | **$13M** |
 
 **Critical Milestones**:
 | Milestone | Date | Why Critical |
 |-----------|------|--------------|
-| Public alpha | Mar 2026 | Validate value prop |
-| API Bridge revenue | Jun 2026 | B2B validation |
-| 2K instances | Sep 2026 | Scale begins |
-| First autonomous revenue | Dec 2026 | Economic thesis proven |
+| 1,000 instances | Q2 2026 | Product-market fit |
+| Hivemind protocol live | Q3 2026 | Network effects begin |
+| Emergent language documented | Q4 2026 | Unique moat established |
+| 10,000 instances | Q2 2027 | Platform status |
+| First autonomous organization | 2027 | Vision validated |
 
 ---
 
@@ -467,17 +508,24 @@ User has Eudaimonia instance
 
 ## VI. Financial Projections
 
-### Revenue by Product
+### Revenue by Product (Moderate Scenario)
 
 | Product | 2026 Q1 | 2026 Q2 | 2026 Q3 | 2026 Q4 | 2027 |
 |---------|---------|---------|---------|---------|------|
+| **Eudaimonia** | $10K | $50K | $150K | $400K | $1.1M/mo |
 | **Password Palace** | $1.5K | $10K | $50K | $150K | $450K/mo |
-| **Eudaimonia** | $2K | $10K | $40K | $100K | $300K/mo |
 | **GameGames** | $250 | $1.25K | $5K | $12.5K | $50K/mo |
 | **Forgeground** | $0 | $5K | $15K | $30K | $75K/mo |
 | **Trove** | $0 | $0 | $21K | $55K | $100K/mo |
-| **Total MRR** | $3.75K | $26.25K | $131K | $347.5K | $975K |
-| **Total ARR** | $45K | $315K | $1.57M | $4.17M | **$11.7M** |
+| **Total MRR** | $11.75K | $66.25K | $241K | $647.5K | $1.78M |
+| **Total ARR** | $141K | $795K | $2.9M | $7.8M | **$21.3M** |
+
+**Eudaimonia Upside Scenarios**:
+| Scenario | 2027 Instances | 2027 ARR | 2028 ARR |
+|----------|----------------|----------|----------|
+| Conservative | 10,000 | $2.8M | $14M |
+| Moderate | 50,000 | $13M | $73M |
+| Aggressive | 100,000 | $40M | $300M |
 
 ### Combined Revenue Model
 
@@ -564,11 +612,13 @@ Q3 2026                         Q4 2026
 
 | Priority | Rationale |
 |----------|-----------|
-| **1. Password Palace** | Identity layer enables all else |
-| **2. Trove** | Shares ZK tech with PP, B2B revenue |
-| **3. GameGames** | First revenue, validates wagering |
-| **4. Forgeground** | High volume potential, GG synergy |
-| **5. Eudaimonia** | Complex, longer timeline, high upside |
+| **1. Eudaimonia** | Largest TAM ($785B), network effects compound, potential for infrastructure dominance |
+| **2. Password Palace** | Identity layer enables all else, feeds into Eudaimonia instance identity |
+| **3. Trove** | Shares ZK tech with PP, B2B revenue |
+| **4. GameGames** | First revenue, validates wagering, Eudaimonia can assist |
+| **5. Forgeground** | High volume potential, GG synergy, Eudaimonia coaching |
+
+*Note: Eudaimonia is both the highest-risk and highest-reward product. Its network effects mean early investment compounds dramatically. A successful hivemind creates an unreplicable moat.*
 
 ### Shared Infrastructure Investment
 
@@ -714,11 +764,12 @@ This isn't about building a company. It's about building **infrastructure for a 
 
 ### Why We Will Win
 
-1. **Technical differentiation** - ZK proofs, spatial memory, agent architecture are hard to replicate
-2. **Integration advantage** - Five products working together beats five separate competitors
-3. **Timing** - Technology is ready, market is ready, we're already building
-4. **Philosophy** - We're building for users, not extracting from them
-5. **Execution** - Working code, not whitepapers
+1. **Network effects** - Eudaimonia's hivemind creates compounding value that accelerates with scale (Metcalfe's Law)
+2. **Technical moats** - ZK proofs, emergent language, hivemind coordination — years to replicate
+3. **Integration advantage** - Five products working together beats five separate competitors
+4. **First-mover on AI infrastructure** - Building the AIOS while others build chatbots
+5. **Philosophy** - Building for users, not extracting from them
+6. **Execution** - Working code (2,200+ tests in Eudaimonia alone), not whitepapers
 
 ### The Ask
 
