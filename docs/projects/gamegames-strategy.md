@@ -319,6 +319,117 @@ await gg.submitResult({
 // Settlement happens automatically
 ```
 
+#### Indie Developer Program (Split Rake)
+
+The key to Phase 3 growth: **make indie developers our distribution channel**.
+
+```
+┌─────────────────────────────────────────────────────────────────────────┐
+│                    INDIE DEVELOPER PROGRAM                               │
+├─────────────────────────────────────────────────────────────────────────┤
+│                                                                          │
+│  THE PITCH TO DEVELOPERS                                                 │
+│  ┌─────────────────────────────────────────────────────────────────┐   │
+│  │ "Add wagering to your game. We handle everything.               │   │
+│  │  You get 50% of the rake. Forever."                             │   │
+│  └─────────────────────────────────────────────────────────────────┘   │
+│                                                                          │
+│  SPLIT RAKE ECONOMICS                                                    │
+│  ┌─────────────────────────────────────────────────────────────────┐   │
+│  │                                                                  │   │
+│  │   Total Rake: 2.5% of wager volume                              │   │
+│  │                                                                  │   │
+│  │   ┌───────────────────────┬───────────────────────┐            │   │
+│  │   │   GAME DEVELOPER      │    GAMEGAMES          │            │   │
+│  │   │        50%            │       50%             │            │   │
+│  │   │                       │                       │            │   │
+│  │   │   1.25% of volume     │   1.25% of volume    │            │   │
+│  │   │                       │                       │            │   │
+│  │   │   $12.50 per $1,000   │   $12.50 per $1,000  │            │   │
+│  │   └───────────────────────┴───────────────────────┘            │   │
+│  │                                                                  │   │
+│  │   Example: Game with $100K monthly wager volume                 │   │
+│  │   • Developer earns: $1,250/month passive income                │   │
+│  │   • GameGames earns: $1,250/month                               │   │
+│  │                                                                  │   │
+│  └─────────────────────────────────────────────────────────────────┘   │
+│                                                                          │
+│  WHY DEVELOPERS JOIN                                                     │
+│  ├── New revenue stream (monetize competitive players)                  │
+│  ├── Zero development cost (SDK handles everything)                     │
+│  ├── No operational burden (we handle disputes, payouts)                │
+│  ├── Player retention (stakes = engagement)                             │
+│  └── Trustless = no liability (smart contracts, not developer)          │
+│                                                                          │
+│  WHY THIS GROWS THE ECOSYSTEM                                           │
+│  ├── Developers become evangelists (they profit from volume)            │
+│  ├── Each game brings its player base to GameGames                      │
+│  ├── Network effects: more games → more players → more games            │
+│  └── Liquidity pools across games (cross-game matching)                 │
+│                                                                          │
+└─────────────────────────────────────────────────────────────────────────┘
+```
+
+#### Split Rake Tiers
+
+| Tier | Monthly Volume | Developer Share | GG Share | Requirements |
+|------|----------------|-----------------|----------|--------------|
+| **Starter** | $0-$50K | 50% | 50% | SDK integration |
+| **Growth** | $50K-$250K | 55% | 45% | 3+ months, good standing |
+| **Partner** | $250K-$1M | 60% | 40% | Featured placement, co-marketing |
+| **Premier** | $1M+ | 65% | 35% | Exclusive partnership terms |
+
+*Higher tiers reward developers who drive volume, creating aligned incentives.*
+
+#### Developer Onboarding Funnel
+
+```
+AWARENESS               INTEGRATION            GROWTH
+────────────────────────────────────────────────────────────────────►
+
+┌─────────────┐      ┌─────────────┐      ┌─────────────┐
+│ Game dev    │      │ SDK         │      │ Developer   │
+│ conferences │ ───► │ integration │ ───► │ promotes    │
+│ (GDC, etc)  │      │ (1-2 days)  │      │ wagering    │
+└─────────────┘      └─────────────┘      └─────────────┘
+       │                    │                    │
+       ▼                    ▼                    ▼
+┌─────────────┐      ┌─────────────┐      ┌─────────────┐
+│ Indie game  │      │ Test on     │      │ Volume      │
+│ communities │ ───► │ devnet      │ ───► │ grows       │
+│ Discord/X   │      │ (free)      │      │ (rake flows)│
+└─────────────┘      └─────────────┘      └─────────────┘
+       │                    │                    │
+       ▼                    ▼                    ▼
+┌─────────────┐      ┌─────────────┐      ┌─────────────┐
+│ "Add wagers │      │ Go live     │      │ Developer   │
+│ in 50 lines"│ ───► │ (mainnet)   │ ───► │ becomes     │
+│ content     │      │             │      │ evangelist  │
+└─────────────┘      └─────────────┘      └─────────────┘
+```
+
+#### Target Developer Segments
+
+| Segment | # of Games | Avg Volume/Game | Total Opportunity |
+|---------|------------|-----------------|-------------------|
+| **Web3 Games** | 500+ | $20K/mo | $10M/mo |
+| **Indie Multiplayer** | 2,000+ | $5K/mo | $10M/mo |
+| **Mobile Competitive** | 1,000+ | $10K/mo | $10M/mo |
+| **Browser Games** | 5,000+ | $2K/mo | $10M/mo |
+| **Modded Games** | 500+ | $15K/mo | $7.5M/mo |
+
+*Even capturing 1% of these segments = $475K/mo in wager volume.*
+
+#### Developer Success Program
+
+| Program | Description | Investment |
+|---------|-------------|------------|
+| **Integration Support** | Dedicated engineer for first 100 devs | Engineering time |
+| **Launch Bonus** | $500 in GG credits for first integration | $50K budget |
+| **Volume Bonuses** | Extra 5% at milestone volumes | Performance-based |
+| **Co-Marketing** | Feature in GG channels, cross-promo | Marketing time |
+| **Developer Fund** | Grants for promising integrations | $100K fund |
+
 #### Phase 3 Success Metrics
 
 | Metric | 2027 H1 | 2027 H2 | Why It Matters |

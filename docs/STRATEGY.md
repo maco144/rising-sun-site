@@ -317,6 +317,7 @@ $600K revenue            $600K revenue             $900K revenue
 - **AI verification**: Claude Vision scales infinitely
 - **Forgeground integration**: Native wagering on Rising Sun games
 - **Infrastructure play**: SDK lets any game add wagering
+- **Split rake model**: 50/50 revenue share turns indie devs into distribution partners
 
 **Critical Milestones**:
 | Milestone | Date | Why Critical |
