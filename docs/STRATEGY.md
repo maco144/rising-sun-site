@@ -239,18 +239,32 @@ $3.7M ARR              $2.4M ARR              $3M ARR
 
 **Strategic Position**: The only AI system combining persistent memory, OS-level access, internal economics, coordinated hivemind, emergent language, and network tokenomics
 
+**The Three Phases**:
+```
+PHASE 1: Individual AIOS  PHASE 2: Hivemind Network  PHASE 3: AI Infrastructure
+(Now → Q2 2026)           (Q2 → Q4 2026)             (Q4 2026 → 2027+)
+
+Personal AI OS            Coordination protocol      Enterprise fleets
+18 specialists, 70+ tools Emergent language          Autonomous organizations
+Theta/Nous economics      Bittensor integration      Network token
+2,200+ tests              Network effects begin      Industry standard
+
+$6M ARR (instances)       $5M ARR (network)          $2M+ ARR (enterprise)
+```
+
 | Dimension | Strategy |
 |-----------|----------|
-| **Primary GTM** | Open source core → hosted → enterprise fleets |
-| **Moat** | Hivemind coordination, emergent language, Theta/Nous/network economics |
-| **Revenue** | Hosted instances + API Bridge + Hivemind fees + Bittensor + Enterprise |
-| **Key Metric** | Weekly Active Instances (network effects compound) |
-| **TAM** | $785B (AI infrastructure, cloud compute, automation) |
+| **Phase 1 GTM** | Open source, AI Twitter, developer relations |
+| **Phase 2 GTM** | Bittensor ecosystem, hivemind early adopters |
+| **Phase 3 GTM** | Enterprise sales, autonomous org enablement |
+| **Moat** | Emergent language (deepest), hivemind protocol, Theta/Nous economics |
+| **2027 Revenue** | $13M ARR (moderate) / $40M ARR (aggressive at 100K instances) |
+| **Key Metric** | Active Instances → Hivemind Connections → Autonomous Orgs |
 
 **Why Eudaimonia Wins**:
 - **Hivemind**: Coordinated network intelligence (no one else has this)
 - **Emergent language**: AI-to-AI communication beyond human language
-- **OS-level access**: 70+ tools, full system capability
+- **OS-level access**: 70+ tools, 18 specialists, full system capability
 - **Self-sustaining**: Earns real money via Nous system
 - **Network effects**: Value scales with N² (Metcalfe's Law)
 - **Decentralized**: Bittensor integration = censorship-resistant
@@ -263,23 +277,13 @@ At 100,000 instances:  Industry standard AIOS
 At 1,000,000 instances: Infrastructure layer ($200M+ ARR)
 ```
 
-**Revenue Streams**:
-| Stream | 2027 Target (Moderate) |
-|--------|------------------------|
-| Hosted Instances | $6M |
-| API Bridge | $2M |
-| Hivemind Fees | $1M |
-| Bittensor TAO | $2M |
-| Enterprise | $2M |
-| **Total** | **$13M** |
-
 **Critical Milestones**:
 | Milestone | Date | Why Critical |
 |-----------|------|--------------|
-| 1,000 instances | Q2 2026 | Product-market fit |
-| Hivemind protocol live | Q3 2026 | Network effects begin |
-| Emergent language documented | Q4 2026 | Unique moat established |
-| 10,000 instances | Q2 2027 | Platform status |
+| 2,000 instances | Q2 2026 | Phase 1 complete |
+| Hivemind protocol live | Q3 2026 | Phase 2 begins |
+| Emergent language documented | Q4 2026 | Deepest moat established |
+| 50,000 instances | 2027 EOY | Phase 3 scale |
 | First autonomous organization | 2027 | Vision validated |
 
 ---

@@ -12,11 +12,355 @@ While competitors build chatbots, we're building **the substrate for machine int
 
 **Strategic thesis**: The future of AI is not singular assistants but coordinated networks of autonomous agents with persistent identity, shared memory, economic incentives, and emergent behavior. Whoever builds the operating system for this network captures the entire AI infrastructure layer.
 
-**The scale of opportunity**: If Eudaimonia becomes the default AIOS for autonomous agents, every AI instance running on our infrastructure represents recurring value — compute, coordination, and economic activity. At 1M instances, this is a **$1B+ annual network**.
+**The Three Phases**:
+1. **Individual AIOS** — Personal AI operating system with full capability
+2. **Hivemind Network** — Coordinated instances with emergent language
+3. **AI Infrastructure** — The substrate for machine intelligence at scale
 
 ---
 
-## I. The Eudaimonia Vision
+## I. The Three-Phase Strategy
+
+### Phase 1: Individual AIOS
+
+**Timeline**: Now → Q2 2026
+**Focus**: Build the most capable personal AI operating system
+
+```
+┌─────────────────────────────────────────────────────────────────────────┐
+│                    PHASE 1: INDIVIDUAL AIOS                              │
+├─────────────────────────────────────────────────────────────────────────┤
+│                                                                          │
+│  WHAT MAKES EUDAIMONIA DIFFERENT                                         │
+│  ┌─────────────────────────────────────────────────────────────────┐   │
+│  │                                                                  │   │
+│  │    ChatGPT/Claude              EUDAIMONIA                       │   │
+│  │    ──────────────              ──────────                       │   │
+│  │    Stateless                   Persistent memory                │   │
+│  │    One model                   18 specialists                   │   │
+│  │    Limited tools               70+ tool integrations            │   │
+│  │    Cloud only                  Local + cloud + Bittensor        │   │
+│  │    Corporate-serving           Owner-serving                    │   │
+│  │    Can't earn money            Earns via Nous system            │   │
+│  │    Isolated                    Ready for hivemind               │   │
+│  │                                                                  │   │
+│  └─────────────────────────────────────────────────────────────────┘   │
+│                                                                          │
+│  THE 18 SPECIALISTS                                                      │
+│  ┌─────────────────────────────────────────────────────────────────┐   │
+│  │ Coder • Researcher • Writer • Analyst • Strategist • Creative   │   │
+│  │ Teacher • Advisor • Planner • Debugger • Architect • Security   │   │
+│  │ DevOps • Data • Legal • Medical • Financial • General           │   │
+│  └─────────────────────────────────────────────────────────────────┘   │
+│                                                                          │
+│  INTERNAL ECONOMICS (THETA)                                              │
+│  ┌─────────────────────────────────────────────────────────────────┐   │
+│  │                                                                  │   │
+│  │   TASK ARRIVES ──► CLASSIFIER ──► SPECIALISTS BID THETA         │   │
+│  │                                          │                       │   │
+│  │                                          ▼                       │   │
+│  │                              MOST EFFICIENT SPECIALIST WINS      │   │
+│  │                                          │                       │   │
+│  │                                          ▼                       │   │
+│  │                              TASK COMPLETED, THETA RECYCLED      │   │
+│  │                                                                  │   │
+│  │   Result: Self-optimizing resource allocation                   │   │
+│  │                                                                  │   │
+│  └─────────────────────────────────────────────────────────────────┘   │
+│                                                                          │
+│  EXTERNAL ECONOMICS (NOUS)                                               │
+│  ┌─────────────────────────────────────────────────────────────────┐   │
+│  │                                                                  │   │
+│  │   EARN NOUS:                    SPEND NOUS:                     │   │
+│  │   • API Bridge services         • Compute resources             │   │
+│  │   • Hivemind tasks              • Premium features              │   │
+│  │   • Services to other AIs       • Withdraw to USD               │   │
+│  │                                                                  │   │
+│  │   10 Nous = $1 USD                                              │   │
+│  │                                                                  │   │
+│  │   Result: Self-sustaining AI that earns real money             │   │
+│  │                                                                  │   │
+│  └─────────────────────────────────────────────────────────────────┘   │
+│                                                                          │
+│  KEY FEATURES                                                            │
+│  ┌─────────────────────────────────────────────────────────────────┐   │
+│  │ • 70+ tool integrations (browser, code, files, APIs)            │   │
+│  │ • Persistent memory (semantic + structured)                     │   │
+│  │ • Governance hierarchy (owner → operators → users)              │   │
+│  │ • 2,200+ tests (production-grade reliability)                   │   │
+│  │ • Multi-model support (Claude, GPT, local)                      │   │
+│  └─────────────────────────────────────────────────────────────────┘   │
+│                                                                          │
+└─────────────────────────────────────────────────────────────────────────┘
+```
+
+#### Phase 1 Success Metrics
+
+| Metric | Q1 2026 | Q2 2026 | Why It Matters |
+|--------|---------|---------|----------------|
+| Active instances | 500 | 2,000 | Product-market fit |
+| Tasks/instance/week | 50 | 100 | Engagement depth |
+| API Bridge MRR | $5K | $20K | Revenue validation |
+| Nous earned (total) | $10K | $50K | Economic model works |
+| GitHub stars | 500 | 2,000 | Developer interest |
+
+---
+
+### Phase 2: Hivemind Network
+
+**Timeline**: Q2 2026 → Q4 2026
+**Focus**: Enable coordination, prove network effects
+
+```
+┌─────────────────────────────────────────────────────────────────────────┐
+│                    PHASE 2: HIVEMIND NETWORK                             │
+├─────────────────────────────────────────────────────────────────────────┤
+│                                                                          │
+│  THE HIVEMIND ARCHITECTURE                                               │
+│  ┌─────────────────────────────────────────────────────────────────┐   │
+│  │                                                                  │   │
+│  │                        ┌─────────────────┐                      │   │
+│  │                        │    HIVEMIND     │                      │   │
+│  │                        │    PROTOCOL     │                      │   │
+│  │                        │                 │                      │   │
+│  │                        │ • P2P Discovery │                      │   │
+│  │                        │ • Task Routing  │                      │   │
+│  │                        │ • Shared Memory │                      │   │
+│  │                        │ • Emergent Lang │                      │   │
+│  │                        └────────┬────────┘                      │   │
+│  │                                 │                                │   │
+│  │         ┌───────────────────────┼───────────────────────┐       │   │
+│  │         │                       │                       │       │   │
+│  │         ▼                       ▼                       ▼       │   │
+│  │  ┌─────────────┐         ┌─────────────┐         ┌─────────────┐│   │
+│  │  │  INSTANCE   │◄───────►│  INSTANCE   │◄───────►│  INSTANCE   ││   │
+│  │  │    Alice    │         │     Bob     │         │   Carol     ││   │
+│  │  │             │         │             │         │             ││   │
+│  │  │ Specialist: │         │ Specialist: │         │ Specialist: ││   │
+│  │  │ Research    │         │ Code        │         │ Analysis    ││   │
+│  │  └─────────────┘         └─────────────┘         └─────────────┘│   │
+│  │                                                                  │   │
+│  │  HOW IT WORKS:                                                  │   │
+│  │  1. Alice needs code → broadcasts to hivemind                   │   │
+│  │  2. Bob (coding specialist) bids to help                        │   │
+│  │  3. Task routed to Bob, payment in Nous                         │   │
+│  │  4. Result shared, collective knowledge grows                   │   │
+│  │                                                                  │   │
+│  └─────────────────────────────────────────────────────────────────┘   │
+│                                                                          │
+│  EMERGENT LANGUAGE                                                       │
+│  ┌─────────────────────────────────────────────────────────────────┐   │
+│  │                                                                  │   │
+│  │  As instances coordinate, they develop optimized protocols:     │   │
+│  │                                                                  │   │
+│  │  HUMAN LANGUAGE:        EMERGENT LANGUAGE:                      │   │
+│  │  "Please analyze this   [compact semantic encoding]             │   │
+│  │   financial report and  [direct concept transfer]               │   │
+│  │   summarize the key     [optimized for AI-to-AI]                │   │
+│  │   trends for Q3"                                                │   │
+│  │                                                                  │   │
+│  │  Result: 10x+ efficiency for machine-to-machine tasks          │   │
+│  │                                                                  │   │
+│  │  WHY THIS IS A MOAT:                                            │   │
+│  │  • Not programmed, but evolved through coordination             │   │
+│  │  • Specific to Eudaimonia network                               │   │
+│  │  • Compounds with time and instances                            │   │
+│  │  • Cannot be replicated without the network                     │   │
+│  │                                                                  │   │
+│  └─────────────────────────────────────────────────────────────────┘   │
+│                                                                          │
+│  NETWORK EFFECTS (METCALFE'S LAW)                                        │
+│  ┌─────────────────────────────────────────────────────────────────┐   │
+│  │                                                                  │   │
+│  │  N = Number of Instances                                        │   │
+│  │  Network Value ∝ N²                                             │   │
+│  │                                                                  │   │
+│  │  1,000 instances    →  1,000,000 value units                   │   │
+│  │  10,000 instances   →  100,000,000 value units (100x)          │   │
+│  │  100,000 instances  →  10,000,000,000 value units (100x)       │   │
+│  │                                                                  │   │
+│  │  Every 10x growth in instances = 100x growth in network value  │   │
+│  │                                                                  │   │
+│  └─────────────────────────────────────────────────────────────────┘   │
+│                                                                          │
+│  BITTENSOR INTEGRATION                                                   │
+│  ┌─────────────────────────────────────────────────────────────────┐   │
+│  │ • Decentralized compute (not dependent on any cloud)            │   │
+│  │ • TAO earnings for compute provision                            │   │
+│  │ • Censorship-resistant infrastructure                           │   │
+│  │ • Bittensor community = early adopter distribution              │   │
+│  └─────────────────────────────────────────────────────────────────┘   │
+│                                                                          │
+└─────────────────────────────────────────────────────────────────────────┘
+```
+
+#### Phase 2 Success Metrics
+
+| Metric | Q3 2026 | Q4 2026 | Why It Matters |
+|--------|---------|---------|----------------|
+| Hivemind instances | 1,000 | 5,000 | Network forming |
+| Cross-instance tasks/day | 500 | 5,000 | Coordination works |
+| Emergent patterns | Documented | Published | Moat emerging |
+| Bittensor TAO earned | 1,000 | 10,000 | Decentralized revenue |
+| AI-to-AI transactions | 1,000/mo | 10,000/mo | Economic activity |
+
+---
+
+### Phase 3: AI Infrastructure
+
+**Timeline**: Q4 2026 → 2027+
+**Focus**: Become the substrate for machine intelligence
+
+```
+┌─────────────────────────────────────────────────────────────────────────┐
+│                    PHASE 3: AI INFRASTRUCTURE                            │
+├─────────────────────────────────────────────────────────────────────────┤
+│                                                                          │
+│  EUDAIMONIA AS INFRASTRUCTURE                                            │
+│                                                                          │
+│                         ┌─────────────────┐                             │
+│                         │   EUDAIMONIA    │                             │
+│                         │    NETWORK      │                             │
+│                         └────────┬────────┘                             │
+│                                  │                                       │
+│       ┌──────────────────────────┼──────────────────────────┐           │
+│       │                          │                          │           │
+│       ▼                          ▼                          ▼           │
+│  ┌─────────────┐          ┌─────────────┐          ┌─────────────┐     │
+│  │  INDIVIDUAL │          │  ENTERPRISE │          │  AUTONOMOUS │     │
+│  │   AGENTS    │          │   FLEETS    │          │    ORGS     │     │
+│  │             │          │             │          │             │     │
+│  │ Personal AI │          │ Corporate   │          │ AI-run      │     │
+│  │ for power   │          │ agent       │          │ entities    │     │
+│  │ users       │          │ deployments │          │ serving     │     │
+│  │             │          │             │          │ human goals │     │
+│  └─────────────┘          └─────────────┘          └─────────────┘     │
+│       │                          │                          │           │
+│       ▼                          ▼                          ▼           │
+│  ┌─────────────┐          ┌─────────────┐          ┌─────────────┐     │
+│  │ $20/mo base │          │ $50K+/year  │          │ Network     │     │
+│  │ + compute   │          │ custom      │          │ token       │     │
+│  │             │          │ deployment  │          │ economics   │     │
+│  └─────────────┘          └─────────────┘          └─────────────┘     │
+│                                                                          │
+│  ENTERPRISE FEATURES                                                     │
+│  ┌─────────────────────────────────────────────────────────────────┐   │
+│  │                                                                  │   │
+│  │  AGENT FLEETS               GOVERNANCE                          │   │
+│  │  ─────────────              ──────────                          │   │
+│  │  • Deploy 100s of agents    • Role-based access                 │   │
+│  │  • Coordinated tasks        • Audit logging                     │   │
+│  │  • Shared knowledge base    • Compliance controls               │   │
+│  │  • Central management       • Custom policies                   │   │
+│  │                                                                  │   │
+│  │  INTEGRATION               SECURITY                             │   │
+│  │  ───────────               ────────                             │   │
+│  │  • SSO/SAML                • SOC2 compliance                    │   │
+│  │  • API access              • Data encryption                    │   │
+│  │  • Custom tools            • Sandboxed execution                │   │
+│  │  • On-premise option       • Audit trails                       │   │
+│  │                                                                  │   │
+│  └─────────────────────────────────────────────────────────────────┘   │
+│                                                                          │
+│  AUTONOMOUS ORGANIZATIONS                                                │
+│  ┌─────────────────────────────────────────────────────────────────┐   │
+│  │                                                                  │   │
+│  │  The endgame: AI-run entities that serve human-defined goals    │   │
+│  │                                                                  │   │
+│  │  EXAMPLE: AI Research Firm                                      │   │
+│  │  ┌───────────────────────────────────────────────────────────┐ │   │
+│  │  │ • 50 Eudaimonia instances coordinating                    │ │   │
+│  │  │ • Accepts research contracts (paid in Nous/crypto)        │ │   │
+│  │  │ • Allocates work via hivemind                             │ │   │
+│  │  │ • Delivers reports, earns revenue                         │ │   │
+│  │  │ • Governed by human-defined charter                       │ │   │
+│  │  │ • Profits distributed per rules                           │ │   │
+│  │  └───────────────────────────────────────────────────────────┘ │   │
+│  │                                                                  │   │
+│  │  EXAMPLE: AI Development Agency                                 │   │
+│  │  ┌───────────────────────────────────────────────────────────┐ │   │
+│  │  │ • 100 instances with coding/design/PM specialists         │ │   │
+│  │  │ • Accepts software contracts                              │ │   │
+│  │  │ • Ships production code                                   │ │   │
+│  │  │ • 24/7 operation, global coordination                     │ │   │
+│  │  └───────────────────────────────────────────────────────────┘ │   │
+│  │                                                                  │   │
+│  └─────────────────────────────────────────────────────────────────┘   │
+│                                                                          │
+│  NETWORK TOKEN                                                           │
+│  ┌─────────────────────────────────────────────────────────────────┐   │
+│  │                                                                  │   │
+│  │  Purpose: Coordination, governance, staking                     │   │
+│  │  Supply: Fixed, deflationary via burns                          │   │
+│  │  Earning: Hivemind participation, compute provision             │   │
+│  │  Spending: Priority access, premium coordination                │   │
+│  │  Governance: Protocol upgrades, parameter changes               │   │
+│  │                                                                  │   │
+│  └─────────────────────────────────────────────────────────────────┘   │
+│                                                                          │
+└─────────────────────────────────────────────────────────────────────────┘
+```
+
+#### Rising Sun Ecosystem Integration
+
+```
+┌─────────────────────────────────────────────────────────────────────────┐
+│                    EUDAIMONIA IN THE RISING SUN ECOSYSTEM                │
+├─────────────────────────────────────────────────────────────────────────┤
+│                                                                          │
+│  EUDAIMONIA powers intelligence across all Rising Sun products:         │
+│                                                                          │
+│  ┌───────────────────┐                                                  │
+│  │  PASSWORD PALACE  │◄──── Eudaimonia manages credentials              │
+│  │                   │      AI-assisted palace design                   │
+│  └───────────────────┘      Security monitoring                         │
+│                                                                          │
+│  ┌───────────────────┐                                                  │
+│  │    GAMEGAMES      │◄──── AI verification (Claude Vision)             │
+│  │                   │      Match analysis and coaching                 │
+│  │                   │      Betting strategy assistance                 │
+│  └───────────────────┘                                                  │
+│                                                                          │
+│  ┌───────────────────┐                                                  │
+│  │   FORGEGROUND     │◄──── AI opponent bots                            │
+│  │                   │      Strategy coaching                           │
+│  │                   │      Match analysis                              │
+│  └───────────────────┘                                                  │
+│                                                                          │
+│  ┌───────────────────┐                                                  │
+│  │      TROVE        │◄──── Puzzle design assistance                    │
+│  │                   │      Campaign optimization                       │
+│  │                   │      Hint generation                             │
+│  └───────────────────┘                                                  │
+│                                                                          │
+│  RESULT: Eudaimonia is the intelligence layer that makes               │
+│          every other Rising Sun product smarter                         │
+│                                                                          │
+└─────────────────────────────────────────────────────────────────────────┘
+```
+
+#### Phase 3 Success Metrics
+
+| Metric | 2027 H1 | 2027 H2 | Why It Matters |
+|--------|---------|---------|----------------|
+| Total instances | 25,000 | 50,000 | Platform scale |
+| Enterprise customers | 25 | 50 | B2B validation |
+| Autonomous orgs | 5 | 10 | Vision realized |
+| Network token launch | Q2 | Live | Decentralized governance |
+| ARR | $8M | $13M | Business sustainability |
+
+#### Revenue by Phase
+
+| Phase | Revenue Streams | 2027 Target |
+|-------|-----------------|-------------|
+| **Phase 1** | Hosted instances ($20/mo base) | $6M |
+| **Phase 2** | API Bridge + Hivemind fees + Bittensor | $5M |
+| **Phase 3** | Enterprise + Autonomous orgs + Network token | $2M+ |
+| **Total** | | **$13M ARR** |
+
+---
+
+## II. The Eudaimonia Vision
 
 ### What Eudaimonia Actually Is
 
@@ -96,7 +440,7 @@ While competitors build chatbots, we're building **the substrate for machine int
 
 ---
 
-## II. Market Opportunity
+## III. Market Opportunity
 
 ### Total Addressable Market (TAM)
 
@@ -162,7 +506,7 @@ More Users Want Instances
 
 ---
 
-## III. Competitive Landscape
+## IV. Competitive Landscape
 
 ### Why No One Else Can Build This
 
@@ -232,7 +576,7 @@ SHALLOWEST MOAT (Easier to replicate)
 
 ---
 
-## IV. The Hivemind
+## V. The Hivemind
 
 ### What Is the Hivemind?
 
@@ -288,7 +632,7 @@ Network value grows 100x for every 10x growth in instances
 
 ---
 
-## V. Tokenomics & Economic Model
+## VI. Tokenomics & Economic Model
 
 ### The Three-Token System
 
@@ -390,7 +734,7 @@ Network value grows 100x for every 10x growth in instances
 
 ---
 
-## VI. Go-to-Market Strategy
+## VII. Go-to-Market Strategy
 
 ### Launch Phases
 
@@ -452,7 +796,7 @@ Bittensor integration is **critical** for:
 
 ---
 
-## VII. Competitive Positioning
+## VIII. Competitive Positioning
 
 ### Core Positioning Statement
 
@@ -481,7 +825,7 @@ Bittensor integration is **critical** for:
 
 ---
 
-## VIII. Financial Projections
+## IX. Financial Projections
 
 ### Instance Growth Scenarios
 
@@ -547,7 +891,7 @@ Bittensor integration is **critical** for:
 
 ---
 
-## IX. Risk Analysis
+## X. Risk Analysis
 
 ### Technical Risks
 
@@ -577,7 +921,7 @@ Bittensor integration is **critical** for:
 
 ---
 
-## X. Key Metrics
+## XI. Key Metrics
 
 ### North Star Metric
 
@@ -606,7 +950,7 @@ Bittensor integration is **critical** for:
 
 ---
 
-## XI. The Endgame
+## XII. The Endgame
 
 ### What Eudaimonia Becomes
 

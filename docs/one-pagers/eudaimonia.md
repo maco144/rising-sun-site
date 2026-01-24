@@ -18,12 +18,20 @@ Your AI works for you, not corporations.
 Your AI coordinates with others — a hivemind you own.
 ```
 
+## The Three Phases
+
+| Phase | Focus | Timeline | Revenue |
+|-------|-------|----------|---------|
+| **1. Individual AIOS** | Personal AI with 18 specialists, 70+ tools, Theta/Nous economics | Now → Q2 2026 | $6M |
+| **2. Hivemind Network** | Coordination protocol, emergent language, Bittensor integration | Q2 → Q4 2026 | $5M |
+| **3. AI Infrastructure** | Enterprise fleets, autonomous organizations, network token | Q4 2026+ | $2M+ |
+
 ## The Network Effect
 
 ```
-1,000 instances    → Useful product
-10,000 instances   → Platform with network effects
-100,000 instances  → Industry standard AIOS
+1,000 instances    → Useful product (Phase 1)
+10,000 instances   → Platform with network effects (Phase 2)
+100,000 instances  → Industry standard AIOS (Phase 3)
 1,000,000 instances → Infrastructure layer ($200M+ ARR)
 
 Value scales with N² (Metcalfe's Law)
@@ -34,10 +42,10 @@ Value scales with N² (Metcalfe's Law)
 | Feature | Eudaimonia | ChatGPT/Claude |
 |---------|------------|----------------|
 | Persistent memory | Yes | No |
-| OS-level access | 70+ tools | Limited |
+| OS-level access | 70+ tools, 18 specialists | Limited |
 | Earns money for you | Yes (Nous system) | No |
 | Hivemind coordination | Yes | No |
-| Emergent language | Yes | No |
+| Emergent language | Yes (deepest moat) | No |
 | Decentralized | Bittensor integration | No |
 
 ## Market Opportunity
@@ -51,13 +59,11 @@ Value scales with N² (Metcalfe's Law)
 
 ## Business Model
 
-| Revenue Stream | Model | 2027 Target |
-|----------------|-------|-------------|
-| Hosted Instances | $20/mo base + compute | $6M |
-| API Bridge | Usage-based | $2M |
-| Hivemind Fees | Network coordination | $1M |
-| Bittensor TAO | Decentralized compute | $2M |
-| Enterprise | Custom deployments | $2M |
+| Phase | Revenue Stream | 2027 Target |
+|-------|----------------|-------------|
+| **Phase 1** | Hosted Instances ($20/mo base) | $6M |
+| **Phase 2** | API Bridge + Hivemind fees + Bittensor | $5M |
+| **Phase 3** | Enterprise + Autonomous orgs | $2M |
 | **Total** | | **$13M ARR** |
 
 **Aggressive scenario (100K instances)**: $40M ARR
@@ -65,9 +71,9 @@ Value scales with N² (Metcalfe's Law)
 ## Traction & Milestones
 
 - **Now**: Alpha with 2,200+ tests, 18 AI specialists, 70+ tools
-- **Q2 2026**: 1,000 instances, product-market fit
-- **Q3 2026**: Hivemind protocol live, network effects begin
-- **Q4 2026**: Emergent language documented
+- **Q2 2026**: 2,000 instances, Phase 1 complete
+- **Q3 2026**: Hivemind protocol live, Phase 2 begins
+- **Q4 2026**: Emergent language documented, deepest moat established
 - **2027**: 50K instances, first autonomous organizations
 
 ## Why Now
