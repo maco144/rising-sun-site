@@ -363,30 +363,47 @@ $600K revenue            $600K revenue             $900K revenue
 
 ### Trove: The Conditional Access Layer
 
-**Mission**: Enable trustless conditional release of digital value
+**Mission**: Become the infrastructure for trustless conditional release of digital value
 
-**Strategic Position**: Only protocol combining spatial puzzles + ZK proofs for programmable treasure
+**Strategic Position**: Only protocol combining spatial puzzles + ZK proofs for programmable treasure, with specialized modules for escrow, inheritance, and prizes
+
+**The Three Phases**:
+```
+PHASE 1: Core Protocol   PHASE 2: Brand Campaigns   PHASE 3: Infrastructure
+(Q1-Q2 2026)             (Q2-Q4 2026)               (Q4 2026 → 2027+)
+
+Trustless Troves         B2B treasure hunts         SDK/API for Web3
+ZK verification          Token distribution         Escrow module
+Piece NFTs               Product launches           Inheritance module
+Creator community        Marketing campaigns        Prize module (GameGames)
+
+Protocol fees            $10K-$100K campaigns       Infrastructure revenue
+```
 
 | Dimension | Strategy |
 |-----------|----------|
-| **Primary GTM** | B2B brand campaigns → B2C follows |
-| **Moat** | Halo2 circuits, own chain, deflationary token |
-| **Revenue** | Protocol fees + managed campaigns |
-| **Key Metric** | Total Value Protected |
+| **Phase 1 GTM** | Creator community, crypto Twitter, SDK developers |
+| **Phase 2 GTM** | B2B brand sales, case studies, managed campaigns |
+| **Phase 3 GTM** | Platform partnerships, specialized modules |
+| **Moat** | Halo2 circuits, spatial puzzles (PP tech), $TROVE deflationary token |
+| **2027 Revenue** | $500K (Protocol + Campaigns + Infrastructure) |
+| **Key Metric** | Total Value Protected → Campaign Revenue → SDK Integrations |
 
 **Why Trove Wins**:
-- Trustless (no escrow agent needed)
-- Engaging (gamified access)
-- Deflationary ($TROVE burns)
-- Password Palace synergy (shared tech)
+- **Trustless**: ZK proofs = no escrow agent, no lawyer, just math
+- **Engaging**: Gamified treasure hunts (viral potential)
+- **Ecosystem integrated**: Prize pools for GameGames, identity via Password Palace
+- **Deflationary**: 40% of fees burned, aligned token incentives
+- **Infrastructure play**: Modules for escrow, inheritance, prizes
 
 **Critical Milestones**:
 | Milestone | Date | Why Critical |
 |-----------|------|--------------|
-| Mainnet + token | Aug 2026 | Live economics |
-| First brand campaign | Sep 2026 | Revenue validation |
-| $1M value protected | Dec 2026 | Scale proof |
-| 10 brand campaigns | Dec 2026 | B2B model works |
+| Testnet launch | Q1 2026 | Protocol validation |
+| Mainnet + $TROVE | Q3 2026 | Live economics |
+| First brand campaign | Q3 2026 | B2B revenue validation |
+| GameGames integration | Q4 2026 | Ecosystem synergy |
+| $2M TVP | 2027 | Infrastructure status |
 
 ---
 

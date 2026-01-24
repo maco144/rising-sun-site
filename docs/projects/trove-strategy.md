@@ -6,13 +6,337 @@
 
 ## Executive Summary
 
-Trove is positioned to become the **infrastructure layer for trustless conditional access** to digital value. While competitors in escrow, inheritance, and gaming prizes require trusted intermediaries, Trove uses zero-knowledge proofs and spatial puzzles to enable programmable release of assets without any third party.
+Trove is the **infrastructure layer for trustless conditional access** to digital value. Using zero-knowledge proofs and spatial puzzles inherited from Password Palace, Trove enables programmable release of assets without any intermediary — no escrow agents, no lawyers, just math.
 
 **Strategic thesis**: Every conditional transfer of value (escrow, inheritance, contests, rewards) currently requires trust. ZK proofs eliminate that requirement. Whoever builds the best trustless conditional access protocol captures a massive horizontal market.
 
+**The Three Phases**:
+1. **Core Protocol** — Trustless Troves for individuals and developers
+2. **Brand Campaigns** — B2B treasure hunts for marketing and engagement
+3. **Conditional Access Infrastructure** — SDK/API for escrow, inheritance, prizes across Web3
+
 ---
 
-## I. Market & Competition
+## I. The Three-Phase Strategy
+
+### Phase 1: Core Protocol
+
+**Timeline**: Q1-Q2 2026
+**Focus**: Ship the protocol, build creator community
+
+```
+┌─────────────────────────────────────────────────────────────────────────┐
+│                    PHASE 1: CORE PROTOCOL                                │
+├─────────────────────────────────────────────────────────────────────────┤
+│                                                                          │
+│  HOW A TROVE WORKS                                                       │
+│  ┌─────────────────────────────────────────────────────────────────┐   │
+│  │                                                                  │   │
+│  │  1. CREATE               2. LOCK                3. DISTRIBUTE   │   │
+│  │  ┌──────────────┐      ┌──────────────┐      ┌──────────────┐  │   │
+│  │  │ Design your  │      │ Deposit      │      │ Give pieces  │  │   │
+│  │  │ spatial      │ ───► │ tokens/NFTs  │ ───► │ to intended  │  │   │
+│  │  │ puzzle       │      │ into Trove   │      │ recipients   │  │   │
+│  │  └──────────────┘      └──────────────┘      └──────────────┘  │   │
+│  │                                                     │           │   │
+│  │  4. SOLVE               5. VERIFY               6. CLAIM       │   │
+│  │  ┌──────────────┐      ┌──────────────┐      ┌──────────────┐  │   │
+│  │  │ Collect all  │      │ ZK proof     │      │ Winner       │  │   │
+│  │  │ pieces +     │ ───► │ verifies     │ ───► │ receives     │  │   │
+│  │  │ solve puzzle │      │ solution     │      │ contents     │  │   │
+│  │  └──────────────┘      └──────────────┘      └──────────────┘  │   │
+│  │                                                                  │   │
+│  └─────────────────────────────────────────────────────────────────┘   │
+│                                                                          │
+│  TROVE TYPES                                                             │
+│  ┌─────────────────┐  ┌─────────────────┐  ┌─────────────────┐         │
+│  │   SINGLE        │  │   MULTI-PIECE   │  │   TIME-LOCKED   │         │
+│  │                 │  │                 │  │                 │         │
+│  │ One puzzle,     │  │ Multiple pieces │  │ Unlocks after   │         │
+│  │ first solver    │  │ needed to solve │  │ specific date   │         │
+│  │ wins all        │  │ (collaboration) │  │ (inheritance)   │         │
+│  └─────────────────┘  └─────────────────┘  └─────────────────┘         │
+│                                                                          │
+│  KEY FEATURES                                                            │
+│  ┌─────────────────────────────────────────────────────────────────┐   │
+│  │ • Spatial puzzles (Password Palace tech)                        │   │
+│  │ • ZK verification (Halo2 — no one sees solution until solved)   │   │
+│  │ • Multi-chain assets (Cosmos IBC)                               │   │
+│  │ • Piece NFTs (tradeable access rights)                          │   │
+│  │ • Hint system (monetization for creators)                       │   │
+│  │ • $TROVE token (deflationary, 40% fee burn)                     │   │
+│  └─────────────────────────────────────────────────────────────────┘   │
+│                                                                          │
+└─────────────────────────────────────────────────────────────────────────┘
+```
+
+#### The ZK Architecture
+
+What makes Trove trustless:
+
+```
+┌─────────────────────────────────────────────────────────────────────────┐
+│                    ZERO-KNOWLEDGE VERIFICATION                           │
+├─────────────────────────────────────────────────────────────────────────┤
+│                                                                          │
+│  TRADITIONAL ESCROW              TROVE                                   │
+│  ──────────────────              ─────                                   │
+│                                                                          │
+│  Creator → Escrow Agent → Solver    Creator → Smart Contract → Solver   │
+│               │                                    │                     │
+│          Trust required                      Math only                   │
+│          Can be bribed                       Can't be bribed             │
+│          Can disappear                       Always available            │
+│          Charges fees                        Minimal fees                │
+│                                                                          │
+│  HOW ZK PROOFS WORK                                                      │
+│  ┌─────────────────────────────────────────────────────────────────┐   │
+│  │                                                                  │   │
+│  │  Creator sets puzzle: "Navigate to coordinates (X, Y, Z)"       │   │
+│  │                              │                                   │   │
+│  │                              ▼                                   │   │
+│  │  Halo2 circuit creates verification key (solution hidden)       │   │
+│  │                              │                                   │   │
+│  │                              ▼                                   │   │
+│  │  Solver submits proof: "I know the path" (doesn't reveal path)  │   │
+│  │                              │                                   │   │
+│  │                              ▼                                   │   │
+│  │  Contract verifies proof → Releases funds                       │   │
+│  │                                                                  │   │
+│  │  Result: Solver proves knowledge without revealing solution     │   │
+│  │          Contract releases funds without knowing solution       │   │
+│  │          Creator can't cheat, solver can't cheat               │   │
+│  │                                                                  │   │
+│  └─────────────────────────────────────────────────────────────────┘   │
+│                                                                          │
+└─────────────────────────────────────────────────────────────────────────┘
+```
+
+#### Phase 1 Success Metrics
+
+| Metric | Q1 2026 | Q2 2026 | Why It Matters |
+|--------|---------|---------|----------------|
+| Troves created | 500 | 2,000 | Protocol adoption |
+| TVP (Total Value Protected) | $100K | $500K | Real usage |
+| Creators | 100 | 500 | Supply side |
+| Solvers | 1,000 | 5,000 | Demand side |
+| SDK integrations | 5 | 15 | Developer adoption |
+
+---
+
+### Phase 2: Brand Campaigns
+
+**Timeline**: Q2-Q4 2026
+**Focus**: B2B treasure hunts for marketing and engagement
+
+```
+┌─────────────────────────────────────────────────────────────────────────┐
+│                    PHASE 2: BRAND CAMPAIGNS                              │
+├─────────────────────────────────────────────────────────────────────────┤
+│                                                                          │
+│  WHY BRANDS USE TROVE                                                    │
+│  ┌─────────────────────────────────────────────────────────────────┐   │
+│  │                                                                  │   │
+│  │  Traditional Campaigns          Trove Campaigns                  │   │
+│  │  ────────────────────          ────────────────                  │   │
+│  │  Low engagement (0.1% CTR)     High engagement (gamified)       │   │
+│  │  Bot farms game it             ZK = proof of human effort       │   │
+│  │  Forgettable                   Memorable experience             │   │
+│  │  One-time impression           Viral sharing                    │   │
+│  │  Trust us with prizes          Trustless, verifiable            │   │
+│  │                                                                  │   │
+│  └─────────────────────────────────────────────────────────────────┘   │
+│                                                                          │
+│  CAMPAIGN TYPES                                                          │
+│  ┌─────────────────┐  ┌─────────────────┐  ┌─────────────────┐         │
+│  │   TREASURE      │  │   TOKEN         │  │   PRODUCT       │         │
+│  │   HUNT          │  │   DISTRIBUTION  │  │   LAUNCH        │         │
+│  │                 │  │                 │  │                 │         │
+│  │ City-wide or    │  │ Gamified        │  │ Limited edition │         │
+│  │ global puzzles  │  │ airdrops that   │  │ access via      │         │
+│  │ with prizes     │  │ resist Sybils   │  │ puzzle solving  │         │
+│  │                 │  │                 │  │                 │         │
+│  │ Beverage brands │  │ Token launches  │  │ Fashion, tech,  │         │
+│  │ Entertainment   │  │ NFT projects    │  │ gaming          │         │
+│  └─────────────────┘  └─────────────────┘  └─────────────────┘         │
+│                                                                          │
+│  EXAMPLE: TOKEN LAUNCH CAMPAIGN                                          │
+│  ┌─────────────────────────────────────────────────────────────────┐   │
+│  │                                                                  │   │
+│  │  Project: $NEWTOKEN launching                                   │   │
+│  │  Goal: Distribute 1M tokens to engaged community                │   │
+│  │  Problem: Sybil attacks, bots claiming multiple airdrops        │   │
+│  │                                                                  │   │
+│  │  TROVE SOLUTION                                                 │   │
+│  │  ┌───────────────────────────────────────────────────────────┐ │   │
+│  │  │ • Create 1,000 Troves with 1,000 tokens each              │ │   │
+│  │  │ • Each requires solving unique spatial puzzle              │ │   │
+│  │  │ • Puzzles released in waves over 2 weeks                  │ │   │
+│  │  │ • Hints available (generates engagement)                   │ │   │
+│  │  │ • Community shares strategies, builds excitement           │ │   │
+│  │  │ • Result: 10K+ engaged participants, zero bots            │ │   │
+│  │  └───────────────────────────────────────────────────────────┘ │   │
+│  │                                                                  │   │
+│  │  Cost: $25K managed campaign                                    │   │
+│  │  Value: $100K+ in earned media, engaged community              │   │
+│  │                                                                  │   │
+│  └─────────────────────────────────────────────────────────────────┘   │
+│                                                                          │
+└─────────────────────────────────────────────────────────────────────────┘
+```
+
+#### Campaign Service Tiers
+
+| Tier | Price | Includes | Target Customer |
+|------|-------|----------|-----------------|
+| **DIY** | Protocol fees | Self-service tools, Trove Studio | Indie projects |
+| **Starter** | $10K | Setup support, 10 Troves, basic analytics | Small brands |
+| **Growth** | $50K | Full service, 100 Troves, influencer outreach | Mid-market |
+| **Enterprise** | $100K+ | White-glove, unlimited Troves, custom dev | Major brands |
+
+#### Phase 2 Success Metrics
+
+| Metric | Q3 2026 | Q4 2026 | Why It Matters |
+|--------|---------|---------|----------------|
+| Brand campaigns | 5 | 15 | B2B validation |
+| Campaign revenue | $75K | $200K | Business model |
+| Campaign participants | 25K | 100K | Engagement proof |
+| Repeat customers | 2 | 5 | Product-market fit |
+| Case studies | 3 | 10 | Sales enablement |
+
+---
+
+### Phase 3: Conditional Access Infrastructure
+
+**Timeline**: Q4 2026 → 2027+
+**Focus**: Become the infrastructure for conditional value release
+
+```
+┌─────────────────────────────────────────────────────────────────────────┐
+│                    PHASE 3: INFRASTRUCTURE LAYER                         │
+├─────────────────────────────────────────────────────────────────────────┤
+│                                                                          │
+│  TROVE AS INFRASTRUCTURE                                                 │
+│                                                                          │
+│                         ┌─────────────────┐                             │
+│                         │  TROVE PROTOCOL │                             │
+│                         └────────┬────────┘                             │
+│                                  │                                       │
+│       ┌──────────────────────────┼──────────────────────────┐           │
+│       │                          │                          │           │
+│       ▼                          ▼                          ▼           │
+│  ┌─────────────┐          ┌─────────────┐          ┌─────────────┐     │
+│  │    SDK      │          │    API      │          │  MODULES    │     │
+│  │             │          │             │          │             │     │
+│  │ Embed Troves│          │ Create/     │          │ Specialized │     │
+│  │ in any app  │          │ manage via  │          │ use cases   │     │
+│  │             │          │ REST/GraphQL│          │             │     │
+│  └─────────────┘          └─────────────┘          └─────────────┘     │
+│       │                          │                          │           │
+│       ▼                          ▼                          ▼           │
+│  ┌─────────────┐          ┌─────────────┐          ┌─────────────┐     │
+│  │ Web3 games  │          │ Escrow      │          │ Inheritance │     │
+│  │ NFT markets │          │ platforms   │          │ services    │     │
+│  │ DeFi apps   │          │ Marketplaces│          │ DAO treasury│     │
+│  └─────────────┘          └─────────────┘          └─────────────┘     │
+│                                                                          │
+│  USE CASE MODULES                                                        │
+│  ┌─────────────────────────────────────────────────────────────────┐   │
+│  │                                                                  │   │
+│  │  ESCROW MODULE             INHERITANCE MODULE                    │   │
+│  │  ─────────────             ──────────────────                    │   │
+│  │  • P2P transactions        • Time-locked release                │   │
+│  │  • Milestone payments      • Dead man's switch                  │   │
+│  │  • Freelancer contracts    • Multi-beneficiary                  │   │
+│  │  • Real estate deposits    • Proof-of-life triggers             │   │
+│  │                                                                  │   │
+│  │  PRIZE MODULE              GOVERNANCE MODULE                     │   │
+│  │  ────────────              ─────────────────                     │   │
+│  │  • GameGames integration   • Conditional treasury               │   │
+│  │  • Tournament prizes       • Milestone unlocks                  │   │
+│  │  • CTF rewards             • KPI-based releases                 │   │
+│  │  • Bounty programs         • Multi-sig alternatives             │   │
+│  │                                                                  │   │
+│  └─────────────────────────────────────────────────────────────────┘   │
+│                                                                          │
+└─────────────────────────────────────────────────────────────────────────┘
+```
+
+#### Rising Sun Ecosystem Integration
+
+```
+┌─────────────────────────────────────────────────────────────────────────┐
+│                    TROVE IN THE RISING SUN ECOSYSTEM                     │
+├─────────────────────────────────────────────────────────────────────────┤
+│                                                                          │
+│  ┌───────────────────┐                                                  │
+│  │  PASSWORD PALACE  │──────► Shared spatial puzzle technology         │
+│  │                   │──────► Identity verification for Trove access   │
+│  └───────────────────┘                                                  │
+│            │                                                             │
+│            ▼                                                             │
+│  ┌───────────────────┐                                                  │
+│  │      TROVE        │                                                  │
+│  │                   │                                                  │
+│  │  Conditional      │                                                  │
+│  │  access layer     │                                                  │
+│  └───────────────────┘                                                  │
+│            │                                                             │
+│            ▼                                                             │
+│  ┌───────────────────┐         ┌───────────────────┐                   │
+│  │    GAMEGAMES      │◄───────►│   FORGEGROUND     │                   │
+│  │                   │         │                   │                   │
+│  │  Tournament       │         │  Prize pools for  │                   │
+│  │  prize pools      │         │  competitions     │                   │
+│  │  via Trove        │         │                   │                   │
+│  └───────────────────┘         └───────────────────┘                   │
+│                                                                          │
+│  INTEGRATION EXAMPLES                                                    │
+│  ┌─────────────────────────────────────────────────────────────────┐   │
+│  │                                                                  │   │
+│  │  GameGames Tournament:                                          │   │
+│  │  • $10K prize pool locked in Trove                              │   │
+│  │  • Winner receives piece automatically                          │   │
+│  │  • Solve puzzle (simple for winner) to claim                    │   │
+│  │  • Trustless, no GG touching funds                              │   │
+│  │                                                                  │   │
+│  │  Forgeground Season Rewards:                                    │   │
+│  │  • Top 100 players get Trove pieces                             │   │
+│  │  • Collaborative puzzle (community event)                       │   │
+│  │  • Shared treasure chest unlocked together                      │   │
+│  │                                                                  │   │
+│  │  Password Palace Premium:                                       │   │
+│  │  • Unlock premium features via Trove puzzle                     │   │
+│  │  • Gamified onboarding experience                               │   │
+│  │                                                                  │   │
+│  └─────────────────────────────────────────────────────────────────┘   │
+│                                                                          │
+└─────────────────────────────────────────────────────────────────────────┘
+```
+
+#### Infrastructure Products
+
+| Product | Description | Pricing | Target Customer |
+|---------|-------------|---------|-----------------|
+| **Trove SDK** | Embed Troves in any app | Free + protocol fees | Web3 developers |
+| **Trove API** | REST/GraphQL for Trove ops | $100/mo + fees | Platforms |
+| **Escrow Module** | Specialized escrow Troves | 0.5% of value | Marketplaces |
+| **Inheritance Module** | Time-locked + dead man's switch | $10/Trove/year | Estate planning |
+| **Prize Module** | GameGames/tournament integration | 1% of prize | Gaming platforms |
+
+#### Phase 3 Success Metrics
+
+| Metric | 2027 H1 | 2027 H2 | Why It Matters |
+|--------|---------|---------|----------------|
+| SDK integrations | 25 | 75 | Platform adoption |
+| API customers | 10 | 30 | B2B revenue |
+| Module usage | 5K Troves | 20K Troves | Specialized value |
+| 3rd party TVP | $2M | $10M | Infrastructure status |
+| Total revenue | $200K | $500K | Business scale |
+
+---
+
+## II. Market & Competition
 
 ### Market Overview
 
@@ -147,7 +471,7 @@ SIMPLE ─┼─────────────────┼────�
 
 ---
 
-## II. Go-to-Market Strategy
+## III. Go-to-Market Strategy
 
 ### Launch Strategy
 
@@ -291,7 +615,7 @@ More brands see engagement
 
 ---
 
-## III. Monetization Strategy
+## IV. Monetization Strategy
 
 ### Revenue Model
 
@@ -400,7 +724,7 @@ More brands see engagement
 
 ---
 
-## IV. Token Strategy
+## V. Token Strategy
 
 ### $TROVE Token Design
 
@@ -460,7 +784,7 @@ Result: Usage directly reduces supply, increasing scarcity
 
 ---
 
-## V. Strategic Risks & Mitigations
+## VI. Strategic Risks & Mitigations
 
 | Risk | Likelihood | Impact | Mitigation |
 |------|------------|--------|------------|
@@ -472,7 +796,7 @@ Result: Usage directly reduces supply, increasing scarcity
 
 ---
 
-## VI. Key Metrics to Track
+## VII. Key Metrics to Track
 
 ### North Star Metric
 
