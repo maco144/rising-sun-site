@@ -1,7 +1,7 @@
 # Project Index: rising-sun-site
 
-**Generated**: 2026-01-23
-**Type**: Next.js Developer Portfolio Website
+**Generated**: 2026-01-24
+**Type**: Next.js Developer Portfolio & Business Showcase
 **Framework**: Next.js 14 (App Router) + TypeScript + Tailwind CSS
 
 ---
@@ -15,6 +15,8 @@ rising-sun-site/
 │   │   ├── layout.tsx          # Root layout (metadata, Header/Footer)
 │   │   ├── page.tsx            # Homepage (featured projects, updates)
 │   │   ├── globals.css         # Global styles, CRT effects, animations
+│   │   ├── manifesto/page.tsx  # Vision & philosophy page
+│   │   ├── roadmap/page.tsx    # Timeline & milestones page
 │   │   ├── about/page.tsx      # About page
 │   │   ├── contact/page.tsx    # Contact page
 │   │   ├── projects/
@@ -23,7 +25,7 @@ rising-sun-site/
 │   │   └── updates/
 │   │       ├── page.tsx        # Updates/blog list
 │   │       └── [slug]/page.tsx # Update detail (dynamic route)
-│   ├── components/             # React components
+│   ├── components/             # React components (14 total)
 │   │   ├── ClientLayout.tsx    # Client wrapper (boot, CRT, cursor)
 │   │   ├── Header.tsx          # Site navigation
 │   │   ├── Footer.tsx          # Site footer with ASCII art
@@ -39,104 +41,21 @@ rising-sun-site/
 │   └── data/                   # Static data (no database)
 │       ├── projects.ts         # Project definitions + helpers
 │       └── updates.ts          # Blog updates + helpers
+├── docs/                       # Business documentation
+│   ├── README.md               # Vision overview
+│   ├── MANIFESTO.md            # Philosophy & principles
+│   ├── TECHNOLOGY_THESIS.md    # Technical deep-dive
+│   ├── ROADMAP.md              # Timeline & milestones
+│   ├── STRATEGY.md             # Business strategy
+│   ├── projects/               # Project summaries (10 files)
+│   │   ├── {project}.md        # Business overview
+│   │   └── {project}-strategy.md # Strategy docs
+│   └── one-pagers/             # Investor one-pagers (5 files)
 ├── tailwind.config.ts          # Custom colors, animations, fonts
-├── tsconfig.json               # TypeScript config
-├── package.json                # Dependencies
-└── .eslintrc.json              # ESLint config
+├── CLAUDE.md                   # AI assistant context
+├── PROJECT_INDEX.md            # This file
+└── PROJECT_INDEX.json          # Machine-readable index
 ```
-
----
-
-## Entry Points
-
-| Entry | Path | Purpose |
-|-------|------|---------|
-| **App Entry** | `src/app/layout.tsx` | Root layout, metadata, global structure |
-| **Homepage** | `src/app/page.tsx` | Featured projects + recent updates |
-| **Dev Server** | `npm run dev` | Start development at localhost:3000 |
-| **Build** | `npm run build` | Production build |
-
----
-
-## Core Modules
-
-### Data Layer (`src/data/`)
-
-**projects.ts**
-- `Project` interface: slug, name, tagline, description, longDescription, status, tags, links, featured
-- `projects[]`: Array of 6 projects (Password Palace, Trove, GameGames, Eudaimonia, Forgeground, Rising Sun)
-- Helpers: `getProjectBySlug()`, `getFeaturedProjects()`, `getProjectsByStatus()`
-
-**updates.ts**
-- `Update` interface: slug, title, date, excerpt, content, projects[]
-- `updates[]`: Array of 7 blog updates
-- Helpers: `getUpdateBySlug()`, `getRecentUpdates()`, `getUpdatesByProject()`
-
-### Components (`src/components/`)
-
-| Component | Type | Purpose |
-|-----------|------|---------|
-| `ClientLayout` | Client | Wraps app with boot sequence, CRT effects, custom cursor |
-| `BootSequence` | Client | BIOS-style startup animation (skippable, session-cached) |
-| `CRTEffect` | Client | Scanline overlay + vignette + screen noise |
-| `CustomCursor` | Client | Terminal block cursor following mouse |
-| `AnimatedHero` | Client | Homepage hero with Rising Sun ASCII art + typing |
-| `Header` | Server | Navigation links |
-| `Footer` | Server | Contact links + ASCII footer art |
-| `ASCIIBorder` | Server | Box-drawing character borders (single/double) |
-| `ProjectCard` | Server | Project preview with status badge |
-| `UpdateCard` | Server | Blog post preview card |
-| `GlitchText` | Server | Text with glitch hover effect |
-| `TypewriterText` | Client | Character-by-character typing animation |
-
----
-
-## Design System
-
-### Color Palette (Tailwind)
-
-| Token | Hex | Usage |
-|-------|-----|-------|
-| `terminal-black` | `#0a0a0a` | Background |
-| `terminal-dark` | `#1a1a1a` | Card backgrounds |
-| `terminal-gray` | `#2a2a2a` | Borders, muted elements |
-| `terminal-green` | `#00ff41` | Primary accent, active states |
-| `terminal-amber` | `#ffb000` | Secondary accent, warnings |
-| `terminal-cyan` | `#00d4ff` | Links, info elements |
-| `terminal-white` | `#e0e0e0` | Primary text |
-| `terminal-white-dim` | `#808080` | Secondary text |
-
-### Custom Animations
-
-- `blink`: Cursor blink (1s step-end)
-- `typewriter`: Width 0→100% (2s steps)
-- `fade-in`: Opacity + translateY entrance
-- `scan`: Scanline movement
-- `glitch`: Clip-path + translate distortion
-- `pulse-glow`: Box-shadow pulsing
-- `flicker`: Subtle opacity flicker
-
-### Visual Effects (globals.css)
-
-- **CRT Overlay**: Scanlines, vignette, screen noise
-- **Glitch Effects**: Hover-triggered color shift + clip-path
-- **Boot Sequence**: Line-by-line reveal with cursor
-- **Glow Classes**: `.glow-green`, `.glow-amber`, `.glow-cyan`
-- **Custom Scrollbar**: Terminal-styled green gradient
-- **Custom Cursor**: Block cursor + trailing dot
-
----
-
-## Key Dependencies
-
-| Package | Version | Purpose |
-|---------|---------|---------|
-| `next` | 14.2.35 | React framework (App Router) |
-| `react` | ^18 | UI library |
-| `tailwindcss` | ^3.4.1 | Utility CSS |
-| `typescript` | ^5 | Type safety |
-
-**Font**: JetBrains Mono (Google Fonts)
 
 ---
 
@@ -145,6 +64,8 @@ rising-sun-site/
 | Route | File | Description |
 |-------|------|-------------|
 | `/` | `app/page.tsx` | Homepage with featured projects + updates |
+| `/manifesto` | `app/manifesto/page.tsx` | Philosophy, principles, vision |
+| `/roadmap` | `app/roadmap/page.tsx` | Timeline, milestones, metrics |
 | `/about` | `app/about/page.tsx` | About page |
 | `/contact` | `app/contact/page.tsx` | Contact information |
 | `/projects` | `app/projects/page.tsx` | All projects list |
@@ -154,45 +75,119 @@ rising-sun-site/
 
 ---
 
+## Components
+
+| Component | Type | Purpose |
+|-----------|------|---------|
+| `ClientLayout` | Client | Wraps app with boot sequence, CRT effects, cursor |
+| `BootSequence` | Client | BIOS-style startup animation (skippable) |
+| `CRTEffect` | Client | Scanline overlay + vignette + noise |
+| `CustomCursor` | Client | Terminal block cursor following mouse |
+| `AnimatedHero` | Client | Homepage hero with Rising Sun ASCII + typing |
+| `Header` | Client | Navigation with active state highlighting |
+| `Footer` | Server | Contact links + ASCII footer art |
+| `ASCIIBorder` | Server | Box-drawing character borders (single/double) |
+| `ProjectCard` | Server | Project preview with status badge |
+| `UpdateCard` | Server | Blog post preview card |
+| `GlitchText` | Server | Text with glitch hover effect |
+| `TypewriterText` | Client | Character-by-character typing animation |
+
+---
+
+## Documentation Structure
+
+```
+docs/
+├── README.md                 # Vision overview (127 lines)
+├── MANIFESTO.md              # Philosophy (217 lines)
+├── TECHNOLOGY_THESIS.md      # Technical deep-dive (734 lines)
+├── ROADMAP.md                # Timeline (445 lines)
+├── STRATEGY.md               # Business strategy
+├── projects/
+│   ├── password-palace.md    # PP business overview
+│   ├── trove.md              # Trove business overview
+│   ├── gamegames.md          # GG business overview
+│   ├── eudaimonia.md         # AIOS business overview
+│   ├── forgeground.md        # FG business overview
+│   └── *-strategy.md         # Per-project strategy docs
+└── one-pagers/
+    ├── password-palace.md    # PP investor one-pager
+    ├── trove.md              # Trove investor one-pager
+    ├── gamegames.md          # GG investor one-pager
+    ├── eudaimonia.md         # AIOS investor one-pager
+    ├── forgeground.md        # FG investor one-pager
+    └── rising-sun-portfolio.md # Portfolio overview
+```
+
+---
+
+## Design System
+
+### Colors (Tailwind `terminal-*`)
+
+| Token | Hex | Usage |
+|-------|-----|-------|
+| `terminal-black` | `#0a0a0a` | Background |
+| `terminal-green` | `#00ff41` | Primary accent, active states |
+| `terminal-amber` | `#ffb000` | Secondary accent, headings |
+| `terminal-cyan` | `#00d4ff` | Links, info elements |
+| `terminal-white` | `#e0e0e0` | Primary text |
+| `terminal-white-dim` | `#808080` | Secondary text |
+
+### Animations
+
+`blink`, `typewriter`, `fade-in`, `scan`, `glitch`, `pulse-glow`, `flicker`
+
+### CSS Effects
+
+CRT overlay, scanlines, vignette, screen noise, glitch text, glow classes, custom cursor
+
+---
+
 ## Projects Showcased
 
-| Project | Status | Tags |
-|---------|--------|------|
-| **Password Palace** | active | web3, typescript, react, three.js, cosmos, zk-proofs |
-| **Trove** | active | web3, cosmos, zk-proofs, typescript, rust |
-| **GameGames** | active | web3, solana, gaming, ai, typescript |
-| **Eudaimonia** | beta | design, ai, ux, research, interfaces |
-| **Forgeground** | beta | gamedev, typescript, babylonjs, webgl, multiplayer |
-| **Rising Sun** | active | nextjs, tailwind, typescript, portfolio, css |
+| Project | Status | Website |
+|---------|--------|---------|
+| **Password Palace** | Private Beta | [passwordpalace.com](https://passwordpalace.com) |
+| **Trove** | Live | [trove.website](https://trove.website) |
+| **GameGames** | Devnet | [gamegames.gg](https://gamegames.gg) |
+| **Eudaimonia** | Alpha | [aios.design](https://aios.design) |
+| **Forgeground** | Beta | [forgeground.online](https://forgeground.online) |
+| **Rising Sun** | Active | This site |
 
 ---
 
 ## Quick Start
 
 ```bash
-# Install dependencies
-npm install
-
-# Development server (localhost:3000)
-npm run dev
-
-# Production build
-npm run build
-
-# Start production server
-npm start
-
-# Lint check
-npm run lint
+npm install          # Install dependencies
+npm run dev          # Dev server (localhost:3000)
+npm run build        # Production build
+npm run lint         # ESLint check
 ```
 
 ---
 
-## Architecture Notes
+## Key Files
 
-1. **No Database**: All content stored in TypeScript files (`src/data/`)
-2. **Static Generation**: Pages use static data, fully SSG-compatible
-3. **Client Components**: Interactive effects (boot, cursor, CRT) wrapped in `ClientLayout`
-4. **Server Components**: Most UI components are server-rendered by default
-5. **Retro Aesthetic**: Terminal/CRT visual language throughout
-6. **Session Storage**: Boot sequence only plays once per session
+| File | Purpose |
+|------|---------|
+| `CLAUDE.md` | AI assistant context for development |
+| `docs/MANIFESTO.md` | Core philosophy and vision |
+| `docs/TECHNOLOGY_THESIS.md` | Technical architecture details |
+| `docs/ROADMAP.md` | Timeline and milestones |
+| `src/data/projects.ts` | Project data and helpers |
+| `src/app/manifesto/page.tsx` | Manifesto page implementation |
+| `src/app/roadmap/page.tsx` | Roadmap page implementation |
+
+---
+
+## File Counts
+
+| Category | Count |
+|----------|-------|
+| TSX Components | 14 |
+| App Pages | 9 |
+| Data Files | 2 |
+| Documentation (docs/) | 21 |
+| Total Source Files | 24 |

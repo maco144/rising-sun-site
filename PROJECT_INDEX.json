@@ -1,7 +1,7 @@
 {
   "name": "rising-sun-site",
-  "type": "Next.js Portfolio Website",
-  "generated": "2026-01-23",
+  "type": "Next.js Portfolio & Business Showcase",
+  "generated": "2026-01-24",
   "framework": {
     "name": "Next.js",
     "version": "14.2.35",
@@ -12,6 +12,8 @@
   "entryPoints": {
     "layout": "src/app/layout.tsx",
     "homepage": "src/app/page.tsx",
+    "manifesto": "src/app/manifesto/page.tsx",
+    "roadmap": "src/app/roadmap/page.tsx",
     "devServer": "npm run dev",
     "build": "npm run build"
   },
@@ -19,10 +21,13 @@
     "app": "src/app",
     "components": "src/components",
     "data": "src/data",
-    "styles": "src/app/globals.css"
+    "styles": "src/app/globals.css",
+    "docs": "docs"
   },
   "pages": [
     { "route": "/", "file": "src/app/page.tsx", "type": "static" },
+    { "route": "/manifesto", "file": "src/app/manifesto/page.tsx", "type": "static" },
+    { "route": "/roadmap", "file": "src/app/roadmap/page.tsx", "type": "static" },
     { "route": "/about", "file": "src/app/about/page.tsx", "type": "static" },
     { "route": "/contact", "file": "src/app/contact/page.tsx", "type": "static" },
     { "route": "/projects", "file": "src/app/projects/page.tsx", "type": "static" },
@@ -32,45 +37,70 @@
   ],
   "components": {
     "layout": [
-      { "name": "ClientLayout", "path": "src/components/ClientLayout.tsx", "type": "client", "purpose": "Wraps app with boot sequence, CRT effects, custom cursor" },
-      { "name": "Header", "path": "src/components/Header.tsx", "type": "server", "purpose": "Site navigation" },
-      { "name": "Footer", "path": "src/components/Footer.tsx", "type": "server", "purpose": "Footer with ASCII art and contact links" }
+      { "name": "ClientLayout", "path": "src/components/ClientLayout.tsx", "type": "client" },
+      { "name": "Header", "path": "src/components/Header.tsx", "type": "client" },
+      { "name": "Footer", "path": "src/components/Footer.tsx", "type": "server" }
     ],
     "effects": [
-      { "name": "BootSequence", "path": "src/components/BootSequence.tsx", "type": "client", "purpose": "BIOS-style startup animation" },
-      { "name": "CRTEffect", "path": "src/components/CRTEffect.tsx", "type": "client", "purpose": "Scanlines, vignette, screen noise" },
-      { "name": "CustomCursor", "path": "src/components/CustomCursor.tsx", "type": "client", "purpose": "Terminal block cursor" },
-      { "name": "GlitchText", "path": "src/components/GlitchText.tsx", "type": "server", "purpose": "Text with glitch effect" }
+      { "name": "BootSequence", "path": "src/components/BootSequence.tsx", "type": "client" },
+      { "name": "CRTEffect", "path": "src/components/CRTEffect.tsx", "type": "client" },
+      { "name": "CustomCursor", "path": "src/components/CustomCursor.tsx", "type": "client" },
+      { "name": "GlitchText", "path": "src/components/GlitchText.tsx", "type": "server" }
     ],
     "content": [
-      { "name": "AnimatedHero", "path": "src/components/AnimatedHero.tsx", "type": "client", "purpose": "Homepage hero with ASCII art and typing" },
-      { "name": "ASCIIBorder", "path": "src/components/ASCIIBorder.tsx", "type": "server", "purpose": "Box-drawing character borders" },
-      { "name": "TypewriterText", "path": "src/components/TypewriterText.tsx", "type": "client", "purpose": "Character-by-character typing" },
-      { "name": "ProjectCard", "path": "src/components/ProjectCard.tsx", "type": "server", "purpose": "Project preview card" },
-      { "name": "UpdateCard", "path": "src/components/UpdateCard.tsx", "type": "server", "purpose": "Blog update preview card" }
+      { "name": "AnimatedHero", "path": "src/components/AnimatedHero.tsx", "type": "client" },
+      { "name": "ASCIIBorder", "path": "src/components/ASCIIBorder.tsx", "type": "server" },
+      { "name": "TypewriterText", "path": "src/components/TypewriterText.tsx", "type": "client" },
+      { "name": "ProjectCard", "path": "src/components/ProjectCard.tsx", "type": "server" },
+      { "name": "UpdateCard", "path": "src/components/UpdateCard.tsx", "type": "server" }
     ]
   },
-  "dataModels": {
-    "Project": {
-      "file": "src/data/projects.ts",
-      "fields": ["slug", "name", "tagline", "description", "longDescription", "status", "tags", "links", "featured"],
-      "helpers": ["getProjectBySlug", "getFeaturedProjects", "getProjectsByStatus"],
-      "count": 6
-    },
-    "Update": {
-      "file": "src/data/updates.ts",
-      "fields": ["slug", "title", "date", "excerpt", "content", "projects"],
-      "helpers": ["getUpdateBySlug", "getRecentUpdates", "getUpdatesByProject"],
-      "count": 7
-    }
+  "documentation": {
+    "core": [
+      { "file": "docs/README.md", "purpose": "Vision overview" },
+      { "file": "docs/MANIFESTO.md", "purpose": "Philosophy and principles" },
+      { "file": "docs/TECHNOLOGY_THESIS.md", "purpose": "Technical deep-dive" },
+      { "file": "docs/ROADMAP.md", "purpose": "Timeline and milestones" },
+      { "file": "docs/STRATEGY.md", "purpose": "Business strategy" }
+    ],
+    "projects": [
+      "docs/projects/password-palace.md",
+      "docs/projects/trove.md",
+      "docs/projects/gamegames.md",
+      "docs/projects/eudaimonia.md",
+      "docs/projects/forgeground.md"
+    ],
+    "strategies": [
+      "docs/projects/password-palace-strategy.md",
+      "docs/projects/trove-strategy.md",
+      "docs/projects/gamegames-strategy.md",
+      "docs/projects/eudaimonia-strategy.md",
+      "docs/projects/forgeground-strategy.md"
+    ],
+    "onePagers": [
+      "docs/one-pagers/password-palace.md",
+      "docs/one-pagers/trove.md",
+      "docs/one-pagers/gamegames.md",
+      "docs/one-pagers/eudaimonia.md",
+      "docs/one-pagers/forgeground.md",
+      "docs/one-pagers/rising-sun-portfolio.md"
+    ]
   },
   "projects": [
-    { "slug": "password-palace", "name": "Password Palace", "status": "active", "featured": true, "tags": ["web3", "typescript", "react", "three.js", "cosmos", "zk-proofs"] },
-    { "slug": "trove", "name": "Trove", "status": "active", "featured": true, "tags": ["web3", "cosmos", "zk-proofs", "typescript", "rust"] },
-    { "slug": "gamegames", "name": "GameGames", "status": "active", "featured": true, "tags": ["web3", "solana", "gaming", "ai", "typescript"] },
-    { "slug": "eudaimonia", "name": "Eudaimonia", "status": "beta", "featured": false, "tags": ["design", "ai", "ux", "research", "interfaces"] },
-    { "slug": "forgeground", "name": "Forgeground", "status": "beta", "featured": false, "tags": ["gamedev", "typescript", "babylonjs", "webgl", "multiplayer"] },
-    { "slug": "rising-sun", "name": "Rising Sun", "status": "active", "featured": false, "tags": ["nextjs", "tailwind", "typescript", "portfolio", "css"] }
+    { "slug": "password-palace", "name": "Password Palace", "status": "Private Beta", "url": "https://passwordpalace.com" },
+    { "slug": "trove", "name": "Trove", "status": "Live", "url": "https://trove.website" },
+    { "slug": "gamegames", "name": "GameGames", "status": "Devnet", "url": "https://gamegames.gg" },
+    { "slug": "eudaimonia", "name": "Eudaimonia", "status": "Alpha", "url": "https://aios.design" },
+    { "slug": "forgeground", "name": "Forgeground", "status": "Beta", "url": "https://forgeground.online" },
+    { "slug": "rising-sun", "name": "Rising Sun", "status": "Active", "url": "https://github.com/maco144/rising-sun-site" }
+  ],
+  "navigation": [
+    { "href": "/", "label": "home" },
+    { "href": "/manifesto", "label": "manifesto" },
+    { "href": "/roadmap", "label": "roadmap" },
+    { "href": "/projects", "label": "projects" },
+    { "href": "/about", "label": "about" },
+    { "href": "/contact", "label": "contact" }
   ],
   "designSystem": {
     "colors": {
@@ -78,9 +108,7 @@
       "terminal-dark": "#1a1a1a",
       "terminal-gray": "#2a2a2a",
       "terminal-green": "#00ff41",
-      "terminal-green-dim": "#00cc33",
       "terminal-amber": "#ffb000",
-      "terminal-amber-dim": "#cc8800",
       "terminal-cyan": "#00d4ff",
       "terminal-white": "#e0e0e0",
       "terminal-white-dim": "#808080"
@@ -89,41 +117,17 @@
     "animations": ["blink", "typewriter", "fade-in", "scan", "glitch", "pulse-glow", "flicker"],
     "effects": ["crt-overlay", "scanlines", "vignette", "screen-noise", "glitch-text", "glow-classes", "custom-cursor"]
   },
-  "dependencies": {
-    "production": {
-      "next": "14.2.35",
-      "react": "^18",
-      "react-dom": "^18"
-    },
-    "development": {
-      "typescript": "^5",
-      "@types/node": "^20",
-      "@types/react": "^18",
-      "@types/react-dom": "^18",
-      "postcss": "^8",
-      "tailwindcss": "^3.4.1",
-      "eslint": "^8",
-      "eslint-config-next": "14.2.35"
-    }
-  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
-  "architecture": {
-    "database": "none",
-    "dataStorage": "TypeScript files in src/data",
-    "rendering": "Static Generation (SSG)",
-    "clientComponents": ["ClientLayout", "BootSequence", "CRTEffect", "CustomCursor", "AnimatedHero", "TypewriterText"],
-    "serverComponents": ["Header", "Footer", "ASCIIBorder", "ProjectCard", "UpdateCard", "GlitchText"],
-    "sessionStorage": ["boot-sequence-state"]
-  },
   "fileStats": {
-    "components": 13,
-    "pages": 7,
+    "components": 14,
+    "pages": 9,
     "dataFiles": 2,
-    "totalTsxFiles": 22
+    "documentation": 21,
+    "totalSourceFiles": 24
   }
 }
