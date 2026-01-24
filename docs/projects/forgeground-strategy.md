@@ -6,9 +6,9 @@
 
 ## Executive Summary
 
-Forgeground is positioned to prove that **the browser is a viable AAA gaming platform**. By delivering 60fps arena shooter gameplay with zero downloads, we target the massive underserved market of players who want quality gaming without hardware barriers.
+Forgeground is a **highly competitive browser-based arena shooter** that proves AAA-quality gaming is possible without downloads. Monetized through standard digital gaming products (cosmetics, level-ups, account features), Forgeground targets competitive players who want serious gameplay without hardware barriers.
 
-**Strategic thesis**: The 50-100GB download era of gaming is ending. As web technologies mature (WebGPU, WASM, WebSockets), the browser becomes the universal gaming platform. First movers who build native-quality browser games will dominate the next gaming paradigm.
+**Strategic thesis**: The 50-100GB download era of gaming is ending. As web technologies mature (WebGPU, WASM, WebSockets), the browser becomes the universal gaming platform. Forgeground combines zero-friction access with deep competitive systems and integrates with GameGames as one of many titles in the wagering ecosystem.
 
 ---
 
@@ -52,18 +52,18 @@ Year 1-2 realistic capture:
 
 | Segment | Profile | Pain Points | Acquisition Cost |
 |---------|---------|-------------|-----------------|
-| **Casual FPS Players** | Played shooters, not hardcore | Downloads too big, gaming PC expensive | Low - broad reach |
-| **Work/School Gamers** | Play during breaks | Can't install games, need browser-based | Low - search/referral |
-| **International Players** | Emerging markets | Hardware expensive, downloads on slow internet | Low - viral |
-| **Lapsed Gamers** | Used to play, life got busy | Don't want to commit to downloads/updates | Medium |
+| **Competitive Players** | Skill-focused, want to prove themselves | Existing games have high barriers, want wagering | Medium - tournaments |
+| **FPS Enthusiasts** | Played shooters, want accessible option | Downloads too big, gaming PC expensive | Low - broad reach |
+| **Work/School Gamers** | Play during breaks, still want competition | Can't install games, need browser-based | Low - search/referral |
+| **International Players** | Emerging markets, competitive drive | Hardware expensive, downloads on slow internet | Low - viral |
 
 #### Secondary Segments
 
 | Segment | Profile | Entry Point |
 |---------|---------|-------------|
-| **Competitive Players** | Skill-focused, ranked play | Ranked mode, tournaments |
-| **Streamers** | Content creators | Clip-worthy moments, challenges |
+| **Streamers** | Content creators | Clip-worthy moments, wager challenges |
 | **Retro Enthusiasts** | Love arena shooters (Quake, UT) | Nostalgia + accessibility |
+| **Wagering Players** | Want to stake on skill | GameGames integration |
 
 ### Competitive Landscape
 
@@ -117,7 +117,7 @@ BARRIER ─┼─────────────────┼────
 
 #### Core Positioning Statement
 
-> For gamers who want competitive shooter gameplay without barriers, Forgeground is the only browser game that delivers 60fps arena action with physics manipulation weapons, proving that zero-download doesn't mean zero quality.
+> For competitive players who want serious shooter gameplay without barriers, Forgeground is the only browser game that delivers 60fps arena action with physics manipulation weapons, deep ranking systems, and native wagering integration through GameGames.
 
 #### Key Differentiators
 
@@ -299,57 +299,113 @@ Clips go viral → New player acquisition
 
 ### Revenue Model
 
-#### Primary: Cosmetics (F2P Model)
+Forgeground uses **standard digital gaming monetization** — the same proven models used by Valorant, Fortnite, and Apex Legends.
+
+```
+┌─────────────────────────────────────────────────────────────────────────┐
+│                    FORGEGROUND REVENUE STREAMS                          │
+├─────────────────────────────────────────────────────────────────────────┤
+│                                                                          │
+│  ┌─────────────────┐  ┌─────────────────┐  ┌─────────────────┐         │
+│  │   COSMETICS     │  │   PROGRESSION   │  │    ACCOUNT      │         │
+│  │                 │  │                 │  │    FEATURES     │         │
+│  │ Weapon skins    │  │ Battle Pass     │  │ Extra loadouts  │         │
+│  │ Character skins │  │ XP boosters     │  │ Name changes    │         │
+│  │ Kill effects    │  │ Level unlocks   │  │ Premium profile │         │
+│  │ Emotes          │  │ Season rewards  │  │ Stat tracking   │         │
+│  └─────────────────┘  └─────────────────┘  └─────────────────┘         │
+│           │                    │                    │                   │
+│           └────────────────────┼────────────────────┘                   │
+│                                ▼                                        │
+│                    ┌─────────────────────┐                             │
+│                    │   + GAMEGAMES       │                             │
+│                    │   WAGERING          │                             │
+│                    │   (revenue share)   │                             │
+│                    └─────────────────────┘                             │
+│                                                                          │
+└─────────────────────────────────────────────────────────────────────────┘
+```
+
+#### Cosmetics
 
 | Item Type | Price Range | Examples |
 |-----------|-------------|----------|
-| **Weapon Skins** | $2-10 | Visual effects, colors |
-| **Character Skins** | $5-20 | Full character models |
-| **Kill Effects** | $3-8 | Death animations |
-| **Emotes** | $2-5 | Victory animations |
+| **Weapon Skins** | $2-10 | Visual effects, colors, animated |
+| **Character Skins** | $5-20 | Full character models, rare editions |
+| **Kill Effects** | $3-8 | Death animations, particle effects |
+| **Emotes** | $2-5 | Victory animations, taunts |
+| **Bundles** | $15-40 | Themed collections, value packs |
+
+#### Progression & Level-Ups
+
+| Item Type | Price | Description |
+|-----------|-------|-------------|
+| **Battle Pass** | $10/season | 100 tiers of rewards, exclusive items |
+| **XP Boosters** | $3-10 | 2x XP for 24hr/7 days |
+| **Level Skip** | $2 | Skip one Battle Pass tier |
+| **Prestige Unlock** | $5 | Unlock prestige levels early |
+
+#### Account Features
+
+| Feature | Price | Description |
+|---------|-------|-------------|
+| **Extra Loadout Slots** | $3 | Additional saved loadouts (default: 3) |
+| **Name Change** | $5 | Change display name |
+| **Premium Profile** | $8 | Animated banner, extended stats, badges |
+| **Stat Tracker** | $5 | Detailed match history, analytics |
+| **Private Server** | $10/mo | Host custom games, practice |
 
 #### Battle Pass (Seasonal)
 
 | Tier | Price | Contents |
 |------|-------|----------|
 | **Free Track** | $0 | Basic rewards, keeps players engaged |
-| **Premium Track** | $10/season | Exclusive cosmetics, faster progression |
+| **Premium Track** | $10/season | 100 exclusive items, faster progression |
+| **Premium+ Bundle** | $25 | Premium + 25 tier skips + bonus skin |
 
-#### Tournament Entry
+#### GameGames Integration
 
-| Format | Entry Fee | Platform Cut |
-|--------|-----------|--------------|
-| **Daily Tournaments** | $1-5 | 10% |
-| **Weekly Major** | $5-20 | 10% |
-| **Monthly Championship** | $10-50 | 10% |
+Forgeground is **one of many games** in the GameGames wagering ecosystem:
 
-#### GameGames Integration Revenue
+| Integration | Description | Revenue Model |
+|-------------|-------------|---------------|
+| **Match Wagering** | Wager on 1v1 or team outcomes | Split rake with GameGames |
+| **Tournament Prizes** | Prize pools via Trove | Sponsored events |
+| **Spectator Betting** | Watch and bet on matches | Revenue share |
 
-- Wagering on Forgeground matches via GameGames
-- Revenue share on wagers
-- Drives engagement for both products
+*GameGames handles all wagering infrastructure — Forgeground focuses on gameplay.*
 
 ### Pricing Strategy
 
 #### Competitive Pricing Analysis
 
-| Game | Cosmetic Range | Battle Pass |
-|------|----------------|-------------|
-| Valorant | $10-25 (premium) | $10 |
-| Fortnite | $5-20 | $8 |
-| Apex | $5-20 | $10 |
-| **Forgeground** | $2-20 | $10 |
+| Game | Cosmetic Range | Battle Pass | Account Features |
+|------|----------------|-------------|------------------|
+| Valorant | $10-25 | $10 | Limited |
+| Fortnite | $5-20 | $8 | Crew $12/mo |
+| Apex | $5-20 | $10 | Limited |
+| **Forgeground** | $2-20 | $10 | $3-10 |
 
-**Philosophy**: Price slightly below AAA because browser context = lower perceived value. Compensate with volume.
+**Philosophy**: Price competitively with AAA F2P games. Browser context is offset by unique physics gameplay and wagering integration.
 
 #### Monetization Timeline
 
 | Phase | Focus | Target ARPU |
 |-------|-------|-------------|
 | **Beta** | Free, no monetization | $0 |
-| **Launch** | Starter cosmetics | $1 |
-| **Growth** | Battle Pass + shop | $5 |
-| **Mature** | Full economy | $8 |
+| **Launch** | Starter cosmetics + account features | $2 |
+| **Growth** | Battle Pass + full shop + level-ups | $6 |
+| **Mature** | Full economy + GameGames wagering | $8+ |
+
+#### Revenue Mix (Mature State)
+
+| Source | % of Revenue | Notes |
+|--------|--------------|-------|
+| **Cosmetics** | 45% | Core F2P revenue |
+| **Battle Pass** | 25% | Seasonal recurring |
+| **Account Features** | 15% | High margin |
+| **Level-ups/Boosters** | 10% | Progression |
+| **GameGames Revenue Share** | 5% | Wagering ecosystem |
 
 ### Unit Economics
 
@@ -410,43 +466,110 @@ Clips go viral → New player acquisition
 
 ---
 
-## IV. Esports Strategy
+## IV. Competitive & Esports Strategy
 
-### Esports Vision
+### Competitive Vision
 
-Build Forgeground as an **accessible esports title** - competitive enough for serious play, but accessible enough for anyone to participate.
+Forgeground is built from the ground up as a **highly competitive title**. Every system supports skill expression, fair play, and ranked progression. The goal: become the most accessible serious competitive FPS.
 
-### Competitive Infrastructure
+```
+┌─────────────────────────────────────────────────────────────────────────┐
+│                    COMPETITIVE ECOSYSTEM                                 │
+├─────────────────────────────────────────────────────────────────────────┤
+│                                                                          │
+│  ┌─────────────────────────────────────────────────────────────────┐   │
+│  │                      RANKED LADDER                               │   │
+│  │  Iron → Bronze → Silver → Gold → Platinum → Diamond → Champion  │   │
+│  └─────────────────────────────────────────────────────────────────┘   │
+│                                │                                        │
+│              ┌─────────────────┼─────────────────┐                     │
+│              ▼                 ▼                 ▼                     │
+│  ┌─────────────────┐  ┌─────────────────┐  ┌─────────────────┐       │
+│  │  TOURNAMENTS    │  │  GAMEGAMES      │  │  LEAGUES        │       │
+│  │                 │  │  WAGERING       │  │                 │       │
+│  │  Daily/Weekly/  │  │                 │  │  Season-long    │       │
+│  │  Monthly events │  │  Stake on your  │  │  competition    │       │
+│  │                 │  │  matches        │  │                 │       │
+│  └─────────────────┘  └─────────────────┘  └─────────────────┘       │
+│                                                                          │
+│  SKILL EXPRESSION                                                       │
+│  ├── Physics weapons reward mastery (high skill ceiling)               │
+│  ├── Movement tech for advanced players                                 │
+│  ├── No RNG — pure skill determines outcomes                           │
+│  └── Replay system for learning and improvement                        │
+│                                                                          │
+└─────────────────────────────────────────────────────────────────────────┘
+```
 
-#### Ranked System
+### Ranked System
 
-| Tier | Rank | % of Players |
-|------|------|--------------|
-| Iron | I-IV | 20% |
-| Bronze | I-IV | 25% |
-| Silver | I-IV | 25% |
-| Gold | I-IV | 15% |
-| Platinum | I-IV | 10% |
-| Diamond | I-III | 4% |
-| Champion | - | 1% |
+| Tier | Rank | % of Players | Rewards |
+|------|------|--------------|---------|
+| Iron | I-IV | 20% | Season charm |
+| Bronze | I-IV | 25% | Season charm + banner |
+| Silver | I-IV | 25% | + weapon skin |
+| Gold | I-IV | 15% | + character skin |
+| Platinum | I-IV | 10% | + animated banner |
+| Diamond | I-III | 4% | + exclusive title |
+| Champion | - | 1% | + trophy + leaderboard |
 
-#### Tournament Circuit
+### Tournament Circuit
 
-| Event | Frequency | Prize Pool | Entry |
-|-------|-----------|------------|-------|
-| **Daily Cup** | Daily | $50 | Free |
-| **Weekend Warrior** | Weekly | $500 | $5 |
-| **Monthly Major** | Monthly | $2,500 | Qualifier |
-| **Seasonal Championship** | Quarterly | $10,000 | Invite |
+| Event | Frequency | Prize Pool | Entry | GameGames Integration |
+|-------|-----------|------------|-------|----------------------|
+| **Daily Cup** | Daily | $50 | Free | Spectator wagering |
+| **Weekend Warrior** | Weekly | $500 | $5 | Entry via GG |
+| **Monthly Major** | Monthly | $2,500 | Qualifier | Full wagering |
+| **Seasonal Championship** | Quarterly | $10,000 | Invite | Prize via Trove |
+
+### GameGames Integration (As One of Many Games)
+
+Forgeground is integrated into GameGames alongside other competitive titles:
+
+```
+┌─────────────────────────────────────────────────────────────────────────┐
+│                    GAMEGAMES ECOSYSTEM                                   │
+├─────────────────────────────────────────────────────────────────────────┤
+│                                                                          │
+│  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐   │
+│  │ FORGEGROUND │  │  FORTNITE   │  │    CS2      │  │  VALORANT   │   │
+│  │     ★       │  │             │  │             │  │             │   │
+│  │  Native     │  │  Screenshot │  │  Screenshot │  │  Screenshot │   │
+│  │  integration│  │  verify     │  │  verify     │  │  verify     │   │
+│  └──────┬──────┘  └──────┬──────┘  └──────┬──────┘  └──────┬──────┘   │
+│         │                │                │                │           │
+│         └────────────────┴────────────────┴────────────────┘           │
+│                                    │                                    │
+│                                    ▼                                    │
+│                    ┌───────────────────────────────┐                   │
+│                    │       GAMEGAMES PROTOCOL       │                   │
+│                    │                               │                   │
+│                    │  Trustless escrow • AI verify │                   │
+│                    │  2.5% fees • Instant payout   │                   │
+│                    └───────────────────────────────┘                   │
+│                                                                          │
+│  FORGEGROUND ADVANTAGE: Native integration = no screenshot needed      │
+│  Match results auto-report to GameGames for instant settlement         │
+│                                                                          │
+└─────────────────────────────────────────────────────────────────────────┘
+```
+
+| Feature | Forgeground (Native) | Other Games (SDK) |
+|---------|---------------------|-------------------|
+| Verification | Automatic (we control game) | Screenshot/API |
+| Settlement | Instant | After AI verification |
+| Dispute rate | ~0% | ~3% |
+| User experience | Seamless | Upload required |
 
 ### Spectator Features
 
 | Feature | Priority | Timeline |
 |---------|----------|----------|
-| **Spectator mode** | High | Q2 2026 |
-| **Replay system** | High | Q2 2026 |
-| **Caster tools** | Medium | Q3 2026 |
-| **Betting integration** | Medium | Q3 2026 |
+| **Spectator mode** | Critical | Q2 2026 |
+| **Replay system** | Critical | Q2 2026 |
+| **Live stats overlay** | High | Q3 2026 |
+| **Caster tools** | High | Q3 2026 |
+| **Spectator wagering** | Medium | Q3 2026 |
 
 ---
 

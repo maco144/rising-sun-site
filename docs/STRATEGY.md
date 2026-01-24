@@ -332,30 +332,32 @@ $600K revenue            $600K revenue             $900K revenue
 
 ### Forgeground: The Gaming Layer
 
-**Mission**: Prove browser is a AAA gaming platform
+**Mission**: Build the most accessible serious competitive FPS
 
-**Strategic Position**: Only browser FPS with 60fps physics manipulation and competitive infrastructure
+**Strategic Position**: Only browser FPS with 60fps physics manipulation, deep competitive systems, and native wagering integration
 
 | Dimension | Strategy |
 |-----------|----------|
-| **Primary GTM** | Viral clips + streamer seeding |
-| **Moat** | Physics weapons, zero-download, esports infra |
-| **Revenue** | Cosmetics + Battle Pass + tournaments |
-| **Key Metric** | Daily Active Users |
+| **Primary GTM** | Viral clips + streamer seeding + competitive community |
+| **Moat** | Physics weapons, zero-download, ranked system, native GG integration |
+| **Revenue** | Cosmetics + Level-ups + Account Features + Battle Pass |
+| **Key Metric** | Daily Active Users → Ranked Participation |
 
 **Why Forgeground Wins**:
-- Zero download (click and play)
-- Physics weapons (unique gameplay)
-- Cross-platform native (any browser)
-- GameGames integration (wager on matches)
+- **Zero download**: Click and play, no barriers
+- **Physics weapons**: Unique high-skill-ceiling gameplay
+- **Highly competitive**: Deep ranked system, tournaments, leagues
+- **Standard monetization**: Proven F2P model (cosmetics, level-ups, account features)
+- **GameGames native**: One of many games, but with seamless integration
 
 **Critical Milestones**:
 | Milestone | Date | Why Critical |
 |-----------|------|--------------|
 | All physics weapons | Jun 2026 | Differentiation complete |
 | 10K MAU | Jun 2026 | Traction proof |
-| Ranked mode | Jul 2026 | Competitive foundation |
-| GameGames integration | Sep 2026 | Ecosystem synergy |
+| Ranked mode live | Jul 2026 | Competitive foundation |
+| GameGames integration | Sep 2026 | Native wagering (one of many games) |
+| 25% ranked participation | Q4 2026 | Competitive positioning validated |
 
 ---
 
