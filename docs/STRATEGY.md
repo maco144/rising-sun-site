@@ -25,9 +25,9 @@ We're betting that:
 | **Eudaimonia** | AI Infrastructure / Hivemind Network | Alpha | $13M ARR |
 | **Password Palace** | Identity Infrastructure (3-Phase) | Private Beta | $9.1M ARR |
 | **Forgeground** | Browser Gaming | Beta | $900K ARR |
-| **GameGames** | Skill Wagering | Devnet | $600K Revenue |
+| **GameGames** | Skill Wagering (3-Phase) | Devnet | $2.1M Revenue |
 | **Trove** | Conditional Access | Live | $500K Revenue |
-| **Combined** | - | - | **$24M+ ARR** |
+| **Combined** | - | - | **$25.5M+ ARR** |
 
 **Note**: Eudaimonia's network effects create exponential upside. At 100K instances (aggressive 2027), ARR reaches $40M+. At 1M instances (2028), $300M+. Password Palace's three-phase approach (Consumer → API → Enterprise) compounds to $9.1M through natural expansion.
 
@@ -160,11 +160,11 @@ Focusing on AI-forward users, crypto-native communities, security-conscious cons
 | **Eudaimonia** | $13M | $40M | 50K instances (moderate) / 100K instances (aggressive) |
 | **Password Palace** | $9.1M | $15M | 3-phase: Consumer + API + Enterprise |
 | Forgeground | $900K | $900K | 150K MAU @ $6 ARPU |
-| GameGames | $600K | $600K | $24M wagering volume @ 2.5% |
+| GameGames | $2.1M | $3.75M | $60M-$150M wagering volume @ 2.5% + infrastructure |
 | Trove | $500K | $500K | 40K Troves + brand campaigns |
 
-**Combined SOM (2027 Moderate): $24M+ ARR**
-**Combined SOM (2027 Aggressive): $57M+ ARR**
+**Combined SOM (2027 Moderate): $25.6M+ ARR**
+**Combined SOM (2027 Aggressive): $60M+ ARR**
 
 *Eudaimonia's network effects compound to $200M+ ARR at 1M instances. Password Palace's three-phase approach builds enterprise revenue on consumer + API base.*
 
@@ -286,30 +286,46 @@ At 1,000,000 instances: Infrastructure layer ($200M+ ARR)
 
 ### GameGames: The Wagering Layer
 
-**Mission**: Enable trustless skill-based wagering
+**Mission**: Become the wagering infrastructure for competitive gaming through three phases
 
-**Strategic Position**: Only decentralized wagering with AI verification and 2.5% fees
+**Strategic Position**: Only decentralized wagering with AI verification, 2.5% fees, and SDK/API for other games
+
+**The Three Phases**:
+```
+PHASE 1: Core Platform   PHASE 2: Tournaments      PHASE 3: Infrastructure
+(Now → Q2 2026)          (Q2 → Q4 2026)            (Q4 2026 → 2027+)
+
+1v1 skill wagers         Tournament system         SDK for any game
+AI verification          League rankings           API for platforms
+Solana escrow            Forgeground integration   White-label solution
+
+$600K revenue            $600K revenue             $900K revenue
+```
 
 | Dimension | Strategy |
 |-----------|----------|
-| **Primary GTM** | Streamers + crypto gaming communities |
-| **Moat** | Solana escrow, AI verification, IPFS hosting |
-| **Revenue** | 2.5% platform fee on wagers |
-| **Key Metric** | Monthly Wagering Volume |
+| **Phase 1 GTM** | Streamers, crypto gaming communities |
+| **Phase 2 GTM** | Esports communities, Forgeground cross-promo |
+| **Phase 3 GTM** | B2B game developers, gaming conferences |
+| **Moat** | Solana escrow, AI verification, IPFS hosting, SDK lock-in |
+| **2027 Revenue** | $2.1M (Core $1.2M + Tournaments $600K + Infrastructure $300K) |
+| **Key Metric** | Monthly Wagering Volume → SDK Integrations |
 
 **Why GameGames Wins**:
-- Trustless (can't steal funds, literally)
-- 2.5% fees (vs 15%+ competitors)
-- AI verification (scalable, unbiased)
-- IPFS hosting (can't be shut down)
+- **Trustless**: Smart contracts hold funds (mathematically can't steal)
+- **2.5% fees**: vs 15%+ competitors (6x more value to players)
+- **AI verification**: Claude Vision scales infinitely
+- **Forgeground integration**: Native wagering on Rising Sun games
+- **Infrastructure play**: SDK lets any game add wagering
 
 **Critical Milestones**:
 | Milestone | Date | Why Critical |
 |-----------|------|--------------|
 | Mainnet launch | Mar 2026 | Real money, real validation |
-| $10K wagered | Mar 2026 | Market exists |
-| AI verification live | Apr 2026 | Scalability unlocked |
-| $100K monthly | Sep 2026 | Revenue meaningful |
+| AI verification 95%+ | Apr 2026 | Scalability unlocked |
+| $500K monthly volume | Q3 2026 | Phase 2 validated |
+| Forgeground integration | Sep 2026 | Ecosystem synergy |
+| 50 SDK integrations | 2027 | Infrastructure status |
 
 ---
 
@@ -534,13 +550,14 @@ User has Eudaimonia instance
 |---------|---------|---------|---------|---------|------|
 | **Eudaimonia** | $10K | $50K | $150K | $400K | $1.1M/mo |
 | **Password Palace** | $1K | $9K | $37K | $135K | $760K/mo |
-| **GameGames** | $250 | $1.25K | $5K | $12.5K | $50K/mo |
+| **GameGames** | $1.25K | $6.25K | $18.75K | $37.5K | $175K/mo |
 | **Forgeground** | $0 | $5K | $15K | $30K | $75K/mo |
 | **Trove** | $0 | $0 | $21K | $55K | $100K/mo |
-| **Total MRR** | $11.25K | $65.25K | $228K | $632.5K | $2.1M |
-| **Total ARR** | $135K | $783K | $2.7M | $7.6M | **$25M** |
+| **Total MRR** | $12.25K | $70.25K | $241.75K | $657.5K | $2.2M |
+| **Total ARR** | $147K | $843K | $2.9M | $7.9M | **$26.4M** |
 
-*Password Palace revenue includes Consumer ($305K/mo) + API ($200K/mo) + Enterprise ($250K/mo) by 2027*
+*Password Palace: Consumer ($305K/mo) + API ($200K/mo) + Enterprise ($250K/mo) by 2027*
+*GameGames: Core wagers ($100K/mo) + Tournaments ($50K/mo) + Infrastructure ($25K/mo) by 2027*
 
 **Eudaimonia Upside Scenarios**:
 | Scenario | 2027 Instances | 2027 ARR | 2028 ARR |
