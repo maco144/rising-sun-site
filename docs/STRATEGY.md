@@ -23,13 +23,13 @@ We're betting that:
 | Project | Category | Status | 2027 Target (Moderate) |
 |---------|----------|--------|------------------------|
 | **Eudaimonia** | AI Infrastructure / Hivemind Network | Alpha | $13M ARR |
-| **Password Palace** | Identity Infrastructure | Private Beta | $5.4M ARR |
+| **Password Palace** | Identity Infrastructure (3-Phase) | Private Beta | $9.1M ARR |
 | **Forgeground** | Browser Gaming | Beta | $900K ARR |
 | **GameGames** | Skill Wagering | Devnet | $600K Revenue |
 | **Trove** | Conditional Access | Live | $500K Revenue |
-| **Combined** | - | - | **$20M+ ARR** |
+| **Combined** | - | - | **$24M+ ARR** |
 
-**Note**: Eudaimonia's network effects create exponential upside. At 100K instances (aggressive 2027), ARR reaches $40M+. At 1M instances (2028), $300M+.
+**Note**: Eudaimonia's network effects create exponential upside. At 100K instances (aggressive 2027), ARR reaches $40M+. At 1M instances (2028), $300M+. Password Palace's three-phase approach (Consumer → API → Enterprise) compounds to $9.1M through natural expansion.
 
 ---
 
@@ -158,15 +158,15 @@ Focusing on AI-forward users, crypto-native communities, security-conscious cons
 | Product | SOM (Moderate) | SOM (Aggressive) | Basis |
 |---------|----------------|------------------|-------|
 | **Eudaimonia** | $13M | $40M | 50K instances (moderate) / 100K instances (aggressive) |
-| Password Palace | $5.4M | $5.4M | 35K paid + 5K enterprise seats |
+| **Password Palace** | $9.1M | $15M | 3-phase: Consumer + API + Enterprise |
 | Forgeground | $900K | $900K | 150K MAU @ $6 ARPU |
 | GameGames | $600K | $600K | $24M wagering volume @ 2.5% |
 | Trove | $500K | $500K | 40K Troves + brand campaigns |
 
-**Combined SOM (2027 Moderate): $20M+ ARR**
-**Combined SOM (2027 Aggressive): $47M+ ARR**
+**Combined SOM (2027 Moderate): $24M+ ARR**
+**Combined SOM (2027 Aggressive): $57M+ ARR**
 
-*Eudaimonia's network effects mean the aggressive scenario compounds: 1M instances by 2028 = $200M+ ARR from Eudaimonia alone.*
+*Eudaimonia's network effects compound to $200M+ ARR at 1M instances. Password Palace's three-phase approach builds enterprise revenue on consumer + API base.*
 
 ### Market Timing
 
@@ -186,30 +186,50 @@ The window is **2026-2028**. After that, either we've established positions or w
 
 ### Password Palace: The Identity Layer
 
-**Mission**: Become the identity standard for the sovereign web
+**Mission**: Become the identity standard for the sovereign web through three phases
 
-**Strategic Position**: Only authentication system combining spatial memory + ZK proofs
+**Strategic Position**: Only authentication system combining spatial memory + ZK proofs, with crypto-native features (wallet-as-a-service, seed phrase storage)
+
+**The Three Phases**:
+```
+PHASE 1: Consumer       PHASE 2: API           PHASE 3: Enterprise
+(Now → Q3 2026)         (Q2 → Q4 2026)         (Q4 2026 → 2027+)
+
+Password manager        OAuth provider         Backend identity
+Seed phrase storage     "Sign in with PP"      verification service
+Wallet-as-a-service     2FA service            Enterprise SSO
+Crypto credentials      Developer APIs         White-label solutions
+
+$3.7M ARR              $2.4M ARR              $3M ARR
+```
 
 | Dimension | Strategy |
 |-----------|----------|
-| **Primary GTM** | OAuth provider adoption → users follow |
+| **Phase 1 GTM** | Crypto communities, seed phrase security messaging |
+| **Phase 2 GTM** | Developer relations, OAuth integrations |
+| **Phase 3 GTM** | Direct enterprise sales, security conferences |
 | **Moat** | 9 modalities, Halo2 circuits, Cosmos integration |
-| **Revenue** | Consumer subscription + Enterprise SSO |
-| **Key Metric** | Weekly Active Authentications |
+| **2027 Revenue** | $9.1M ARR across all phases |
+| **Key Metric** | Monthly Active Palaces → Daily API Auths → Enterprise Seats |
+
+**Pricing**:
+- Premium: $8/mo | Family: $13/mo | Team: $20/user/mo
+- API: First 1,000 calls free, then usage-based
 
 **Why Password Palace Wins**:
-- No secrets transmitted (can't be phished)
-- No biometrics (can't be spoofed)
-- No hardware (can't be stolen)
-- Decentralized verification (can't be revoked)
+- **Crypto-first**: Seed phrase storage, wallet-as-a-service, multi-chain
+- **No secrets transmitted**: Can't be phished, MITM'd, or breached
+- **Natural expansion**: Consumer → API → Enterprise, each phase de-risks the next
+- **Decentralized verification**: No company can revoke your identity
 
 **Critical Milestones**:
 | Milestone | Date | Why Critical |
 |-----------|------|--------------|
 | Security audit | Feb 2026 | Trust prerequisite |
-| Public beta | Mar 2026 | Market validation |
-| 10 OAuth integrations | Jun 2026 | Distribution flywheel |
-| 50K users | Dec 2026 | Scale proof |
+| Public beta | Mar 2026 | Phase 1 market validation |
+| 50 API integrations | Q3 2026 | Phase 2 network effects |
+| First enterprise customers | Q4 2026 | Phase 3 validation |
+| $9.1M ARR | 2027 EOY | All three phases mature |
 
 ---
 
@@ -513,12 +533,14 @@ User has Eudaimonia instance
 | Product | 2026 Q1 | 2026 Q2 | 2026 Q3 | 2026 Q4 | 2027 |
 |---------|---------|---------|---------|---------|------|
 | **Eudaimonia** | $10K | $50K | $150K | $400K | $1.1M/mo |
-| **Password Palace** | $1.5K | $10K | $50K | $150K | $450K/mo |
+| **Password Palace** | $1K | $9K | $37K | $135K | $760K/mo |
 | **GameGames** | $250 | $1.25K | $5K | $12.5K | $50K/mo |
 | **Forgeground** | $0 | $5K | $15K | $30K | $75K/mo |
 | **Trove** | $0 | $0 | $21K | $55K | $100K/mo |
-| **Total MRR** | $11.75K | $66.25K | $241K | $647.5K | $1.78M |
-| **Total ARR** | $141K | $795K | $2.9M | $7.8M | **$21.3M** |
+| **Total MRR** | $11.25K | $65.25K | $228K | $632.5K | $2.1M |
+| **Total ARR** | $135K | $783K | $2.7M | $7.6M | **$25M** |
+
+*Password Palace revenue includes Consumer ($305K/mo) + API ($200K/mo) + Enterprise ($250K/mo) by 2027*
 
 **Eudaimonia Upside Scenarios**:
 | Scenario | 2027 Instances | 2027 ARR | 2028 ARR |

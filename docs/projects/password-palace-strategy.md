@@ -6,333 +6,457 @@
 
 ## Executive Summary
 
-Password Palace is positioned to become the **identity layer for Web3** and a category-defining authentication solution. By combining spatial memory with zero-knowledge proofs, we address the fundamental weakness of every authentication method: the need to share or expose secrets.
+Password Palace is positioned to become the **identity layer for Web3** through a three-phase growth strategy: Consumer → API → Enterprise. By combining spatial memory with zero-knowledge proofs, we address the fundamental weakness of every authentication method: the need to share or expose secrets.
 
 **Strategic thesis**: The identity problem is the root cause of most security failures. Whoever solves self-sovereign identity wins the infrastructure layer of the next internet.
 
+**The Three Phases**:
+1. **Consumer** - Password manager with crypto-native features (wallet-as-a-service, seed phrase storage)
+2. **API** - OAuth provider and 2FA service that other apps integrate
+3. **Enterprise** - Backend identity verification infrastructure
+
 ---
 
-## I. Market & Competition
+## I. The Three-Phase Strategy
+
+### Phase 1: Consumer Password Manager
+
+**Timeline**: Now → Q3 2026
+**Focus**: Build user base with crypto-native password management
+
+```
+┌─────────────────────────────────────────────────────────────────────────┐
+│                    PHASE 1: CONSUMER PASSWORD MANAGER                    │
+├─────────────────────────────────────────────────────────────────────────┤
+│                                                                          │
+│  CORE FEATURES                           CRYPTO FEATURES                 │
+│  ┌─────────────────────────┐            ┌─────────────────────────┐    │
+│  │ • 3D Spatial Palaces    │            │ • Seed Phrase Storage   │    │
+│  │ • 9 Auth Modalities     │            │ • Wallet-as-a-Service   │    │
+│  │ • Browser Extension     │            │ • Multi-chain Support   │    │
+│  │ • Mobile Apps           │            │ • Hardware Wallet Alt   │    │
+│  │ • Secure Vault          │            │ • DeFi Credential Mgmt  │    │
+│  └─────────────────────────┘            └─────────────────────────┘    │
+│                                                                          │
+│  TARGET USERS                                                            │
+│  ┌─────────────────────────────────────────────────────────────────┐   │
+│  │ Crypto Natives • DeFi Users • NFT Collectors • Privacy Advocates│   │
+│  └─────────────────────────────────────────────────────────────────┘   │
+│                                                                          │
+│  REVENUE MODEL                                                           │
+│  ┌─────────────────────────────────────────────────────────────────┐   │
+│  │ Free Tier → Premium ($8/mo) → Family ($13/mo)                   │   │
+│  └─────────────────────────────────────────────────────────────────┘   │
+│                                                                          │
+└─────────────────────────────────────────────────────────────────────────┘
+```
+
+#### Why Crypto-First
+
+| Crypto Pain Point | Password Palace Solution |
+|-------------------|--------------------------|
+| **Seed phrases** | Store in spatial memory, ZK-verified recovery |
+| **Multiple wallets** | Single palace, multiple chains |
+| **Phishing attacks** | Nothing to phish - ZK proofs only |
+| **Hardware wallet cost** | Software solution, same security |
+| **Exchange credentials** | Manage all DeFi/CEX logins |
+| **Inheritance** | Trove integration for succession |
+
+#### Wallet-as-a-Service
+
+Password Palace can generate and manage wallets for users who don't want to handle raw keys:
+
+```
+User creates Palace → Palace derives wallet keys → Keys never leave Palace
+                                ↓
+        User interacts via familiar spatial interface
+                                ↓
+        ZK proofs authorize transactions without exposing keys
+```
+
+This positions PP as the **non-custodial wallet that feels custodial** - best of both worlds.
+
+#### Phase 1 Success Metrics
+
+| Metric | Q2 2026 | Q4 2026 | Q2 2027 |
+|--------|---------|---------|---------|
+| Registered users | 10,000 | 50,000 | 150,000 |
+| Paid subscribers | 1,000 | 10,000 | 35,000 |
+| Seed phrases stored | 5,000 | 30,000 | 100,000 |
+| Wallets managed | 2,000 | 15,000 | 50,000 |
+| MRR | $10K | $150K | $400K |
+
+---
+
+### Phase 2: API & OAuth Platform
+
+**Timeline**: Q2 2026 → Q4 2026
+**Focus**: Become the authentication layer other apps integrate
+
+```
+┌─────────────────────────────────────────────────────────────────────────┐
+│                    PHASE 2: API & OAUTH PLATFORM                         │
+├─────────────────────────────────────────────────────────────────────────┤
+│                                                                          │
+│                         ┌─────────────────┐                             │
+│                         │ PASSWORD PALACE │                             │
+│                         │      API        │                             │
+│                         └────────┬────────┘                             │
+│                                  │                                       │
+│         ┌────────────────────────┼────────────────────────┐             │
+│         │                        │                        │             │
+│         ▼                        ▼                        ▼             │
+│  ┌─────────────┐          ┌─────────────┐          ┌─────────────┐     │
+│  │   OAuth     │          │     2FA     │          │   Verify    │     │
+│  │  Provider   │          │   Service   │          │   Service   │     │
+│  │             │          │             │          │             │     │
+│  │ "Sign in    │          │ Confirm     │          │ Prove       │     │
+│  │  with PP"   │          │ transactions│          │ identity    │     │
+│  └─────────────┘          └─────────────┘          └─────────────┘     │
+│         │                        │                        │             │
+│         └────────────────────────┼────────────────────────┘             │
+│                                  │                                       │
+│                         ┌────────▼────────┐                             │
+│                         │  THIRD-PARTY    │                             │
+│                         │  APPLICATIONS   │                             │
+│                         │                 │                             │
+│                         │ DeFi • Games •  │                             │
+│                         │ Marketplaces •  │                             │
+│                         │ Social • DAOs   │                             │
+│                         └─────────────────┘                             │
+│                                                                          │
+└─────────────────────────────────────────────────────────────────────────┘
+```
+
+#### API Products
+
+| Product | Description | Pricing |
+|---------|-------------|---------|
+| **OAuth Provider** | "Sign in with Password Palace" | First 1,000 calls/mo free, then usage-based |
+| **2FA Service** | ZK-verified second factor for high-value actions | First 1,000 calls/mo free, then usage-based |
+| **Identity Verification** | Prove user is who they claim | Per-verification pricing |
+| **Wallet Connect** | Connect PP-managed wallets to dApps | Transaction-based |
+
+#### Why Apps Will Integrate
+
+| Benefit | Description |
+|---------|-------------|
+| **Reduced fraud** | ZK proofs = no phishable credentials |
+| **Better UX** | Users already have PP accounts |
+| **Compliance** | Audit trail without storing PII |
+| **Conversion** | Lower friction than creating new accounts |
+| **Trust signal** | PP verification = credible user |
+
+#### OAuth Flywheel
+
+```
+More apps integrate PP OAuth
+         │
+         ▼
+More users see "Sign in with Password Palace"
+         │
+         ▼
+More users create PP accounts
+         │
+         ▼
+PP becomes default identity layer
+         │
+         ▼
+More apps want to integrate
+         │
+         └──────► (Network effects compound)
+```
+
+#### Target Integration Partners
+
+| Category | Partners | Priority |
+|----------|----------|----------|
+| **Internal** | Trove, GameGames, Forgeground | Critical |
+| **DeFi** | Uniswap, Aave, Compound, Zapper, DeBank | High |
+| **NFT** | OpenSea, Blur, Magic Eden | High |
+| **Web3 Social** | Lens, Farcaster, Mirror | High |
+| **Gaming** | Immutable, Ronin apps | Medium |
+| **DAOs** | Snapshot, Tally, Commonwealth | Medium |
+| **Dev Tools** | Alchemy, Infura, Moralis | Medium |
+
+#### API Pricing Model
+
+| Tier | Monthly Calls | Price |
+|------|---------------|-------|
+| **Free** | 1,000 | $0 |
+| **Starter** | 10,000 | $49/mo |
+| **Growth** | 100,000 | $199/mo |
+| **Scale** | 1,000,000 | $999/mo |
+| **Enterprise** | Unlimited | Custom |
+
+#### Phase 2 Success Metrics
+
+| Metric | Q3 2026 | Q4 2026 | Q2 2027 |
+|--------|---------|---------|---------|
+| API integrations | 10 | 50 | 200 |
+| Monthly API calls | 100K | 1M | 10M |
+| OAuth daily auths | 1,000 | 10,000 | 100,000 |
+| API MRR | $5K | $50K | $200K |
+
+---
+
+### Phase 3: Enterprise Identity Infrastructure
+
+**Timeline**: Q4 2026 → 2027+
+**Focus**: Backend identity verification for businesses
+
+```
+┌─────────────────────────────────────────────────────────────────────────┐
+│                 PHASE 3: ENTERPRISE IDENTITY INFRASTRUCTURE              │
+├─────────────────────────────────────────────────────────────────────────┤
+│                                                                          │
+│  ┌─────────────────────────────────────────────────────────────────┐   │
+│  │                    ENTERPRISE DEPLOYMENT                         │   │
+│  │                                                                  │   │
+│  │   ┌───────────────┐  ┌───────────────┐  ┌───────────────┐      │   │
+│  │   │   IDENTITY    │  │   ACCESS      │  │   AUDIT       │      │   │
+│  │   │   PROVIDER    │  │   CONTROL     │  │   & COMPLIANCE│      │   │
+│  │   │               │  │               │  │               │      │   │
+│  │   │ Employee SSO  │  │ Role-based    │  │ Full audit    │      │   │
+│  │   │ Customer auth │  │ Permissions   │  │ trail         │      │   │
+│  │   │ Partner access│  │ Time-bounded  │  │ SOC2 ready    │      │   │
+│  │   └───────────────┘  └───────────────┘  └───────────────┘      │   │
+│  │                                                                  │   │
+│  │   ┌───────────────┐  ┌───────────────┐  ┌───────────────┐      │   │
+│  │   │   ON-PREM     │  │   PRIVATE     │  │   WHITE       │      │   │
+│  │   │   DEPLOYMENT  │  │   CLOUD       │  │   LABEL       │      │   │
+│  │   │               │  │               │  │               │      │   │
+│  │   │ Air-gapped    │  │ Dedicated     │  │ Your brand,   │      │   │
+│  │   │ Self-hosted   │  │ infrastructure│  │ our tech      │      │   │
+│  │   └───────────────┘  └───────────────┘  └───────────────┘      │   │
+│  │                                                                  │   │
+│  └─────────────────────────────────────────────────────────────────┘   │
+│                                                                          │
+│  TARGET INDUSTRIES                                                       │
+│  ┌─────────────────────────────────────────────────────────────────┐   │
+│  │ Crypto/Web3 • Financial Services • Healthcare • Government      │   │
+│  └─────────────────────────────────────────────────────────────────┘   │
+│                                                                          │
+└─────────────────────────────────────────────────────────────────────────┘
+```
+
+#### Enterprise Products
+
+| Product | Description | Target |
+|---------|-------------|--------|
+| **PP Enterprise SSO** | Replace Okta/Auth0 with ZK-verified identity | Companies with security focus |
+| **Customer Identity** | Manage customer authentication at scale | B2C platforms |
+| **Backend Verification** | API for identity checks in business processes | Compliance-heavy industries |
+| **Private Deployment** | Dedicated PP infrastructure | Regulated industries |
+| **White Label** | PP technology under customer's brand | Identity-as-a-service providers |
+
+#### Why Enterprises Will Buy
+
+| Enterprise Pain | Password Palace Solution |
+|-----------------|--------------------------|
+| **Breaches** | Nothing to breach - ZK proofs only |
+| **Compliance** | Cryptographic audit trail, no PII storage |
+| **Password resets** | Spatial memory = memorable |
+| **Phishing losses** | Mathematically impossible to phish |
+| **Vendor lock-in** | Decentralized verification |
+| **MFA friction** | Spatial auth is natural, not annoying |
+
+#### Enterprise Pricing
+
+| Tier | Users | Price | Features |
+|------|-------|-------|----------|
+| **Team** | Up to 50 | $20/user/mo | Admin dashboard, audit logs, SSO |
+| **Business** | 50-500 | $15/user/mo | SCIM, compliance reports, SLA |
+| **Enterprise** | 500+ | Custom | Dedicated support, custom integration, on-prem option |
+
+#### Phase 3 Success Metrics
+
+| Metric | Q4 2026 | Q2 2027 | Q4 2027 |
+|--------|---------|---------|---------|
+| Enterprise customers | 5 | 20 | 50 |
+| Enterprise seats | 500 | 5,000 | 25,000 |
+| Enterprise ARR | $100K | $750K | $3M |
+| White label deals | 0 | 2 | 5 |
+
+---
+
+## II. Market & Competition
 
 ### Market Overview
 
 #### Total Addressable Market (TAM)
 
-| Market | Size (2026) | Growth Rate |
-|--------|-------------|-------------|
-| **Identity & Access Management** | $24.1B | 13.2% CAGR |
-| **Password Management** | $3.1B | 15.1% CAGR |
-| **Web3 Identity** | $1.8B | 42% CAGR |
-| **Zero-Knowledge Proofs (Enterprise)** | $650M | 35% CAGR |
+| Market | Size (2026) | Growth Rate | PP Phase |
+|--------|-------------|-------------|----------|
+| **Password Management** | $3.1B | 15.1% CAGR | Phase 1 |
+| **Crypto Custody/Wallets** | $1.5B | 30% CAGR | Phase 1 |
+| **Identity & Access Management** | $24.1B | 13.2% CAGR | Phase 2-3 |
+| **Web3 Identity** | $1.8B | 42% CAGR | Phase 2 |
+| **Enterprise SSO** | $6.5B | 12% CAGR | Phase 3 |
+| **Zero-Knowledge (Enterprise)** | $650M | 35% CAGR | Phase 3 |
 
-**Combined TAM**: ~$29B globally
+**Combined TAM**: ~$37B globally
 
-#### Serviceable Addressable Market (SAM)
+#### Serviceable Market by Phase
 
-Focusing on:
-- Security-conscious consumers (password manager users)
-- Web3 native users (crypto wallet users)
-- Enterprise SSO/authentication buyers
-- Developer platforms needing OAuth providers
-
-**SAM**: ~$8B (users willing to adopt new authentication paradigms)
-
-#### Serviceable Obtainable Market (SOM)
-
-Year 1-2 realistic capture:
-- 50K consumer users @ $60/year average = $3M ARR
-- 10 enterprise customers @ $50K average = $500K ARR
-- Developer OAuth integrations (indirect revenue) = $500K
-
-**SOM (2027)**: $4M ARR
-
-### Target Segments
-
-#### Primary Segments
-
-| Segment | Profile | Pain Points | Willingness to Pay |
-|---------|---------|-------------|-------------------|
-| **Crypto Natives** | Web3 users, DeFi participants, NFT collectors | Seed phrase management, wallet security, phishing attacks | High - already pay for hardware wallets ($100-200) |
-| **Security Professionals** | IT admins, security researchers, privacy advocates | Password fatigue, 2FA friction, compliance requirements | Medium-High - expense accounts |
-| **Developers** | Indie devs, startups building auth | OAuth complexity, user acquisition via login | Medium - will pay for reliable auth |
-| **Privacy Advocates** | Journalists, activists, users in authoritarian regions | Biometric coercion, platform dependence, surveillance | High - privacy is existential |
-
-#### Secondary Segments
-
-| Segment | Profile | Entry Point |
-|---------|---------|-------------|
-| **Gaming** | Competitive gamers, esports | Account security, cross-platform identity |
-| **Enterprise** | SMBs, compliance-heavy industries | SSO replacement, audit requirements |
-| **Inheritance/Estate** | Crypto holders with succession needs | Trove integration for conditional access |
+| Phase | SAM | Rationale |
+|-------|-----|-----------|
+| **Phase 1** | $2B | Crypto users willing to pay for security |
+| **Phase 2** | $3B | Apps needing auth infrastructure |
+| **Phase 3** | $5B | Enterprises seeking ZK-verified identity |
+| **Combined** | $10B | |
 
 ### Competitive Landscape
 
-#### Direct Competitors
+#### Phase 1 Competitors (Consumer)
 
 | Competitor | Approach | Strengths | Weaknesses |
 |------------|----------|-----------|------------|
-| **1Password** | Traditional password manager | UX, market share, enterprise | Still passwords, centralized |
-| **Bitwarden** | Open-source password manager | Trust, price, self-host option | Same fundamental model |
-| **LastPass** | Password manager (freemium) | Awareness | Breach history, trust issues |
-| **Passkeys (FIDO2)** | Device-bound keys | Apple/Google backing | Device-dependent, recovery issues |
-| **Worldcoin** | Biometric identity (iris) | Scale, VC backing | Privacy concerns, centralized orb |
-| **Spruce ID** | Decentralized identity | W3C standards, enterprise | Complex, no consumer product |
+| **1Password** | Traditional password manager | UX, market share | No crypto focus, centralized |
+| **Bitwarden** | Open-source PM | Trust, price | No ZK, no spatial |
+| **Ledger** | Hardware wallet | Security | Hardware-dependent, complex |
+| **MetaMask** | Browser wallet | Ubiquity | Not a full identity solution |
 
-#### Indirect Competitors
+#### Phase 2 Competitors (API)
 
-| Competitor | Why They Matter |
-|------------|-----------------|
-| **Hardware wallets (Ledger, Trezor)** | Solve key custody, not identity |
-| **Sign-in with Google/Apple** | Convenience benchmark |
-| **ENS/Unstoppable Domains** | Web3 identity namespace |
+| Competitor | Approach | Strengths | Weaknesses |
+|------------|----------|-----------|------------|
+| **Auth0** | Identity platform | Developer experience | No ZK, centralized |
+| **Magic** | Passwordless auth | Web3 focused | Email-based, custodial |
+| **Privy** | Web3 onboarding | Good UX | Limited to wallets |
+| **Dynamic** | Wallet auth | Multi-chain | No broader identity |
 
-#### Competitive Positioning Matrix
+#### Phase 3 Competitors (Enterprise)
 
-```
-                        HIGH SECURITY
-                             │
-           ┌─────────────────┼─────────────────┐
-           │                 │                 │
-           │  Hardware       │  PASSWORD       │
-           │  Wallets        │  PALACE         │
-           │                 │    ★            │
-COMPLEX ───┼─────────────────┼─────────────────┼─── SIMPLE
-           │                 │                 │
-           │  Enterprise     │  Sign-in with   │
-           │  SSO            │  Google         │
-           │                 │                 │
-           └─────────────────┼─────────────────┘
-                             │
-                        LOW SECURITY
-```
+| Competitor | Approach | Strengths | Weaknesses |
+|------------|----------|-----------|------------|
+| **Okta** | Enterprise IAM | Market leader | Legacy architecture |
+| **Microsoft Entra** | Enterprise SSO | Bundle with M365 | No ZK innovation |
+| **Ping Identity** | Enterprise identity | Compliance | Complex, expensive |
+| **Worldcoin** | Biometric identity | Scale | Privacy nightmare |
 
-### Positioning & Differentiation
+### Positioning by Phase
 
-#### Core Positioning Statement
-
-> For security-conscious users who need identity they truly own, Password Palace is the only authentication system that combines the memorability of spatial memory with the mathematical guarantees of zero-knowledge proofs, eliminating the need to trust anyone with your credentials.
-
-#### Key Differentiators
-
-| Differentiator | Why It Matters | Proof Points |
-|----------------|----------------|--------------|
-| **No secrets transmitted** | Can't be phished, MITM'd, or breached | ZK proofs verify without revealing |
-| **Human-memorable** | No seed phrases, no recovery codes | Spatial memory is how memory champions work |
-| **Coercion-resistant** | Can't be extracted via $5 wrench attack | Secret exists only in your mind |
-| **Decentralized verification** | No company can revoke your identity | Cosmos blockchain verification |
-| **9 modalities** | Not one-size-fits-all | Different people remember differently |
-
-#### Messaging Pillars
-
-1. **"Your identity should exist in your mind, not in a database"** - Core philosophy
-2. **"The password you can't forget and can't be stolen"** - Consumer benefit
-3. **"Identity infrastructure for the sovereign web"** - Developer/enterprise pitch
-4. **"Built on mathematics, not promises"** - Trust architecture
-
-### SWOT Analysis
-
-| Strengths | Weaknesses |
-|-----------|------------|
-| Novel, defensible technology | New UX paradigm = learning curve |
-| No breach liability (nothing to breach) | Small team, limited resources |
-| Cross-chain potential | Consumer crypto adoption still limited |
-| Aligned with Web3 trends | Requires explaining ZK to mainstream |
-
-| Opportunities | Threats |
-|---------------|---------|
-| Passkey failures create opening | Apple/Google push passkeys hard |
-| Enterprise compliance needs | Regulatory uncertainty |
-| Trove integration = distribution | Better-funded competitor copies approach |
-| OAuth provider = network effects | Market timing (too early?) |
+| Phase | Positioning |
+|-------|-------------|
+| **Phase 1** | "The password manager for crypto" |
+| **Phase 2** | "Sign in with Password Palace" |
+| **Phase 3** | "Identity verification without identity exposure" |
 
 ---
 
-## II. Go-to-Market Strategy
+## III. Pricing & Revenue Model
 
-### Launch Strategy
+### Consumer Pricing (Phase 1)
 
-#### Phase 1: Private Beta (Current - Q1 2026)
+| Tier | Price | Features |
+|------|-------|----------|
+| **Free** | $0 | 1 palace, 10 credentials, web vault |
+| **Premium** | $8/month | Unlimited palaces, all 9 modalities, extension, mobile, seed storage, wallet-as-a-service |
+| **Family** | $13/month | Premium for up to 5 users, shared vaults |
 
-**Goal**: Validate core UX with crypto-native early adopters
+### API Pricing (Phase 2)
 
-| Activity | Target | Success Metric |
-|----------|--------|----------------|
-| Invite-only beta | 500 users | 50% weekly active |
-| Discord community | 1,000 members | Daily engagement |
-| Security researcher program | 10 auditors | No critical findings |
-| Documentation | Complete | <5 support tickets/day |
+| Tier | Monthly Calls | Price | Per-Call After |
+|------|---------------|-------|----------------|
+| **Free** | 1,000 | $0 | - |
+| **Starter** | 10,000 | $49/mo | $0.005 |
+| **Growth** | 100,000 | $199/mo | $0.003 |
+| **Scale** | 1,000,000 | $999/mo | $0.001 |
+| **Enterprise** | Unlimited | Custom | Custom |
 
-#### Phase 2: Public Beta (Q1 2026)
+### Enterprise Pricing (Phase 3)
 
-**Goal**: Achieve product-market fit signal
+| Tier | Users | Price |
+|------|-------|-------|
+| **Team** | Up to 50 | $20/user/mo |
+| **Business** | 50-500 | $15/user/mo |
+| **Enterprise** | 500+ | Custom (typically $10-12/user) |
+| **White Label** | - | $50K+ setup + revenue share |
 
-| Activity | Target | Success Metric |
-|----------|--------|----------------|
-| Open registration | 5,000 users | 25% week-4 retention |
-| Browser extension launch | Chrome + Firefox | 1,000 installs |
-| First OAuth integrations | 5 partners | 100 authentications/week |
-| Press/content campaign | 3 major outlets | 10K site visitors |
+### Competitive Pricing Comparison
 
-#### Phase 3: General Availability (Q2 2026)
+| Product | Free | Consumer | Enterprise |
+|---------|------|----------|------------|
+| 1Password | No | $3/mo | $8/user |
+| Bitwarden | Yes | $10/year | $5/user |
+| LastPass | Yes | $3/mo | $6/user |
+| Auth0 | 7K MAU | Usage-based | Custom |
+| Okta | No | N/A | $6-15/user |
+| **Password Palace** | Yes | $8/mo | $15-20/user |
 
-**Goal**: Revenue and growth
-
-| Activity | Target | Success Metric |
-|----------|--------|----------------|
-| Mobile app launch | iOS + Android | 10K downloads |
-| Enterprise tier | 5 customers | $250K pipeline |
-| 25 OAuth partners | Developer ecosystem | 1,000 daily auths |
-| Mainnet deployment | Cosmos | <1s proof verification |
-
-### User Acquisition Channels
-
-#### Channel Strategy (Priority Order)
-
-| Channel | Strategy | CAC Target | Volume Potential |
-|---------|----------|------------|------------------|
-| **1. Crypto Twitter/X** | Thought leadership, memes, engagement | $5-10 | High |
-| **2. Developer relations** | OAuth adoption drives user signups | $0 (organic) | Medium |
-| **3. Content marketing** | "Why passwords are broken" narrative | $15-20 | High |
-| **4. Podcast appearances** | Crypto/security/tech podcasts | $0 | Medium |
-| **5. Referral program** | Users invite users (1 month Pro free) | $20 | Medium |
-| **6. Security conferences** | DEF CON, ETHDenver, etc. | $50 | Low but high-value |
-
-#### Content Strategy
-
-| Content Type | Frequency | Purpose |
-|--------------|-----------|---------|
-| Technical blog posts | 2/month | SEO, developer trust |
-| "Death of passwords" series | Weekly | Thought leadership |
-| Video demos | 1/month | Reduce friction |
-| Security audits (public) | Quarterly | Trust building |
-
-### Distribution Strategy
-
-#### OAuth Provider as Distribution
-
-The key unlock: **Every OAuth integration is a distribution channel**.
-
-```
-Developer integrates PP OAuth
-         │
-         ▼
-Their users see "Sign in with Password Palace"
-         │
-         ▼
-Users create PP accounts
-         │
-         ▼
-Use PP across all integrated apps
-         │
-         ▼
-Network effects compound
-```
-
-**Target OAuth Partners**:
-- Trove (internal)
-- GameGames (internal)
-- DeFi dashboards (Zapper, DeBank)
-- NFT marketplaces
-- Web3 social (Lens, Farcaster apps)
-- Developer tools (Replit, Vercel)
-
-#### Platform Strategy
-
-| Platform | Priority | Rationale |
-|----------|----------|-----------|
-| **Chrome Extension** | Critical | Where users authenticate |
-| **Firefox Extension** | High | Privacy-focused users |
-| **iOS App** | High | Mobile authentication |
-| **Android App** | Medium | Broader reach |
-| **CLI Tool** | Low | Developer niche |
-
-### Partnership Strategy
-
-#### Strategic Partnerships
-
-| Partner Type | Target Partners | Value Exchange |
-|--------------|-----------------|----------------|
-| **Wallets** | Phantom, Keplr, Metamask | PP as backup recovery option |
-| **Chains** | Cosmos Hub, Osmosis | Native identity layer |
-| **DeFi** | Uniswap, Aave | Secure authentication |
-| **Enterprise** | Cloudflare, Auth0 | SSO integration |
-
-#### Integration Partnerships
-
-| Partner Type | Target | Approach |
-|--------------|--------|----------|
-| **Password manager migrations** | 1Password, Bitwarden | Import tools |
-| **Developer platforms** | Vercel, Netlify | Starter templates |
-| **Crypto exchanges** | Kraken, Coinbase | 2FA alternative |
-
-### Community Building
-
-#### Community Channels
-
-| Channel | Purpose | Target Size (Y1) |
-|---------|---------|------------------|
-| **Discord** | Support, feedback, community | 5,000 |
-| **Twitter/X** | Announcements, engagement | 10,000 |
-| **Developer forum** | Technical discussion | 500 active |
-| **GitHub** | Open-source engagement | 1,000 stars |
-
-#### Community Programs
-
-| Program | Description | Incentive |
-|---------|-------------|-----------|
-| **Beta Testers** | Early access, feedback | Free Pro for life |
-| **Security Researchers** | Bug bounty program | $500-$10K per bug |
-| **OAuth Partners** | Early integration support | Co-marketing |
-| **Ambassadors** | Regional community leaders | Revenue share |
+**Premium pricing justified by**: ZK proofs, crypto features, decentralized verification, no breach liability
 
 ---
 
-## III. Monetization Strategy
+## IV. Financial Projections
 
-### Revenue Model
+### Revenue by Phase
 
-#### Consumer Tiers
+```
+2026                                    2027
+├──────────────────────────────────────┼──────────────────────────────────►
 
-| Tier | Price | Features | Target Segment |
-|------|-------|----------|----------------|
-| **Free** | $0 | 1 palace, 3 credentials, web vault | Trial/light users |
-| **Pro** | $5/month ($48/year) | Unlimited palaces, all modalities, extension, mobile | Power users |
-| **Family** | $10/month | Pro for up to 5 users, shared vaults | Households |
+                                        ┌─────────────────────────
+                                       ╱│ PHASE 3: Enterprise
+                                      ╱ │ $3M ARR
+                                     ╱  │
+                          ┌─────────╱   │
+                         ╱│ PHASE 2:    │ API
+                        ╱ │ API         │ $2.4M ARR
+                       ╱  │ $600K       │
+            ┌─────────╱   │             │
+           ╱│ PHASE 1:    │             │
+          ╱ │ Consumer    │             │ Consumer
+         ╱  │ $1.8M       │             │ $4M ARR
+        ╱   │             │             │
+───────╱────┴─────────────┴─────────────┴─────────────────────────────────
 
-#### Enterprise Tiers
+Q1     Q2         Q3         Q4         Q1    Q2    Q3    Q4
+2026   2026       2026       2026       2027  2027  2027  2027
+```
 
-| Tier | Price | Features | Target |
-|------|-------|----------|--------|
-| **Team** | $8/user/month | Admin dashboard, audit logs, SSO | Startups (5-50) |
-| **Business** | $15/user/month | SCIM, compliance reports, SLA | SMB (50-500) |
-| **Enterprise** | Custom | Dedicated support, custom integrations | Large orgs (500+) |
+### Detailed Projections
 
-#### Developer/API Revenue
+#### Phase 1: Consumer Revenue
 
-| Product | Price | Use Case |
-|---------|-------|----------|
-| **OAuth Provider** | Free (up to 1K MAU), then $0.001/auth | Third-party login |
-| **API Access** | $99/month + usage | Programmatic authentication |
-| **White Label** | Custom | Rebranded PP for enterprises |
+| Metric | Q1 2026 | Q2 2026 | Q3 2026 | Q4 2026 | 2027 EOY |
+|--------|---------|---------|---------|---------|----------|
+| Free users | 2,000 | 10,000 | 30,000 | 60,000 | 200,000 |
+| Premium ($8) | 100 | 800 | 3,000 | 8,000 | 30,000 |
+| Family ($13) | 20 | 150 | 500 | 1,500 | 5,000 |
+| Conversion rate | 6% | 9% | 11% | 15% | 17% |
+| Consumer MRR | $1K | $8K | $30K | $85K | $305K |
+| Consumer ARR | $12K | $100K | $360K | $1M | $3.7M |
 
-### Pricing Strategy
+#### Phase 2: API Revenue
 
-#### Pricing Philosophy
+| Metric | Q2 2026 | Q3 2026 | Q4 2026 | 2027 EOY |
+|--------|---------|---------|---------|----------|
+| API integrations | 5 | 25 | 75 | 250 |
+| Monthly API calls | 50K | 500K | 2M | 20M |
+| Paid API customers | 3 | 15 | 50 | 150 |
+| API MRR | $500 | $5K | $30K | $200K |
+| API ARR | $6K | $60K | $360K | $2.4M |
 
-1. **Free tier must be useful** - Not just a trial, actual value
-2. **Pro is the hero tier** - Where most users should land
-3. **Enterprise is relationship-based** - Custom pricing, high-touch sales
+#### Phase 3: Enterprise Revenue
 
-#### Competitive Pricing Analysis
+| Metric | Q3 2026 | Q4 2026 | 2027 EOY |
+|--------|---------|---------|----------|
+| Enterprise customers | 2 | 8 | 40 |
+| Total seats | 100 | 800 | 10,000 |
+| Avg deal size | $10K | $15K | $25K |
+| Enterprise MRR | $2K | $20K | $250K |
+| Enterprise ARR | $20K | $240K | $3M |
 
-| Product | Free | Pro Equivalent | Enterprise |
-|---------|------|----------------|------------|
-| 1Password | None | $3/month | $8/user |
-| Bitwarden | Yes (generous) | $10/year | $5/user |
-| LastPass | Yes (limited) | $3/month | $6/user |
-| **Password Palace** | Yes | $5/month | $15/user |
+#### Combined Revenue
 
-**Rationale for premium pricing**: Novel technology, zero-knowledge guarantees, decentralized verification justify premium over traditional password managers.
+| Metric | Q1 2026 | Q2 2026 | Q3 2026 | Q4 2026 | 2027 EOY |
+|--------|---------|---------|---------|---------|----------|
+| **Consumer ARR** | $12K | $100K | $360K | $1M | $3.7M |
+| **API ARR** | $0 | $6K | $60K | $360K | $2.4M |
+| **Enterprise ARR** | $0 | $0 | $20K | $240K | $3M |
+| **Total ARR** | $12K | $106K | $440K | $1.6M | **$9.1M** |
 
 ### Unit Economics
 
@@ -340,92 +464,181 @@ Network effects compound
 
 | Metric | Value | Notes |
 |--------|-------|-------|
-| **CAC (blended)** | $25 | Weighted across channels |
-| **ARPU (monthly)** | $4.50 | Mix of free/Pro/Family |
-| **Gross margin** | 85% | Primarily infra costs |
-| **LTV** | $108 | 24-month avg lifetime |
-| **LTV:CAC** | 4.3:1 | Healthy ratio |
-| **Payback period** | 5.5 months | |
+| **CAC** | $20 | Crypto community = efficient |
+| **ARPU** | $7.50/mo | Mix of tiers |
+| **Gross margin** | 85% | Infra + ZK compute |
+| **LTV** | $135 | 18-month lifetime |
+| **LTV:CAC** | 6.75:1 | Strong |
+| **Payback** | 2.7 months | Fast |
+
+#### API Economics
+
+| Metric | Value | Notes |
+|--------|-------|-------|
+| **Integration CAC** | $500 | Developer relations |
+| **Avg MRR/integration** | $150 | Mix of tiers |
+| **Gross margin** | 80% | Compute costs |
+| **LTV** | $3,600 | 24-month avg |
+| **LTV:CAC** | 7.2:1 | Excellent |
 
 #### Enterprise Economics
 
 | Metric | Value | Notes |
 |--------|-------|-------|
 | **CAC** | $5,000 | Sales-driven |
-| **ACV** | $15,000 | 50-user average deal |
-| **Gross margin** | 80% | Support costs higher |
-| **LTV** | $45,000 | 3-year avg contract |
-| **LTV:CAC** | 9:1 | Enterprise is profitable |
-
-### Revenue Projections
-
-#### Conservative Scenario
-
-| Metric | 2026 Q1 | 2026 Q2 | 2026 Q3 | 2026 Q4 | 2027 |
-|--------|---------|---------|---------|---------|------|
-| **Free users** | 2,000 | 8,000 | 25,000 | 50,000 | 150,000 |
-| **Paid users** | 200 | 1,000 | 4,000 | 10,000 | 35,000 |
-| **Enterprise seats** | 0 | 100 | 500 | 1,500 | 5,000 |
-| **MRR** | $1.5K | $10K | $50K | $150K | $450K |
-| **ARR** | $18K | $120K | $600K | $1.8M | $5.4M |
-
-#### Optimistic Scenario (Network Effects Kick In)
-
-| Metric | 2026 | 2027 |
-|--------|------|------|
-| **ARR** | $3M | $15M |
-| **Paid users** | 25,000 | 150,000 |
-| **Enterprise seats** | 5,000 | 25,000 |
-
-### Path to Profitability
-
-#### Cost Structure (Monthly at Scale)
-
-| Category | Amount | % of Revenue |
-|----------|--------|--------------|
-| **Infrastructure** | $15K | 10% |
-| **Team (5 FTE)** | $75K | 50% |
-| **Marketing** | $30K | 20% |
-| **Security/Audits** | $15K | 10% |
-| **Legal/Compliance** | $7.5K | 5% |
-| **Other** | $7.5K | 5% |
-| **Total** | $150K | 100% |
-
-#### Profitability Timeline
-
-- **Break-even MRR**: $175K
-- **Target date**: Q3 2026
-- **Path**: Enterprise contracts + Pro conversion optimization
+| **ACV** | $75,000 | Growing deal sizes |
+| **Gross margin** | 75% | Support costs |
+| **LTV** | $225,000 | 3-year contracts |
+| **LTV:CAC** | 45:1 | Highly profitable |
 
 ---
 
-## IV. Strategic Risks & Mitigations
+## V. Go-to-Market Strategy
+
+### Phase 1 GTM: Consumer Acquisition
+
+#### Channels
+
+| Channel | Strategy | CAC | Priority |
+|---------|----------|-----|----------|
+| **Crypto Twitter** | Thought leadership, seed phrase memes | $5-10 | Critical |
+| **DeFi communities** | Discord presence, tutorials | $10-15 | High |
+| **Content marketing** | "Stop using seed phrases" narrative | $15-20 | High |
+| **Influencer partnerships** | Crypto YouTubers, podcasters | $20-30 | Medium |
+| **Referral program** | 1 month free for referrals | $15 | Medium |
+
+#### Key Messages
+
+1. **"Your seed phrase belongs in a palace, not a drawer"**
+2. **"The last password manager you'll ever need"**
+3. **"Wallet security without the hardware"**
+
+### Phase 2 GTM: Developer Adoption
+
+#### Channels
+
+| Channel | Strategy | Priority |
+|---------|----------|----------|
+| **Developer relations** | Docs, SDKs, sample apps | Critical |
+| **Hackathon sponsorships** | ETHGlobal, etc. | High |
+| **Integration partnerships** | Co-marketing with early adopters | High |
+| **Technical content** | "How to add PP auth in 10 minutes" | High |
+| **Developer community** | Discord, forum, GitHub | Medium |
+
+#### Key Messages
+
+1. **"Add 'Sign in with Password Palace' in 10 minutes"**
+2. **"Auth that can't be phished"**
+3. **"Your users already have Password Palace"**
+
+### Phase 3 GTM: Enterprise Sales
+
+#### Channels
+
+| Channel | Strategy | Priority |
+|---------|----------|----------|
+| **Direct sales** | Outbound to security-focused companies | Critical |
+| **Security conferences** | DEF CON, RSA, etc. | High |
+| **Channel partners** | Security consultants, SIs | Medium |
+| **Analyst relations** | Gartner, Forrester coverage | Medium |
+| **Case studies** | Document enterprise wins | High |
+
+#### Key Messages
+
+1. **"Identity verification without identity exposure"**
+2. **"The IAM solution that can't be breached"**
+3. **"Zero-knowledge compliance"**
+
+---
+
+## VI. Risk Analysis
+
+### Phase-Specific Risks
+
+| Phase | Risk | Likelihood | Impact | Mitigation |
+|-------|------|------------|--------|------------|
+| **Phase 1** | Crypto winter reduces TAM | Medium | High | Non-crypto features too |
+| **Phase 1** | Hardware wallet competition | Medium | Medium | Software convenience |
+| **Phase 2** | Slow API adoption | Medium | High | Strong consumer base first |
+| **Phase 2** | Big tech launches competing | Medium | High | ZK differentiation |
+| **Phase 3** | Long enterprise sales cycles | High | Medium | Land-and-expand strategy |
+| **Phase 3** | Compliance requirements | Medium | Medium | SOC2, audits early |
+
+### Cross-Phase Risks
 
 | Risk | Likelihood | Impact | Mitigation |
 |------|------------|--------|------------|
 | Passkeys win mindshare | Medium | High | Position as "passkeys done right" |
-| ZK proof performance issues | Low | High | Continuous optimization, fallback modes |
-| Regulatory pressure on crypto | Medium | Medium | Custodial option, fiat payments |
-| User confusion (new paradigm) | High | Medium | Extensive onboarding, tutorials |
-| Security vulnerability | Low | Critical | Bug bounty, audits, gradual rollout |
+| ZK performance issues | Low | High | Continuous optimization |
+| Security vulnerability | Low | Critical | Audits, bug bounty |
+| User confusion | High | Medium | Extensive onboarding |
 
 ---
 
-## V. Key Metrics to Track
+## VII. Key Metrics
 
-### North Star Metric
+### North Star Metrics by Phase
 
-**Weekly Active Authentications (WAA)** - Measures actual usage, not just signups
+| Phase | North Star | Why |
+|-------|------------|-----|
+| **Phase 1** | Monthly Active Palaces | Measures real usage |
+| **Phase 2** | Daily API Authentications | Network effect indicator |
+| **Phase 3** | Enterprise Seats | Revenue driver |
 
-### Supporting Metrics
+### Dashboard Metrics
 
-| Category | Metric | Target (2026 EOY) |
-|----------|--------|-------------------|
-| **Acquisition** | Weekly signups | 2,000 |
-| **Activation** | Palace created (% of signups) | 60% |
-| **Retention** | Week-4 retention | 40% |
-| **Revenue** | MRR | $150K |
-| **Referral** | Viral coefficient | 0.3 |
+| Category | Metric | Q4 2026 Target | 2027 Target |
+|----------|--------|----------------|-------------|
+| **Acquisition** | New signups/week | 3,000 | 8,000 |
+| **Activation** | Palace created (%) | 65% | 75% |
+| **Retention** | Month-3 retention | 50% | 60% |
+| **Consumer Revenue** | MRR | $85K | $305K |
+| **API** | Monthly calls | 2M | 20M |
+| **API Revenue** | MRR | $30K | $200K |
+| **Enterprise** | Customers | 8 | 40 |
+| **Enterprise Revenue** | ARR | $240K | $3M |
+| **Total ARR** | | $1.6M | $9.1M |
+
+---
+
+## VIII. Roadmap Summary
+
+```
+2026 Q1         Q2              Q3              Q4              2027
+   │             │               │               │               │
+   │ ┌─────────────────────────────────────────────────────────────┐
+   │ │ PHASE 1: CONSUMER                                           │
+   │ │ • Public beta      • Mobile apps       • Wallet-as-service │
+   │ │ • Extension v1     • Seed storage      • Multi-chain       │
+   │ └─────────────────────────────────────────────────────────────┘
+   │             │               │               │               │
+   │             │ ┌─────────────────────────────────────────────────┐
+   │             │ │ PHASE 2: API                                    │
+   │             │ │ • OAuth beta       • 2FA service   • 200 integ │
+   │             │ │ • First 10 apps    • API pricing   • 20M calls │
+   │             │ └─────────────────────────────────────────────────┘
+   │             │               │               │               │
+   │             │               │ ┌─────────────────────────────────┐
+   │             │               │ │ PHASE 3: ENTERPRISE             │
+   │             │               │ │ • First customers  • 40 ent    │
+   │             │               │ │ • Team tier        • SOC2      │
+   │             │               │ └─────────────────────────────────┘
+   │             │               │               │               │
+```
+
+---
+
+## IX. The Opportunity
+
+Password Palace has a **natural expansion path** that compounds:
+
+1. **Phase 1 builds the user base** - Every crypto user needs seed phrase security
+2. **Phase 2 leverages that base** - Apps integrate to access PP users
+3. **Phase 3 leverages Phase 2** - Enterprises see API traction and want dedicated solution
+
+Each phase de-risks the next. Consumer traction proves the UX. API adoption proves market demand. Enterprise revenue proves unit economics.
+
+**By 2027 EOY**: $9.1M ARR across all three phases, with enterprise providing the growth engine for 2028+.
 
 ---
 
