@@ -1,24 +1,44 @@
 # CLAUDE.md
 
-This file provides context for Claude Code when working on this repository.
+Context for Claude Code when working on this repository.
 
 ## Project Overview
 
-Rising Sun is a developer portfolio website with a retro terminal/CRT aesthetic. Built with Next.js 14 (App Router), TypeScript, and Tailwind CSS.
+Rising Sun is a **developer portfolio and business showcase** with a retro terminal/CRT aesthetic. It presents a suite of projects unified by a mission: *an internet where users are safe, AIs are allies, and power is decentralized*.
+
+**Stack**: Next.js 14 (App Router) + TypeScript + Tailwind CSS
 
 ## Quick Reference
 
 ```bash
-npm run dev      # Start dev server at localhost:3000
+npm run dev      # Dev server at localhost:3000
 npm run build    # Production build
 npm run lint     # ESLint check
 ```
 
-## Architecture
+## Live Products
 
-- **No database** - All content in `src/data/projects.ts` and `src/data/updates.ts`
-- **Static generation** - All pages can be statically generated
-- **Client/Server split** - Interactive effects (boot, cursor, CRT) in ClientLayout; most UI is server-rendered
+| Project | URL | Status |
+|---------|-----|--------|
+| Password Palace | [passwordpalace.com](https://passwordpalace.com) | Private Beta |
+| Trove | [trove.website](https://trove.website) | Live |
+| GameGames | [gamegames.gg](https://gamegames.gg) | Devnet |
+| Eudaimonia | [aios.design](https://aios.design) | Alpha |
+| Forgeground | [forgeground.online](https://forgeground.online) | Beta |
+
+## Site Structure
+
+```
+/                 # Homepage - featured projects + updates
+/manifesto        # Philosophy, principles, vision
+/roadmap          # Timeline, milestones, metrics
+/projects         # All projects list
+/projects/[slug]  # Project detail pages
+/about            # About page
+/contact          # Contact info
+/updates          # Blog/updates list
+/updates/[slug]   # Update detail pages
+```
 
 ## Key Files
 
@@ -26,29 +46,67 @@ npm run lint     # ESLint check
 |---------|------|
 | Root layout | `src/app/layout.tsx` |
 | Homepage | `src/app/page.tsx` |
+| **Manifesto page** | `src/app/manifesto/page.tsx` |
+| **Roadmap page** | `src/app/roadmap/page.tsx` |
 | Global styles | `src/app/globals.css` |
-| Tailwind config | `tailwind.config.ts` |
 | Projects data | `src/data/projects.ts` |
 | Updates data | `src/data/updates.ts` |
-| Client wrapper | `src/components/ClientLayout.tsx` |
+| Navigation | `src/components/Header.tsx` |
+
+## Documentation Structure
+
+```
+docs/
+├── README.md              # Vision overview
+├── MANIFESTO.md           # Philosophy (source for /manifesto)
+├── TECHNOLOGY_THESIS.md   # Technical deep-dive (734 lines)
+├── ROADMAP.md             # Timeline (source for /roadmap)
+├── STRATEGY.md            # Business strategy
+├── projects/              # Per-project docs
+│   ├── {project}.md       # Business overview
+│   └── {project}-strategy.md
+└── one-pagers/            # Investor materials
+    └── {project}.md
+```
+
+## Architecture
+
+- **No database** - Content in `src/data/` TypeScript files
+- **Static generation** - All pages SSG-compatible
+- **Client/Server split** - Effects in ClientLayout; UI is server-rendered
+- **Docs as source** - `docs/MANIFESTO.md` informs `/manifesto` page content
 
 ## Design System
 
-**Colors** (use `terminal-` prefix in Tailwind):
-- `terminal-green` (#00ff41) - Primary accent
-- `terminal-amber` (#ffb000) - Secondary accent
-- `terminal-cyan` (#00d4ff) - Links, info
-- `terminal-black` (#0a0a0a) - Background
-- `terminal-white` (#e0e0e0) - Text
+**Colors** (Tailwind `terminal-*` prefix):
+| Token | Hex | Usage |
+|-------|-----|-------|
+| `terminal-green` | #00ff41 | Primary accent, active states |
+| `terminal-amber` | #ffb000 | Secondary accent, headings |
+| `terminal-cyan` | #00d4ff | Links, info |
+| `terminal-black` | #0a0a0a | Background |
+| `terminal-white` | #e0e0e0 | Text |
+| `terminal-white-dim` | #808080 | Muted text |
 
-**Glow effects**: `.glow-green`, `.glow-amber`, `.glow-cyan`
+**Effects**: `.glow-green`, `.glow-amber`, `.glow-cyan`
 
 **Font**: JetBrains Mono (monospace throughout)
+
+## Components
+
+| Component | Type | Usage |
+|-----------|------|-------|
+| `ASCIIBorder` | Server | `<ASCIIBorder variant="single\|double">` |
+| `ClientLayout` | Client | Wraps app with boot, CRT, cursor |
+| `BootSequence` | Client | BIOS startup (skippable, session-cached) |
+| `CRTEffect` | Client | Scanlines + vignette overlay |
+| `CustomCursor` | Client | Block cursor following mouse |
+| `ProjectCard` | Server | Project preview with status badge |
 
 ## Adding Content
 
 ### New Project
-Edit `src/data/projects.ts`, add to the `projects` array:
+Edit `src/data/projects.ts`:
 ```typescript
 {
   slug: "my-project",
@@ -58,36 +116,41 @@ Edit `src/data/projects.ts`, add to the `projects` array:
   longDescription: `Markdown content...`,
   status: "active" | "beta" | "coming-soon",
   tags: ["tag1", "tag2"],
-  links: [{ label: "GitHub", url: "https://..." }],
+  links: [{ label: "Website", url: "https://..." }],
   featured: true | false
 }
 ```
 
-### New Update/Blog Post
-Edit `src/data/updates.ts`, add to the `updates` array:
+### New Documentation
+Add to `docs/projects/` for business docs, `docs/one-pagers/` for investor materials.
+
+## Navigation
+
+Current nav structure in `Header.tsx`:
 ```typescript
-{
-  slug: "update-slug",
-  title: "Update Title",
-  date: "2025-01-20",
-  excerpt: "Short excerpt",
-  content: `Markdown content...`,
-  projects: ["related-project-slug"]
-}
+const navLinks = [
+  { href: "/", label: "home" },
+  { href: "/manifesto", label: "manifesto" },
+  { href: "/roadmap", label: "roadmap" },
+  { href: "/projects", label: "projects" },
+  { href: "/about", label: "about" },
+  { href: "/contact", label: "contact" },
+];
 ```
 
-## Component Patterns
+## Mission Context
 
-- **Server components** (default): No "use client" directive
-- **Client components**: Add "use client" at top, used for interactivity
-- **ASCII borders**: Use `<ASCIIBorder variant="single|double">`
-- **Glitch on hover**: Add `glitch-hover` class
-- **Status badges**: active=green, beta=amber, coming-soon=cyan
+When working on this site, keep in mind the core thesis:
 
-## Visual Effects
+1. **User Safety** - Technology protected by math, not promises (ZK proofs)
+2. **AI as Ally** - AI that serves users, not platforms
+3. **Decentralization** - No single point of failure or control
 
-All CRT/retro effects are in `globals.css`:
-- Boot sequence plays once per session (sessionStorage)
-- Press any key to skip boot
-- Custom block cursor follows mouse
-- Scanlines + vignette overlay on everything
+The manifesto and roadmap pages are central to communicating this vision.
+
+## File Counts
+
+- Components: 14
+- Pages: 9
+- Documentation: 21 files
+- Total source: 24 files
