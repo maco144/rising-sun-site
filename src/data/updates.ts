@@ -45,6 +45,49 @@ These changes significantly improve the security posture ahead of the planned pu
     projects: ["password-palace"],
   },
   {
+    slug: "gamegames-capture-game-detection",
+    title: "GameGames Capture: Automatic Game Detection and End-State Monitoring",
+    date: "2026-01-25",
+    excerpt:
+      "The GG Capture tool now automatically detects which game you're playing and monitors for match end-states to trigger screenshot capture.",
+    content: `Major update to GG Capture, the desktop companion app for GameGames wager verification.
+
+## Phase 1: Game Detection
+
+GG Capture can now automatically detect which game you're playing:
+
+- **Process & window detection** - Monitors running processes and window titles
+- **10+ games supported** - Chess.com, Lichess, TETR.IO, card games, and more
+- **Cross-platform** - Win32, X11 (Linux), and AppleScript (macOS) support
+- **Background monitoring** - Emits \`game:changed\` events when you switch games
+- **Wager validation** - Ensures your wager matches the detected game
+
+## Phase 2: End-State Detection
+
+The app now knows when your game ends:
+
+- **Game-specific adapters** - Custom detection for Chess, TETR.IO, card games
+- **Visual recognition** - Color and pattern-based end-state detection
+- **Confidence scoring** - Reports how certain it is about the outcome
+- **Auto-capture** - Optionally captures screenshots automatically at game end
+
+## UI Updates
+
+- Shows detected game in both minimized and expanded views
+- End-state indicator displays outcome and confidence level
+- Toggle controls for monitoring and auto-capture features
+- Capture button disabled when no supported game is detected
+
+## Why This Matters
+
+This moves GameGames closer to fully automated verification. Instead of manually screenshotting, the app detects your game, waits for it to end, captures the result, and submits for AI verification—all automatically.
+
+## What's Next
+
+Integration with the AI verification oracle for end-to-end automated wager settlement.`,
+    projects: ["gamegames"],
+  },
+  {
     slug: "eudaimonia-v37-release",
     title: "Eudaimonia V37: 30 Specialists and Nous Validation",
     date: "2026-01-25",
