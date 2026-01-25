@@ -36,17 +36,11 @@ export default function HomePage() {
 
       {/* Featured Projects */}
       <section className="mb-16">
-        <div className="flex items-center justify-between mb-6">
+        <div className="mb-6">
           <h2 className="text-xl font-semibold glitch-hover">
             <span className="text-terminal-gray">{">"}</span>{" "}
             <span className="text-terminal-amber glow-amber">Featured Projects</span>
           </h2>
-          <Link
-            href="/projects"
-            className="text-sm text-terminal-white-dim hover:text-terminal-green hover:glow-green transition-all"
-          >
-            [view all]
-          </Link>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {featuredProjects.map((project, index) => (
