@@ -45,6 +45,72 @@ These changes significantly improve the security posture ahead of the planned pu
     projects: ["password-palace"],
   },
   {
+    slug: "forgeground-melee-combat-creator",
+    title: "Forgeground: Melee Combat System and Massive Creator Expansion",
+    date: "2026-01-25",
+    excerpt:
+      "23 commits add a full melee combat system with blocking, parrying, and combos, plus 96 new creator components and three new genre modes.",
+    content: `Huge week for Forgeground with 23 commits delivering melee combat, an expanded creator system, and new genre modes.
+
+## Melee Combat System
+
+A complete melee combat overhaul:
+
+- **Attack phases** - Windup, active, and recovery frames for each attack
+- **Blocking** - Damage reduction with perfect block windows
+- **Parrying** - Precise timing for counter-stuns and invincibility frames
+- **Combo chains** - 5 combo patterns with finisher bonuses
+- **Stamina system** - Attack costs and blocking drain
+- **Poise/stagger** - Break through guards with sustained pressure
+- **10 melee attacks** - Each with unique timing and damage profiles
+- **Directional attacks** - High, mid, and low targeting
+
+The Blade weapon now uses the full combat system with HUD elements for stamina, poise, combo counter, and timing indicators.
+
+## Creator System Expansion
+
+96 new components for weapon and ability creation:
+
+| Category | New Components |
+|----------|----------------|
+| Weapon Frames | +12 (twin, flak, coil, shard, torch, lance, needle, grenade, minigun, crossbow, cannon, sidearm) |
+| Delivery Systems | +14 (boomerang, drill, cone, mines, turret, orb, tether, volley, melee-spin, vortex, mortar, swarm) |
+| Damage Types | +10 (quantum, radiation, sonic, psychic, holy, necrotic, plasma, gravity, temporal, chemical) |
+| Effect Modifiers | +22 (magnetic, volatile, weaken, marked, blind, silence, overcharge, executioner, momentum, soul-harvest) |
+| Physics Fields | +10 (void, stasis, chaos, repulsion, attraction, distortion, acceleration, reversal) |
+| Ability Effects | +28 (teleport, wall-run, phase-walk, lunge, missiles, chain-lightning, singularity, and more) |
+
+## New Genre Modes
+
+Three complete genre configurations for the cross-genre game system:
+
+**Cards (Tactical Summoner)**
+- 10 mana pool with regen, 7-card hand, 5-creature board
+- 22-second phase cycle for strategic play
+- Mouse-driven card play with creature commanding
+
+**Rhythm (Beat Warrior)**
+- 4-lane note highway (D/F/J/K inputs)
+- Timing bonuses: Perfect (1.5x), Good (1.25x), OK (1.0x)
+- Flow meter and combo system with uncapped scaling
+- Dynamic BPM (90-150) adapts to combat intensity
+
+**Racing**
+- Full racing mechanics integrated with combat
+
+## Game Feel Improvements
+
+- **Movement feel** - Landing impact, head bob, slide tilt
+- **Hit feedback** - Hit types, hitstop, and screen effects
+- **Weapon recoil** - Per-weapon recoil patterns
+- **Retro-futuristic visuals** - Complete visual redesign for all modes
+
+## AI Updates
+
+Melee combat AI with blocking, parrying, and combo behaviors for NPCs.`,
+    projects: ["forgeground"],
+  },
+  {
     slug: "gamegames-capture-game-detection",
     title: "GameGames Capture: Automatic Game Detection and End-State Monitoring",
     date: "2026-01-25",
