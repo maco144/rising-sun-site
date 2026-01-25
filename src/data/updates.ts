@@ -9,278 +9,166 @@ export interface Update {
 
 export const updates: Update[] = [
   {
-    slug: "password-palace-v2-launch",
-    title: "Password Palace v2.0 Launches with Team Features",
-    date: "2025-01-15",
+    slug: "project-index-finalized",
+    title: "Project Index and Documentation Complete",
+    date: "2026-01-24",
     excerpt:
-      "Major release introducing secure team password sharing, improved browser extensions, and a redesigned vault interface.",
-    content: `We're thrilled to announce Password Palace v2.0, our biggest update yet. This release focuses on team collaboration while maintaining our commitment to zero-knowledge security.
+      "All five Rising Sun products now have comprehensive documentation, strategy guides, and investor materials ready.",
+    content: `The Rising Sun documentation suite is now complete. Every product in the portfolio has detailed strategy documentation and investor-ready materials.
 
-## What's New
+## What's Included
 
-### Team Sharing
-Share passwords securely with team members without ever exposing the actual credentials. Each team member's vault remains encrypted with their own key, and shared items are re-encrypted for each recipient.
+### Strategy Documentation
+Each product now has a dedicated strategy document covering:
+- Three-phase development approach
+- Market positioning and competitive analysis
+- Revenue models and projections
+- Technical architecture decisions
 
-### Redesigned Vault Interface
-The new vault UI is faster, more intuitive, and supports keyboard navigation throughout. Power users will love the new command palette (Ctrl/Cmd + K).
+### Investor One-Pagers
+Professional one-pagers created for:
+- **Password Palace** - Self-sovereign identity via spatial memory + ZK proofs
+- **Trove** - Programmable conditional access to digital value
+- **GameGames** - Trustless skill wagering with AI verification
+- **Eudaimonia** - AI Operating System with hivemind coordination
+- **Forgeground** - Browser-based competitive FPS
+- **Rising Sun Portfolio** - Combined investment thesis
 
-### Improved Browser Extensions
-All browser extensions have been rebuilt from the ground up:
-- Faster autofill
-- Better site detection
-- Biometric unlock support
-- Inline password generator
+## GameGames Indie Developer Program
+Also announced: the Indie Developer Program with split rake economics. Indie developers can integrate their games with GameGames and earn 60% of the rake on their games.
 
-## Migration Guide
-
-Existing users will be automatically migrated to v2.0. Your vault remains encrypted and secure throughout the process.
-
-## What's Next
-
-We're already working on v2.1, which will include:
-- Hardware key support (YubiKey, etc.)
-- Emergency access feature
-- Password health dashboard improvements
-
-Thank you to everyone who provided feedback during the beta. Your input shaped this release.`,
-    projects: ["password-palace"],
+## Access the Docs
+All documentation is available in the [docs/](https://github.com/maco144/rising-sun-site/tree/main/docs) directory of the repository.`,
+    projects: ["password-palace", "trove", "gamegames", "eudaimonia", "forgeground"],
   },
   {
-    slug: "trove-ai-tagging",
-    title: "Trove Now Features AI-Powered Auto-Tagging",
-    date: "2025-01-10",
+    slug: "2026-roadmap-published",
+    title: "Rising Sun 2026 Roadmap Published",
+    date: "2026-01-23",
     excerpt:
-      "Let machine learning organize your assets. Trove's new AI tagging feature automatically categorizes and tags your files.",
-    content: `Managing thousands of digital assets just got a lot easier. Trove's new AI-powered tagging feature automatically analyzes and categorizes your files as you upload them.
+      "Our complete roadmap for 2026 is now public. From Password Palace security audit to Trove mainnet launch, here's what's coming.",
+    content: `We've published our full 2026 roadmap. Transparency is a core value, and we want you to know exactly what we're building and when.
 
-## How It Works
+## Q1 2026: Foundation
 
-When you upload assets to Trove, our ML models analyze each file and suggest relevant tags based on:
+**Password Palace**
+- Security audit of ZK circuits and contracts
+- Browser extension v1.0 (Chrome, Firefox)
+- Public beta launch in February
+- Production mainnet deployment in March
 
-- **Image Content**: Objects, scenes, colors, and composition
-- **Text Content**: Keywords, topics, and document type
-- **File Metadata**: Creation date, dimensions, file type
+**Eudaimonia**
+- Hivemind P2P stability improvements
+- Bittensor subnet integration
+- Voice interface (Whisper + TTS)
+- Public alpha release in March
 
-You can accept, reject, or modify suggested tags with a single click.
+**GameGames**
+- AI verification implementation (Claude Vision)
+- Mainnet deployment on Solana
+- Tournament mode MVP
 
-## Privacy First
+## Q2-Q4 Highlights
 
-All processing happens on our servers, but your actual files are never used to train our models. We use pre-trained models that run in isolated containers.
+- **Trove** testnet launch (Q2), mainnet launch (Q3)
+- **Forgeground** ranked matchmaking and tournament infrastructure
+- Cross-project integration starting Q2
+- Rising Sun DAO formation in Q4
 
-## Getting Started
+## Success Metrics
 
-AI tagging is enabled by default for all accounts. You can disable it in Settings > Organization > Auto-tagging.
+By end of 2026, we're targeting:
+- 50k Password Palace users
+- $500k monthly wagers on GameGames
+- 5k active Eudaimonia instances
+- 75k monthly Forgeground players
 
-## Accuracy Improvements
+## Read the Full Roadmap
 
-We've seen the following accuracy rates in testing:
-- Photos: 92% accuracy
-- Icons/Illustrations: 87% accuracy
-- Documents: 94% accuracy
-- Videos: 89% accuracy
-
-The system learns from your corrections, improving over time for your specific use case.`,
-    projects: ["trove"],
+The complete roadmap with quarterly breakdowns, resource allocation, and risk factors is available at [/roadmap](/roadmap).`,
+    projects: ["password-palace", "trove", "gamegames", "eudaimonia", "forgeground"],
   },
   {
-    slug: "gamegames-multiplayer-update",
-    title: "GameGames Adds Real-Time Multiplayer",
-    date: "2025-01-05",
+    slug: "manifesto-technology-thesis",
+    title: "Rising Sun Manifesto and Technology Thesis Published",
+    date: "2026-01-23",
     excerpt:
-      "Challenge friends or strangers in real-time multiplayer matches. New games and leaderboards included.",
-    content: `Get ready to compete! GameGames now supports real-time multiplayer for all games in our collection.
+      "We've published our core philosophy documents: the Manifesto explaining why we build, and the Technology Thesis explaining how.",
+    content: `Two foundational documents now define the Rising Sun vision: the Manifesto and the Technology Thesis.
 
-## New Multiplayer Features
+## The Manifesto
 
-### Quick Match
-Jump into a game instantly with players of similar skill level. Our matchmaking system ensures fair, competitive matches.
+The internet we were promised—open, free, owned by its users—is dying. Five companies control what you see, your passwords wait in breachable databases, and your AI reports to corporations, not you.
 
-### Private Rooms
-Create a private room and share the code with friends. Perfect for game nights or casual sessions.
+We're building something different. Our three principles:
 
-### Global Leaderboards
-Every game now has global leaderboards. Compete for the top spot and earn badges for your achievements.
+1. **Safety Through Mathematics** - Zero-knowledge proofs mean we can't be evil even if we wanted to. Password Palace doesn't store your passwords because it doesn't need to.
 
-## New Games
+2. **AI as Ally, Not Adversary** - Eudaimonia works for you, not for advertisers. It has memory, agency, and answers only to its owner.
 
-We've added three new games to celebrate the multiplayer launch:
+3. **Decentralization as Insurance** - Our products run on Cosmos, Solana, and IPFS because these networks have no off switch. No CEO can shut them down.
 
-1. **Duel**: A real-time 1v1 puzzle battle
-2. **Race to 100**: Competitive math puzzle racing
-3. **Territory**: Strategic hex-grid conquest
+## The Technology Thesis
 
-## Technical Details
+A 700+ line deep-dive into the technical foundations:
 
-Multiplayer is powered by WebSockets with client-side prediction for smooth gameplay even on slower connections. We're running game servers in multiple regions to minimize latency.
+- Why spatial memory + ZK proofs solve the identity problem
+- How the Halo2 proof system enables trustless verification
+- The architecture of Eudaimonia's hivemind coordination
+- GameGames' AI verification vs traditional anti-cheat
+- Browser-native 3D rendering for Forgeground
 
-## Coming Soon
+## Read More
 
-- Tournament mode
-- Spectator mode
-- Replay sharing
-- Custom game rules`,
-    projects: ["gamegames"],
+- [/manifesto](/manifesto) - The philosophy
+- Technology Thesis available in docs/TECHNOLOGY_THESIS.md`,
+    projects: ["password-palace", "trove", "gamegames", "eudaimonia", "forgeground"],
   },
   {
-    slug: "eudaimonia-beta-launch",
-    title: "Eudaimonia Enters Public Beta",
-    date: "2024-12-20",
+    slug: "portfolio-site-launch",
+    title: "Rising Sun Portfolio Site Launches",
+    date: "2026-01-22",
     excerpt:
-      "After months of development, our mindful productivity app is ready for beta testers. Join us in building a more balanced approach to productivity.",
-    content: `We're excited to open Eudaimonia to public beta testers. After months of development and private testing, we're ready to share our vision for mindful productivity.
+      "The Rising Sun portfolio site is live with a retro terminal aesthetic, CRT effects, and comprehensive project showcases.",
+    content: `We're excited to announce the launch of the Rising Sun portfolio site—the central hub for all our projects and documentation.
 
-## What is Eudaimonia?
+## Retro Terminal Aesthetic
 
-Eudaimonia is a productivity app that doesn't just track your tasks - it tracks your well-being. We believe sustainable productivity comes from understanding your energy, mood, and natural rhythms.
+The site features a complete retro computing experience:
 
-## Beta Features
+- **Boot Sequence** - A nostalgic BIOS-style startup animation
+- **CRT Effects** - Authentic scanlines and screen curvature
+- **Terminal Colors** - Classic green, amber, and cyan on black
+- **ASCII Borders** - Box-drawing characters throughout
+- **Custom Cursor** - Block cursor that follows your mouse
 
-The current beta includes:
+The aesthetic isn't just for show. It reflects our philosophy: building technology that serves users rather than extracting from them. The early internet was weird, personal, and owned by its users. That's the spirit we're channeling.
 
-- **Holistic Dashboard**: Your productivity, energy, and mood at a glance
-- **Habit Tracking**: Build positive habits with streak tracking
-- **Energy Mapping**: Log and understand your energy patterns
-- **Task Management**: Simple but effective task organization
-- **Weekly Reviews**: Guided reflection to improve continuously
+## What's on the Site
 
-## Join the Beta
+- **Projects** - Detailed pages for all five Rising Sun products
+- **Manifesto** - Our core philosophy and principles
+- **Roadmap** - Complete 2026 development timeline
+- **Updates** - Development blog and announcements
+- **About & Contact** - Connect with us
 
-We're accepting beta testers on iOS (TestFlight) and Android (Google Play Beta). Desktop apps are coming in the next beta phase.
+## Built With
 
-## Feedback Welcome
+- Next.js 14 (App Router)
+- TypeScript
+- Tailwind CSS
+- JetBrains Mono font
+- Zero external component libraries
 
-As a beta tester, your feedback directly shapes the product. We're particularly interested in:
+## Explore
 
-- Feature requests
-- UI/UX improvements
-- Performance issues
-- Integration suggestions
-
-Join our Discord to connect with other beta testers and the development team.`,
-    projects: ["eudaimonia"],
-  },
-  {
-    slug: "forgeground-terminal-sharing",
-    title: "Forgeground Adds Shared Terminal Sessions",
-    date: "2024-12-15",
-    excerpt:
-      "Collaborate on more than just code. Forgeground now supports shared terminal sessions with full PTY support.",
-    content: `Pair programming is about more than just editing code together. That's why we've added shared terminal sessions to Forgeground.
-
-## Shared Terminals
-
-Now you can:
-
-- **Share a Terminal**: Give collaborators access to a terminal session
-- **Control Permissions**: Choose who can type vs. who can only watch
-- **Run Commands Together**: Perfect for debugging, testing, and deployment
-- **Full PTY Support**: vim, tmux, and other TUI apps work perfectly
-
-## How It Works
-
-Each Forgeground session can have multiple shared terminals. The host's terminal is streamed to all participants with minimal latency. Participants with write access can type commands that execute on the host's session.
-
-## Security Considerations
-
-Shared terminals are powerful, so we've built in safety features:
-
-- Write access is opt-in per participant
-- All commands are logged for audit
-- Sessions are isolated in containers
-- Network access is configurable
-
-## Use Cases
-
-- **Pair Debugging**: Debug issues together in real-time
-- **Teaching**: Show students how to use CLI tools
-- **Code Reviews**: Run tests and explore behavior together
-- **Interviews**: Watch candidates work in a real environment
-
-Try it out and let us know what you think!`,
-    projects: ["forgeground"],
-  },
-  {
-    slug: "hexgrid-v3-release",
-    title: "HexGrid v3.0: WebGL Renderer and Performance Boost",
-    date: "2024-12-01",
-    excerpt:
-      "Major performance improvements with the new WebGL renderer. Render millions of hexes at 60fps.",
-    content: `HexGrid v3.0 is here with a complete rendering overhaul and significant performance improvements.
-
-## New WebGL Renderer
-
-The new WebGL renderer can handle millions of hexes at 60fps. Features include:
-
-- **Instanced Rendering**: Efficiently render massive grids
-- **Shader-Based Coloring**: Dynamic terrain coloring in the GPU
-- **Zoom Levels**: Automatic detail reduction at far zoom
-- **Fog of War**: Built-in fog of war effect support
-
-## Performance Benchmarks
-
-Compared to v2.x Canvas renderer:
-
-| Grid Size | v2.x FPS | v3.0 FPS |
-|-----------|----------|----------|
-| 1,000 hexes | 60 | 60 |
-| 10,000 hexes | 45 | 60 |
-| 100,000 hexes | 8 | 60 |
-| 1,000,000 hexes | - | 55 |
-
-## Breaking Changes
-
-- Renamed \`HexRenderer\` to \`CanvasRenderer\`
-- New \`WebGLRenderer\` class for WebGL rendering
-- Changed coordinate system to cube coordinates by default
-
-See the migration guide for details on updating your code.
-
-## What's Next
-
-- 3D hex rendering
-- Terrain mesh generation
-- Path visualization improvements
-- Mobile touch controls`,
-    projects: ["hexgrid"],
-  },
-  {
-    slug: "terminal-ui-announcement",
-    title: "Announcing Terminal UI: React Components with Retro Style",
-    date: "2024-11-15",
-    excerpt:
-      "A new React component library bringing terminal aesthetics to modern web applications. Coming soon.",
-    content: `We're working on something new: Terminal UI, a React component library that brings the aesthetic of classic terminal interfaces to modern web development.
-
-## Why Terminal UI?
-
-There's something timeless about the look of terminal interfaces - the monospace fonts, the box-drawing characters, the blinking cursors. We wanted to capture that aesthetic while providing the functionality modern applications need.
-
-## Planned Components
-
-We're building a comprehensive set of components:
-
-- **Layout**: Containers, grids, and dividers
-- **Typography**: Headers, paragraphs, and code blocks
-- **Forms**: Inputs, selects, checkboxes, and buttons
-- **Feedback**: Alerts, toasts, and progress indicators
-- **Navigation**: Menus, tabs, and breadcrumbs
-- **Data Display**: Tables, lists, and cards
-
-## Design Principles
-
-1. **Authentic Aesthetic**: True to terminal conventions
-2. **Modern Functionality**: Full keyboard navigation, ARIA support
-3. **Customizable**: Theming system for colors and borders
-4. **Lightweight**: No external CSS dependencies
-
-## Timeline
-
-We're targeting a Q1 2025 release. Follow the GitHub repo for updates and early access.
-
-## Contributing
-
-We'll be opening the repo for contributions once we have the core components stable. Star the repo to stay notified!`,
-    projects: ["terminal-ui"],
+Visit the projects at:
+- [Password Palace](https://passwordpalace.com) - Private Beta
+- [Trove](https://trove.website) - Live
+- [GameGames](https://gamegames.gg) - Devnet
+- [Eudaimonia](https://aios.design) - Alpha
+- [Forgeground](https://forgeground.online) - Beta`,
+    projects: ["password-palace", "trove", "gamegames", "eudaimonia", "forgeground"],
   },
 ];
 
