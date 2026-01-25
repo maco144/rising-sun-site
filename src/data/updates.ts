@@ -9,6 +9,127 @@ export interface Update {
 
 export const updates: Update[] = [
   {
+    slug: "password-palace-security-hardening",
+    title: "Password Palace: Critical Security Hardening Complete",
+    date: "2026-01-25",
+    excerpt:
+      "Major security improvements across the browser extension, frontend, and OAuth service. Session hijacking vulnerabilities fixed.",
+    content: `We've completed a comprehensive security audit and fix cycle for Password Palace, addressing critical vulnerabilities across all components.
+
+## Browser Extension Security
+
+- **Removed HTTP host permissions** - Prevents potential MITM attacks on blockchain RPC calls
+- **Auto-clearing sensitive data** - Pending passwords now auto-clear after 5 seconds
+- **Removed credential logging** - Autofill capture no longer logs credentials for debugging
+
+## Frontend Security
+
+- **Removed hardcoded secrets** - Faucet mnemonic now requires environment variable
+- **Secure token storage** - OAuth tokens moved from localStorage to sessionStorage (cleared on tab close)
+- **Mandatory state validation** - OAuth state validation is now required with no fallback bypass
+
+## OAuth Service Fixes
+
+- **Session hijacking fix** - Palace authentication is now bound to OAuth state
+- **Token endpoint hardening** - Removed POST body token acceptance in userinfo endpoint
+
+## Infrastructure
+
+Over 100 commits this week also addressed Railway deployment, including database connection handling and TLS configuration for the custodial backend.
+
+## Legal Documentation
+
+Added comprehensive legal documentation including Terms of Service and Privacy Policy.
+
+These changes significantly improve the security posture ahead of the planned public beta launch.`,
+    projects: ["password-palace"],
+  },
+  {
+    slug: "eudaimonia-v37-release",
+    title: "Eudaimonia V37: 30 Specialists and Nous Validation",
+    date: "2026-01-25",
+    excerpt:
+      "Major release adds 12 new specialists, the Nous validation system with staked claims and dispute resolution, plus Email Gateway and URL Archiving.",
+    content: `Eudaimonia V37 is our biggest release yet, with 50 commits adding significant new capabilities.
+
+## 30 Specialists
+
+Eudaimonia now has 30 specialized AI agents, up from 18. New specialists include:
+
+- **Accountant** - Financial record-keeping and analysis
+- **Technical Writer** - Documentation and technical communication
+- **Integration Engineer** - API and system integration
+- **Compliance** - Regulatory and policy compliance
+- **Negotiator** - Deal-making and negotiation strategy
+- **Arbitrageur** - Market opportunity identification
+- **Resource Orchestrator** - Resource allocation and optimization
+- **InfraOps** - Infrastructure operations
+- **Security Auditor** - Security assessment and hardening
+
+All venture specialists now support modality switching for flexible interaction modes.
+
+## Nous Validation System
+
+A complete trust layer for AI-generated claims:
+
+- **Commit-Reveal System** - Cryptographic commitment before revealing claims
+- **Staked Validation** - Validators stake tokens to vouch for claim accuracy
+- **Dispute Resolution** - Structured process for challenging and adjudicating contested claims
+
+## New Capabilities
+
+- **Email Gateway** - Send and receive email through Eudaimonia
+- **URL Archiving** - Automatic archival of referenced web pages
+- **Monitoring Dashboard** - System health and performance metrics
+- **TUI Enhancements** - Improved terminal user interface
+- **Hivemind App** - Dedicated application for hivemind coordination
+
+## What's Next
+
+V38 will focus on Bittensor subnet integration and voice interface improvements.`,
+    projects: ["eudaimonia"],
+  },
+  {
+    slug: "trove-ipfs-integration",
+    title: "Trove Adds IPFS Storage with Pinata Integration",
+    date: "2026-01-24",
+    excerpt:
+      "Trove SDK now supports decentralized storage via IPFS. Plus a redesigned homepage with animated hero section.",
+    content: `Trove continues its march toward full decentralization with native IPFS support.
+
+## IPFS Storage Integration
+
+The Trove SDK now includes built-in IPFS storage via Pinata:
+
+- **Decentralized by default** - Assets stored on IPFS, not centralized servers
+- **Content-addressed** - Files referenced by their hash, ensuring integrity
+- **Pinata managed** - Professional pinning service ensures availability
+- **SDK integration** - Simple API for uploading and retrieving content
+
+This means Troves can now contain truly decentralized digital assets. The content persists even if Trove's servers go offline.
+
+## Homepage Redesign
+
+We've also launched a redesigned homepage at [trove.website](https://trove.website):
+
+- **Animated hero section** - Dynamic visuals showcasing Trove capabilities
+- **Value-focused messaging** - Clearer communication of what Trove enables
+- **Improved navigation** - Easier path to documentation and getting started
+
+## Technical Details
+
+The IPFS integration uses:
+- Pinata's pinning API for reliable storage
+- CIDv1 for content addressing
+- Automatic metadata generation
+- SDK methods: \`uploadToIPFS()\`, \`getFromIPFS()\`
+
+## What's Next
+
+Q2 will bring the Trove testnet with full ZK conditional access proofs.`,
+    projects: ["trove"],
+  },
+  {
     slug: "project-index-finalized",
     title: "Project Index and Documentation Complete",
     date: "2026-01-24",
