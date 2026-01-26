@@ -3,11 +3,10 @@ import ProjectCard from "@/components/ProjectCard";
 import UpdateCard from "@/components/UpdateCard";
 import ASCIIBorder from "@/components/ASCIIBorder";
 import AnimatedHero from "@/components/AnimatedHero";
-import { getFeaturedProjects } from "@/data/projects";
+import { projects } from "@/data/projects";
 import { getRecentUpdates } from "@/data/updates";
 
 export default function HomePage() {
-  const featuredProjects = getFeaturedProjects();
   const recentUpdates = getRecentUpdates(3);
 
   return (
@@ -25,7 +24,7 @@ export default function HomePage() {
           </span>
           <span className="text-terminal-gray hidden sm:inline">|</span>
           <span className="text-terminal-white-dim">
-            {featuredProjects.length + 5} projects
+            {projects.length} projects
           </span>
           <span className="text-terminal-gray hidden sm:inline">|</span>
           <span className="text-terminal-white-dim">
@@ -43,7 +42,7 @@ export default function HomePage() {
           </h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {featuredProjects.map((project, index) => (
+          {projects.map((project, index) => (
             <div
               key={project.slug}
               className="animate-fade-in"
