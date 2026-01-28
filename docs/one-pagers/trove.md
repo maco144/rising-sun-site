@@ -69,7 +69,7 @@ No intermediaries, just mathematics.
 | **Inheritance** | Time-locked release with dead man's switch |
 | **Escrow** | Milestone-based freelancer payments |
 | **Tournament Prizes** | GameGames integration for trustless payouts |
-| **API Key Sharing** | Routine secure distribution of credentials to team members |
+| **Family and Team Secrets** | Routine secure distribution of credentials to team members |
 
 ## Ecosystem Integration
 
