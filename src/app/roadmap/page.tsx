@@ -10,31 +10,31 @@ export const metadata = {
 const currentState = [
   {
     name: "Password Palace",
-    status: "Private Beta",
+    status: "Full Implementation Private Beta",
     completion: 70,
     url: "https://passwordpalace.com",
   },
   {
     name: "Trove",
-    status: "Live",
+    status: "Live Alpha Test",
     completion: 50,
     url: "https://trove.website",
   },
   {
     name: "GameGames",
     status: "Devnet",
-    completion: 50,
+    completion: 85,
     url: "https://gamegames.gg",
   },
   {
     name: "Eudaimonia",
-    status: "Alpha",
+    status: "Live Private Testing",
     completion: 60,
     url: "https://aios.design",
   },
   {
     name: "Forgeground",
-    status: "Beta",
+    status: "Online Version 1",
     completion: 40,
     url: "https://forgeground.online",
   },
@@ -84,6 +84,7 @@ const q2Milestones = [
       "10+ OAuth integrations",
       "Enterprise customers (target: 5)",
       "Mobile app v1.0",
+      "API Wallet as a Service",
     ],
   },
   {
