@@ -10,7 +10,9 @@ Passwords are broken. People forget them, reuse them, and get phished. Current s
 
 ## The Solution
 
-Password Palace replaces text passwords with **spatial memory** — 3D environments you navigate to authenticate. Combined with **zero-knowledge proofs**, your credentials are never transmitted. No one — not even us — can see your secrets.
+Password Palace is an **entirely new category** of authentication — not an incremental improvement, but a fundamental rethinking of how humans prove identity. Instead of memorizing arbitrary strings, users leverage natural human memory: **scenes, melodies, screenshots, gestures, and spatial navigation**.
+
+Combined with **zero-knowledge proofs**, your credentials are never transmitted. No one — not even us — can see your secrets.
 
 ```
 You remember places, not strings.
@@ -18,14 +20,30 @@ You prove knowledge without revealing it.
 You own your identity, forever.
 ```
 
+## Authentication Modalities
+
+Password Palace offers multiple user-friendly ways to prove identity:
+
+| Modality | How It Works |
+|----------|--------------|
+| **3D Scenes** | Navigate rooms, interact with objects in memorable spaces |
+| **Melodies** | Hum or tap a personal tune only you know |
+| **Screenshots** | Select specific regions of images you remember |
+| **Gestures** | Draw patterns or air-sign your unique signature |
+| **Spatial Paths** | Trace routes through personalized environments |
+
+**Always evolving**: Password Palace continuously develops new authentication methods, making proof easier and more accessible. The platform grows with users, adding modalities that match how people naturally remember.
+
 ## Key Differentiators
 
 | Feature | Password Palace | Traditional |
 |---------|-----------------|-------------|
+| Approach | Novel (memory-based) | Incremental (text-based) |
+| Auth methods | Multiple (scenes, melodies, gestures) | Single (passwords/passkeys) |
 | Secrets transmitted | Never (ZK proofs) | Always |
 | Can be phished | No | Yes |
 | Platform can revoke | No | Yes |
-| Memorable | Yes (spatial memory) | No |
+| Memorable | Yes (natural memory) | No |
 | Crypto-native | Yes (seed phrase storage) | No |
 
 ## Market Opportunity
