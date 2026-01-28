@@ -12,12 +12,12 @@ Quality competitive gaming requires 50-100GB downloads, expensive hardware, and 
 
 Forgeground is an **entirely new category** of competitive gaming — not another browser game, but a fundamental rethinking of accessible esports. Instead of choosing between quality and convenience, players get **AAA-level gameplay with zero downloads** through cutting-edge browser technology.
 
-Unique **physics manipulation weapons** and **multiple combat systems** create high skill-ceiling gameplay. Deep ranked systems and native wagering integration through GameGames.
+Unique **physics manipulation weapons** and **multiple combat systems** create high skill-ceiling gameplay. **AI-generated avatars** let players design fully custom characters — from 3D model to skill set to fighting style. Deep ranked systems and native wagering integration through GameGames.
 
 ```
 Click. Play. Compete.
 Browser gaming, AAA quality.
-Physics is your weapon.
+Your fighter. Your style.
 ```
 
 ## Combat Modalities
@@ -34,11 +34,34 @@ Forgeground offers multiple user-friendly ways to compete:
 
 **Always evolving**: Forgeground continuously adds new weapons, abilities, maps, and game modes. The platform grows with the community, making competitive gaming more accessible over time.
 
+## AI Character Creation
+
+Forgeground is an arena where players bring their **true fighting identity** to life:
+
+| Element | AI-Generated |
+|---------|--------------|
+| **3D Model** | Describe your character, AI generates the full avatar |
+| **Skill Set** | Choose abilities that match your playstyle |
+| **Fighting Style** | Define movement, aggression, and combat approach |
+| **Visual Identity** | Unique looks, effects, and animations |
+| **Evolution** | Characters grow and adapt as you play |
+
+```
+"Create a nimble shadow warrior with gravity manipulation."
+"Design a heavy tank with time-slowing abilities."
+"Build an agile sniper who blinks between positions."
+
+Your imagination. Your fighter. Your true style.
+```
+
+Every player's character is uniquely theirs — not selected from a roster, but generated from their vision. The arena becomes a clash of personalized fighting identities.
+
 ## Key Differentiators
 
 | Feature | Forgeground | Valorant/CS2 | Krunker.io |
 |---------|-------------|--------------|------------|
 | Approach | Novel (browser AAA) | Traditional (download) | Basic browser |
+| Character creation | AI-generated (fully custom) | Fixed roster | Limited skins |
 | Combat systems | Multiple (physics, standard, abilities) | Single (gunplay) | Limited |
 | Download required | No | Yes (50GB+) | No |
 | Graphics quality | High (WebGPU) | AAA | Basic |
