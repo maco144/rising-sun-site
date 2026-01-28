@@ -37,6 +37,14 @@ const statusLabels = {
   "coming-soon": "COMING SOON",
 };
 
+const projectsWithOnePagers = [
+  "password-palace",
+  "trove",
+  "gamegames",
+  "eudaimonia",
+  "forgeground",
+];
+
 export default function ProjectPage({ params }: ProjectPageProps) {
   const project = getProjectBySlug(params.slug);
 
@@ -84,6 +92,17 @@ export default function ProjectPage({ params }: ProjectPageProps) {
           ))}
         </div>
       </header>
+
+      {/* One-Pager Link */}
+      {projectsWithOnePagers.includes(project.slug) && (
+        <Link
+          href={`/projects/${project.slug}/one-pager`}
+          className="inline-flex items-center gap-2 mb-8 px-4 py-2 border border-terminal-cyan text-terminal-cyan hover:bg-terminal-cyan hover:text-terminal-black transition-all"
+        >
+          <span>{">"}</span>
+          <span>View One-Pager</span>
+        </Link>
+      )}
 
       {/* Links */}
       {project.links.length > 0 && (
