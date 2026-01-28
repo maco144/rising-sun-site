@@ -127,6 +127,6 @@ Building infrastructure for a different kind of internet.
 
 ---
 
-**Rising Sun** · risingsun.dev · January 2026
+**Rising Sun** · risingsun.name · January 2026
 
 *"The best way to predict the future is to build it."*

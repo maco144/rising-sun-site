@@ -87,4 +87,4 @@ Proving browser is a AAA gaming platform. Native integration with GameGames crea
 
 ---
 
-**Rising Sun** · risingsun.dev · January 2026
+**Rising Sun** · risingsun.name · January 2026

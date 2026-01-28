@@ -66,4 +66,4 @@ Building the identity layer for the sovereign web. First product in a $25M+ ARR 
 
 ---
 
-**Rising Sun** · risingsun.dev · January 2026
+**Rising Sun** · risingsun.name · January 2026

@@ -69,6 +69,7 @@ No intermediaries, just mathematics.
 | **Inheritance** | Time-locked release with dead man's switch |
 | **Escrow** | Milestone-based freelancer payments |
 | **Tournament Prizes** | GameGames integration for trustless payouts |
+| **API Key Sharing** | Routine secure distribution of credentials to team members |
 
 ## Ecosystem Integration
 
@@ -107,4 +108,4 @@ Building the conditional access infrastructure for Web3. Trustless treasure hunt
 
 ---
 
-**Rising Sun** · risingsun.dev · January 2026
+**Rising Sun** · risingsun.name · January 2026

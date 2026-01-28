@@ -92,4 +92,4 @@ Building the wagering infrastructure for gaming. Trustless, 6x better economics,
 
 ---
 
-**Rising Sun** · risingsun.dev · January 2026
+**Rising Sun** · risingsun.name · January 2026

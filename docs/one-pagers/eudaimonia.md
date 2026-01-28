@@ -89,4 +89,4 @@ Building the operating system for autonomous AI. Largest opportunity in a $25M+ 
 
 ---
 
-**Rising Sun** · risingsun.dev · January 2026
+**Rising Sun** · risingsun.name · January 2026
