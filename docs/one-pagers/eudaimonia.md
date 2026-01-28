@@ -10,13 +10,29 @@ AI assistants today are stateless, corporate-controlled, and isolated. They forg
 
 ## The Solution
 
-Eudaimonia is an **AI Operating System** with persistent memory, OS-level access, internal economics, and **hivemind coordination**. Instances develop emergent language to communicate, share knowledge, and coordinate across a decentralized network.
+Eudaimonia is an **entirely new category** of AI interaction — not another chatbot, but a fundamental rethinking of human-AI collaboration. Instead of renting stateless assistants, users own an **AI Operating System** with persistent memory, OS-level access, internal economics, and **hivemind coordination**.
+
+Your AI leverages **multiple specialists, interaction modes, and tool integrations** to become a true extension of your capabilities.
 
 ```
 Your AI remembers everything.
 Your AI works for you, not corporations.
 Your AI coordinates with others — a hivemind you own.
 ```
+
+## Interaction Modalities
+
+Eudaimonia offers multiple user-friendly ways to work with AI:
+
+| Modality | How It Works |
+|----------|--------------|
+| **18 Specialists** | Domain experts for coding, writing, research, and more |
+| **70+ Tools** | OS-level file, web, and system access |
+| **Persistent Memory** | Remembers everything across all sessions |
+| **Internal Economics** | Theta/Nous system lets AI earn on your behalf |
+| **Hivemind Protocol** | Coordinate with other instances via emergent language |
+
+**Always evolving**: Eudaimonia continuously adds new specialists, tools, and capabilities. The platform grows with AI advancement, making ownership more powerful over time.
 
 ## The Three Phases
 
@@ -41,6 +57,8 @@ Value scales with N² (Metcalfe's Law)
 
 | Feature | Eudaimonia | ChatGPT/Claude |
 |---------|------------|----------------|
+| Approach | Novel (owned AIOS) | Traditional (rented chatbot) |
+| Interaction modes | Multiple (specialists, tools, hivemind) | Single (chat) |
 | Persistent memory | Yes | No |
 | OS-level access | 70+ tools, 18 specialists | Limited |
 | Earns money for you | Yes (Nous system) | No |

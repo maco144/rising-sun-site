@@ -10,13 +10,29 @@ Skill gaming platforms charge 10-20% fees, require trusting centralized operator
 
 ## The Solution
 
-GameGames enables **trustless wagering** on competitive games. Smart contracts hold funds (we literally cannot steal them), AI verifies outcomes, and winners are paid instantly. All for **2.5% fees** — 6x better economics than competitors.
+GameGames is an **entirely new category** of skill wagering — not another betting site, but a fundamental rethinking of competitive gaming stakes. Instead of trusting platforms, users leverage **smart contract escrow, AI verification, and multiple proof methods** to ensure fair, instant outcomes.
+
+Smart contracts hold funds (we literally cannot steal them), AI verifies outcomes, and winners are paid instantly. All for **2.5% fees** — 6x better economics than competitors.
 
 ```
 Bet on yourself, trustlessly.
 2.5% fees (they charge 15%).
 We literally can't steal your money.
 ```
+
+## Verification Modalities
+
+GameGames offers multiple user-friendly ways to prove match results:
+
+| Modality | How It Works |
+|----------|--------------|
+| **Screenshots** | AI vision analyzes end-game screens |
+| **Video Clips** | Submit match recordings for verification |
+| **API Integration** | Direct game API pulls results automatically |
+| **Native Games** | Forgeground reports results with zero friction |
+| **Spectator Consensus** | Community verification for edge cases |
+
+**Always evolving**: GameGames continuously adds new games, verification methods, and ways to compete. The platform grows with the gaming community, making wagering accessible across any competitive title.
 
 ## How It Works
 
@@ -36,6 +52,8 @@ We literally can't steal your money.
 
 | Feature | GameGames | PlayersLounge |
 |---------|-----------|---------------|
+| Approach | Novel (trustless) | Traditional (trust-based) |
+| Verification methods | Multiple (AI, API, video) | Single (human review) |
 | Fees | 2.5% | 15% |
 | Can platform steal? | No (math) | Yes |
 | Verification | AI (scales infinitely) | Human moderators |

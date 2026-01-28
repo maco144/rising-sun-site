@@ -10,7 +10,9 @@ Quality competitive gaming requires 50-100GB downloads, expensive hardware, and 
 
 ## The Solution
 
-Forgeground is a **browser-based arena shooter** delivering 60fps competitive gameplay with zero downloads. Unique physics manipulation weapons create high skill-ceiling gameplay. Deep ranked systems and native wagering integration through GameGames.
+Forgeground is an **entirely new category** of competitive gaming — not another browser game, but a fundamental rethinking of accessible esports. Instead of choosing between quality and convenience, players get **AAA-level gameplay with zero downloads** through cutting-edge browser technology.
+
+Unique **physics manipulation weapons** and **multiple combat systems** create high skill-ceiling gameplay. Deep ranked systems and native wagering integration through GameGames.
 
 ```
 Click. Play. Compete.
@@ -18,10 +20,26 @@ Browser gaming, AAA quality.
 Physics is your weapon.
 ```
 
+## Combat Modalities
+
+Forgeground offers multiple user-friendly ways to compete:
+
+| Modality | How It Works |
+|----------|--------------|
+| **Physics Weapons** | Gravity, time, inertia, entropy, space manipulation |
+| **Standard Arsenal** | Rifles, shotguns, snipers, bows for traditional play |
+| **Movement Abilities** | Dash, blink, grappling hook for mobility |
+| **Offensive Powers** | Grenades, missiles, area denial |
+| **Field Effects** | Manipulate physics fields across the arena |
+
+**Always evolving**: Forgeground continuously adds new weapons, abilities, maps, and game modes. The platform grows with the community, making competitive gaming more accessible over time.
+
 ## Key Differentiators
 
 | Feature | Forgeground | Valorant/CS2 | Krunker.io |
 |---------|-------------|--------------|------------|
+| Approach | Novel (browser AAA) | Traditional (download) | Basic browser |
+| Combat systems | Multiple (physics, standard, abilities) | Single (gunplay) | Limited |
 | Download required | No | Yes (50GB+) | No |
 | Graphics quality | High (WebGPU) | AAA | Basic |
 | Competitive depth | Deep ranked | Deep ranked | Limited |

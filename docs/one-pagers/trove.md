@@ -10,13 +10,29 @@ Every conditional transfer of value — escrow, inheritance, contest prizes, pro
 
 ## The Solution
 
-Trove uses **zero-knowledge proofs** and **spatial puzzles** to enable programmable release of assets without any third party. Lock tokens in a Trove, set conditions (puzzle, time, multi-party), and math guarantees the release. No lawyers, no escrow agents, just math.
+Trove is an **entirely new category** of asset protection — not another escrow service, but a fundamental rethinking of conditional access. Instead of trusting intermediaries, users leverage **spatial puzzles, time-locks, multi-party requirements, and cryptographic conditions** to control when and how value is released.
+
+Combined with **zero-knowledge proofs**, the conditions are enforced by mathematics. No lawyers, no escrow agents, just math.
 
 ```
 Digital treasure, trustlessly secured.
 The first to solve it wins.
 No intermediaries, just mathematics.
 ```
+
+## Access Modalities
+
+Trove offers multiple user-friendly ways to protect and release value:
+
+| Modality | How It Works |
+|----------|--------------|
+| **Spatial Puzzles** | Navigate 3D environments to unlock contents |
+| **Time-Locks** | Release after specific dates or durations |
+| **Multi-Party** | Require multiple participants to unlock |
+| **Piece Collection** | Gather distributed fragments to complete access |
+| **Conditional Triggers** | Release based on external events or data |
+
+**Always evolving**: Trove continuously develops new access conditions, making trustless escrow more flexible and accessible. The protocol grows with users, adding modalities that match real-world needs.
 
 ## How It Works
 
@@ -34,7 +50,9 @@ No intermediaries, just mathematics.
 
 | Feature | Trove | Escrow.com | Gnosis Safe |
 |---------|-------|------------|-------------|
-| Trustless | Yes (ZK proofs) | No | Partial (multisig) |
+| Approach | Novel (puzzle-based) | Traditional (trust-based) | Partial (multisig) |
+| Access methods | Multiple (spatial, time, multi-party) | Single (agent approval) | Single (signatures) |
+| Trustless | Yes (ZK proofs) | No | Partial |
 | Gamified | Yes (puzzles) | No | No |
 | Programmable conditions | Yes | Limited | Limited |
 | Can intermediary steal? | No | Yes | Signers can |
