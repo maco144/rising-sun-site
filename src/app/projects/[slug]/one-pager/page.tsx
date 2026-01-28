@@ -15,6 +15,7 @@ const onePagerSlugs = [
   "gamegames",
   "eudaimonia",
   "forgeground",
+  "rising-sun",
 ];
 
 export function generateStaticParams() {

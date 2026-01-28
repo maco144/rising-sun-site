@@ -43,6 +43,7 @@ const projectsWithOnePagers = [
   "gamegames",
   "eudaimonia",
   "forgeground",
+  "rising-sun",
 ];
 
 export default function ProjectPage({ params }: ProjectPageProps) {
