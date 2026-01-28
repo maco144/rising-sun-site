@@ -183,34 +183,45 @@ Built with TypeScript and Babylon.js. 60Hz fixed timestep physics with determini
   {
     slug: "rising-sun",
     name: "Rising Sun",
-    tagline: "This very website you're browsing",
+    tagline: "Communication where history is opt-in",
     description:
-      "A minimal, ASCII-aesthetic portfolio site built with Next.js and Tailwind CSS. Features CRT effects, boot sequences, and terminal-inspired design.",
-    longDescription: `Rising Sun is this portfolio website - a showcase of projects built with a love for retro computing aesthetics and modern web technologies.
+      "A unified spatial memory platform where identity, storage, and communication are built on proving your position in a shared Merkle tree. No receipt = no proof = never happened.",
+    longDescription: `Rising Sun reimagines communication infrastructure. Instead of platforms that remember everything forever, Rising Sun creates shared spaces where the world only knows current state. If you want proof of the past, YOU keep the receipt.
 
-## Design Philosophy
+## Core Concept
 
-- **Terminal Aesthetic**: Inspired by classic CRT monitors and terminal interfaces
-- **Boot Sequence**: Simulated BIOS startup for full retro immersion
-- **CRT Effects**: Scanlines, vignette, flicker, and noise for authentic feel
-- **Minimal & Fast**: No unnecessary bloat, statically generated for speed
+Users exist IN a shared Merkle space:
+- Each user is a leaf (or subtree) derived from spatial memory
+- Position/state changes update the world root
+- Proof = where you are NOW, not what you knew THEN
+- History is opt-in via receipts YOU choose to keep
 
-## Features
+## Key Features
 
-- **Custom Block Cursor**: Follows your mouse like an old terminal
-- **Glitch Effects**: Hover interactions with retro glitch animations
-- **ASCII Art**: Decorative borders and graphics using text characters
-- **Responsive**: Full experience on all device sizes
+- **Spatial Identity**: User ID derived deterministically from a spatial arrangement (objects at positions) - no accounts, identity IS the spatial memory
+- **Receipts System**: Generate cryptographic receipts to prove historical presence; no receipt = no proof = never happened
+- **Region Types**: Home (private), Channel (real-time chat), Forum (threaded), Trove (multi-party unlock)
+- **E2E Encryption**: X25519 key exchange with ChaCha20-Poly1305 authenticated encryption
+- **Multi-party Unlocking**: Troves require pieces from various sources (NFT ownership, location, time, achievements)
+- **Consent-based Memory**: Both parties keep receipts for shared history to exist
+
+## Design Principles
+
+1. **Presence is native** - You're in the tree or you're not
+2. **History is opt-in** - No receipt = never happened
+3. **Privacy by default** - World forgets, individuals remember
+4. **Proof without trust** - Merkle proofs are self-validating
+5. **Consent-based memory** - Both parties keep receipts for shared history
 
 ## Tech Stack
 
-Built with Next.js 14, TypeScript, and Tailwind CSS. Custom CSS animations for CRT and glitch effects. Hosted on Vercel.`,
-    status: "active",
-    tags: ["nextjs", "tailwind", "typescript", "portfolio", "css"],
+TypeScript with WebSocket networking. Browser client with React and IndexedDB for persistence. P2P via WebRTC with TURN server support. Poseidon hashing for ZK circuit compatibility.`,
+    status: "beta",
+    tags: ["typescript", "cryptography", "merkle-trees", "websocket", "e2e-encryption", "p2p"],
     links: [
-      { label: "Source", url: "https://github.com/maco144/rising-sun-site" },
+      { label: "Source", url: "https://github.com/maco144/rising-sun" },
     ],
-    featured: false,
+    featured: true,
   },
 ];
 
