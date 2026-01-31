@@ -15,6 +15,7 @@ const onePagerSlugs = [
   "gamegames",
   "eudaimonia",
   "forgeground",
+  "entity-identity",
   "rising-sun",
 ];
 

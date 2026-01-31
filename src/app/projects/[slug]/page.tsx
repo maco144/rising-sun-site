@@ -43,6 +43,7 @@ const projectsWithOnePagers = [
   "gamegames",
   "eudaimonia",
   "forgeground",
+  "entity-identity",
   "rising-sun",
 ];
 
