@@ -230,6 +230,7 @@ Circom 2.1.6 circuits with Groth16 proofs, EdDSA signatures over BabyJubJub curv
     status: "beta",
     tags: ["zk-proofs", "cryptography", "solidity", "typescript", "circom", "ai-identity"],
     links: [
+      { label: "GitHub", url: "https://github.com/maco144/entity-identity" },
       { label: "Registry Contract", url: "https://sepolia.etherscan.io/address/0xFb637C39439f969e5Cc0b1910308146f1DD529Fe#code" },
       { label: "Verifier Contract", url: "https://sepolia.etherscan.io/address/0x7444ba1b14a8dfC3342e3190b2Be991bA4A3801E#code" },
     ],
