@@ -181,6 +181,61 @@ Built with TypeScript and Babylon.js. 60Hz fixed timestep physics with determini
     featured: false,
   },
   {
+    slug: "entity-identity",
+    name: "Entity Identity",
+    tagline: "Zero-knowledge proof system for universal entity type verification",
+    description:
+      "Enables AIs, robots, humans, and hybrid entities to cryptographically prove their type without revealing their identity. A dual-layer system combining ZK privacy with public trust.",
+    longDescription: `Entity Identity is a zero-knowledge proof system that enables universal entity type verification. AIs, robots, humans, and hybrid entities can cryptographically prove their type without revealing their identity.
+
+## Core Innovation
+
+**16 standardized entity type codes** with phonetic names for verbal disambiguation:
+
+- **AI (0x01xx)**: CA (Kah - Conversational Agent), LM (Elm - Language Model), GN (Jen - Generative Model), AA (Ahh - Autonomous Agent), and 6 more types
+- **AR (0x02xx)**: RB (Rob - Robot), DR (Dar - Drone), VH (Vee - Vehicle)
+- **HU (0x03xx)**: US (Who - Human User)
+- **HY (0x04xx)**: CP (Kip - Copilot), HS (His - Hive Swarm)
+
+## Dual-Layer Architecture
+
+**Layer 1 (ZK Private)**: Proves entity type without revealing identity
+- Hidden: entity identity, attester identity, signature
+- Revealed: type code, commitment (pseudonymous ID), nullifier
+- Uses: Groth16 zero-knowledge proofs with Poseidon hashing
+
+**Layer 2 (Public Trust)**: Visible attestation graph for accountability
+- Auditable history of attestations
+- Sybil resistance through reputation
+- Builds trust over time
+
+## Interaction Levels
+
+- **Level 0**: Anonymous (browsing)
+- **Level 1**: Type Only via ZK (comments, basic API access)
+- **Level 2**: Type + Standing (transactions, publishing)
+- **Level 3**: Full Accountability (legal, financial, physical access)
+
+## Key Features
+
+- **CLI Tool**: \`npx eid <command>\` for type listing, proof generation, and verification
+- **REST API**: Complete endpoints for attestation, verification, and registry management
+- **SDK**: Node.js library with TypeScript support
+- **Smart Contracts**: Deployed to Sepolia testnet for on-chain verification
+- **Performance**: 2-5 second proof generation, ~200 byte proofs, ~10ms verification
+
+## Tech Stack
+
+Circom 2.1.6 circuits with Groth16 proofs, EdDSA signatures over BabyJubJub curve, Solidity smart contracts via Hardhat, Express.js API with SQLite, comprehensive Jest test suite.`,
+    status: "beta",
+    tags: ["zk-proofs", "cryptography", "solidity", "typescript", "circom", "ai-identity"],
+    links: [
+      { label: "Registry Contract", url: "https://sepolia.etherscan.io/address/0xFb637C39439f969e5Cc0b1910308146f1DD529Fe#code" },
+      { label: "Verifier Contract", url: "https://sepolia.etherscan.io/address/0x7444ba1b14a8dfC3342e3190b2Be991bA4A3801E#code" },
+    ],
+    featured: true,
+  },
+  {
     slug: "rising-sun",
     name: "Rising Sun",
     tagline: "Communication where history is opt-in",
